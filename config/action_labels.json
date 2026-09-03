@@ -21,6 +21,13 @@
     ]
   },
   {
+    "name": "Action_None",
+    "id": 7450853,
+    "color": "#808080",
+    "type": "any",
+    "attributes": []
+  },
+  {
     "name": "Action_ArcToEdge",
     "id": 7442896,
     "color": "#ff0000",

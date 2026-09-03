@@ -69,6 +69,8 @@ class ActionFilter:
 
     def get_action_priority(self, action_name: str) -> int:
         """Get numerical priority rank (lower number = higher priority)."""
+        if action_name == "Action_None":
+            return 9999
         return self.priority_rank.get(action_name, 999)
 
     def filter_frame_annotations(

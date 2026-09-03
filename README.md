@@ -132,7 +132,6 @@ styles:
 
 hidden_actions:
   portfolio:
-    - Action_None
     - Action_Unknown
     - Action_Defense_NotAnnotated
 

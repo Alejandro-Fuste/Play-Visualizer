@@ -91,7 +91,7 @@ def load_config(
                 "neutral": StyleConfig(box_color=[149, 165, 166], label_bg_color=[127, 140, 141], text_color=[255, 255, 255], thickness=2),
             },
             hidden_actions={
-                "portfolio": ["Action_None", "Action_Unknown", "Action_Defense_NotAnnotated"],
+                "portfolio": ["Action_Unknown", "Action_Defense_NotAnnotated"],
                 "technical": [],
             },
             action_priority=[

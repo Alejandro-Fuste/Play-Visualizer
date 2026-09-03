@@ -1,7 +1,7 @@
 {
   "input_video": "examples/JetSweep_1.mp4",
   "input_annotations": "examples/annotations.json",
-  "output_video": "output/JetSweep_1_TapeVision_Demo_v2.mp4",
+  "output_video": "output/JetSweep_1_PlayVisualizer_Demo_v2.mp4",
   "mode": "standard",
   "video_properties": {
     "fps": 30.0,
@@ -24,7 +24,7 @@
       "result_frame": 329
     },
     "num_players": 24,
-    "num_action_segments": 58,
+    "num_action_segments": 57,
     "num_dense_annotations": 7230
   },
   "rendered_frame_start": 0,
@@ -47,6 +47,6 @@
     }
   ],
   "skipped_annotations": 0,
-  "ffmpeg_command": "/opt/homebrew/bin/ffmpeg -y -i output/.tmp_tapevision/JetSweep_1_TapeVision_Demo_v2.intermediate.mp4 -i examples/JetSweep_1.mp4 -c:v libx264 -preset medium -crf 18 -pix_fmt yuv420p -movflags +faststart -timecode 00:00:00:00 -write_tmcd 1 -c:a aac -map 0:v:0 -map 1:a:0? output/JetSweep_1_TapeVision_Demo_v2.mp4",
+  "ffmpeg_command": "/opt/homebrew/bin/ffmpeg -y -i output/.tmp_play_visualizer/JetSweep_1_PlayVisualizer_Demo_v2.intermediate.mp4 -i examples/JetSweep_1.mp4 -c:v libx264 -preset medium -crf 18 -pix_fmt yuv420p -movflags +faststart -timecode 00:00:00:00 -write_tmcd 1 -c:a aac -map 0:v:0 -map 1:a:0? output/JetSweep_1_PlayVisualizer_Demo_v2.mp4",
   "status": "success"
 }

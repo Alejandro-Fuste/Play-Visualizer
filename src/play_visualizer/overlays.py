@@ -114,7 +114,6 @@ class OverlayRenderer:
         thickness = 2 if is_highlighted else 1
 
         if action and action in self.config.action_colors and action not in (
-            "Action_None",
             "Action_Unknown",
             "Action_Defense_NotAnnotated",
         ):
@@ -263,7 +262,6 @@ class OverlayRenderer:
         seen: set[str] = set()
         for ann in active_actions:
             if ann.action and ann.action not in (
-                "Action_None",
                 "Action_Unknown",
                 "Action_Defense_NotAnnotated",
             ):

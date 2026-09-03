@@ -22,6 +22,8 @@ def test_load_action_colors():
     assert colors["Action_ArcToEdge"] == [0, 0, 255]  # #ff0000 -> BGR [0, 0, 255]
     assert "Object_Ball" in colors
     assert colors["Object_Ball"] == [255, 255, 0]    # #00ffff -> BGR [255, 255, 0]
+    assert "Action_None" in colors
+    assert colors["Action_None"] == [128, 128, 128]  # #808080 -> BGR [128, 128, 128]
 
 
 def test_overlay_renderer_uses_action_colors():
@@ -49,6 +51,20 @@ def test_overlay_renderer_uses_action_colors():
     assert bg_color == [0, 0, 255]
 
 
+def test_overlay_renderer_uses_action_none_color():
+    cfg = load_config()
+    renderer = OverlayRenderer(config=cfg)
+
+    box_color, bg_color, text_color, thickness = renderer._get_team_colors(
+        team_side="offense",
+        is_highlighted=False,
+        action="Action_None",
+    )
+
+    assert box_color == [128, 128, 128]
+    assert bg_color == [128, 128, 128]
+
+
 def test_overlay_renderer_fallback_for_unmapped_action():
     cfg = load_config()
     renderer = OverlayRenderer(config=cfg)
@@ -56,7 +72,7 @@ def test_overlay_renderer_fallback_for_unmapped_action():
     box_color, _, _, _ = renderer._get_team_colors(
         team_side="offense",
         is_highlighted=False,
-        action="Action_None",
+        action="Action_Unknown_NonExistent",
     )
 
     # Should fall back to offense style box_color [46, 204, 113]
