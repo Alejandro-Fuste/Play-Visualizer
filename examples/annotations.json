@@ -2,12 +2,12 @@
   "schema_version": "tapevision_annotation_enrichment_v1.1",
   "source": {
     "xml_file": "generated_base_cvat.xml",
-    "csv_file": "KeyActions_Sheet.csv",
+    "csv_file": "JetSweep.csv",
     "source_of_truth": "cvat_video_xml",
-    "action_source": "csv_start_frame_only",
+    "action_source": "key_actions_csv_plus_temporal_rules",
     "metadata_files": {
-      "dataset_summary": "Dataset Summary.csv",
-      "actions": "actions11.json",
+      "dataset_summary": "DatasetSummary.csv",
+      "actions": "actions.json",
       "plays": "plays.json"
     }
   },
@@ -116031,7 +116031,7 @@
         "team_side": "offense",
         "action": "Action_ZoneBlock",
         "start_frame": 133,
-        "end_frame": 191,
+        "end_frame": 192,
         "source": "inferred_complete_timeline"
       },
       {
@@ -116040,7 +116040,7 @@
         "position": "LG",
         "team_side": "offense",
         "action": "Action_None",
-        "start_frame": 192,
+        "start_frame": 193,
         "end_frame": 309,
         "source": "inferred_complete_timeline"
       },
@@ -116081,7 +116081,7 @@
         "team_side": "offense",
         "action": "Action_ZoneBlock",
         "start_frame": 133,
-        "end_frame": 191,
+        "end_frame": 192,
         "source": "inferred_complete_timeline"
       },
       {
@@ -116090,7 +116090,7 @@
         "position": "LT",
         "team_side": "offense",
         "action": "Action_None",
-        "start_frame": 192,
+        "start_frame": 193,
         "end_frame": 329,
         "source": "inferred_complete_timeline"
       },
@@ -116131,7 +116131,7 @@
         "team_side": "offense",
         "action": "Action_BallSnap",
         "start_frame": 132,
-        "end_frame": 132,
+        "end_frame": 144,
         "source": "inferred_complete_timeline"
       },
       {
@@ -116140,8 +116140,8 @@
         "position": "C",
         "team_side": "offense",
         "action": "Action_ZoneBlock",
-        "start_frame": 133,
-        "end_frame": 191,
+        "start_frame": 145,
+        "end_frame": 192,
         "source": "inferred_complete_timeline"
       },
       {
@@ -116150,7 +116150,7 @@
         "position": "C",
         "team_side": "offense",
         "action": "Action_None",
-        "start_frame": 192,
+        "start_frame": 193,
         "end_frame": 329,
         "source": "inferred_complete_timeline"
       },
@@ -116191,7 +116191,7 @@
         "team_side": "offense",
         "action": "Action_ZoneBlock",
         "start_frame": 133,
-        "end_frame": 191,
+        "end_frame": 192,
         "source": "inferred_complete_timeline"
       },
       {
@@ -116200,7 +116200,7 @@
         "position": "RG",
         "team_side": "offense",
         "action": "Action_None",
-        "start_frame": 192,
+        "start_frame": 193,
         "end_frame": 329,
         "source": "inferred_complete_timeline"
       },
@@ -116261,7 +116261,7 @@
         "team_side": "offense",
         "action": "Action_LeadBlock",
         "start_frame": 133,
-        "end_frame": 133,
+        "end_frame": 192,
         "source": "inferred_complete_timeline"
       },
       {
@@ -116270,7 +116270,7 @@
         "position": "TE",
         "team_side": "offense",
         "action": "Action_None",
-        "start_frame": 134,
+        "start_frame": 193,
         "end_frame": 329,
         "source": "inferred_complete_timeline"
       },
@@ -116301,7 +116301,7 @@
         "team_side": "offense",
         "action": "Action_BlockSecondLevel",
         "start_frame": 165,
-        "end_frame": 191,
+        "end_frame": 192,
         "source": "inferred_complete_timeline"
       },
       {
@@ -116310,7 +116310,7 @@
         "position": "RT",
         "team_side": "offense",
         "action": "Action_None",
-        "start_frame": 192,
+        "start_frame": 193,
         "end_frame": 329,
         "source": "inferred_complete_timeline"
       },
@@ -116401,7 +116401,7 @@
         "team_side": "offense",
         "action": "Action_Toss",
         "start_frame": 145,
-        "end_frame": 145,
+        "end_frame": 159,
         "source": "inferred_complete_timeline"
       },
       {
@@ -116410,7 +116410,7 @@
         "position": "QB",
         "team_side": "offense",
         "action": "Action_None",
-        "start_frame": 146,
+        "start_frame": 160,
         "end_frame": 329,
         "source": "inferred_complete_timeline"
       },
@@ -116461,16 +116461,6 @@
         "team_side": "offense",
         "action": "Action_BallCarry",
         "start_frame": 160,
-        "end_frame": 160,
-        "source": "inferred_complete_timeline"
-      },
-      {
-        "actor_track_id": "19",
-        "xml_track_id": "18",
-        "position": "WR",
-        "team_side": "offense",
-        "action": "Action_None",
-        "start_frame": 161,
         "end_frame": 329,
         "source": "inferred_complete_timeline"
       },
@@ -133602,7 +133592,7 @@
         "xml_track_id": "2",
         "position": "LG",
         "team_side": "offense",
-        "action": "Action_None",
+        "action": "Action_ZoneBlock",
         "bbox_xyxy": [
           1504.38,
           544.26,
@@ -146382,7 +146372,7 @@
         "xml_track_id": "4",
         "position": "LT",
         "team_side": "offense",
-        "action": "Action_None",
+        "action": "Action_ZoneBlock",
         "bbox_xyxy": [
           1442.32,
           634.57,
@@ -158402,7 +158392,7 @@
         "xml_track_id": "6",
         "position": "C",
         "team_side": "offense",
-        "action": "Action_ZoneBlock",
+        "action": "Action_BallSnap",
         "bbox_xyxy": [
           1186.07,
           454.58,
@@ -158422,7 +158412,7 @@
         "xml_track_id": "6",
         "position": "C",
         "team_side": "offense",
-        "action": "Action_ZoneBlock",
+        "action": "Action_BallSnap",
         "bbox_xyxy": [
           1187.33,
           453.87,
@@ -158442,7 +158432,7 @@
         "xml_track_id": "6",
         "position": "C",
         "team_side": "offense",
-        "action": "Action_ZoneBlock",
+        "action": "Action_BallSnap",
         "bbox_xyxy": [
           1188.73,
           453.5,
@@ -158462,7 +158452,7 @@
         "xml_track_id": "6",
         "position": "C",
         "team_side": "offense",
-        "action": "Action_ZoneBlock",
+        "action": "Action_BallSnap",
         "bbox_xyxy": [
           1191.4,
           454.34,
@@ -158482,7 +158472,7 @@
         "xml_track_id": "6",
         "position": "C",
         "team_side": "offense",
-        "action": "Action_ZoneBlock",
+        "action": "Action_BallSnap",
         "bbox_xyxy": [
           1193.95,
           454.91,
@@ -158502,7 +158492,7 @@
         "xml_track_id": "6",
         "position": "C",
         "team_side": "offense",
-        "action": "Action_ZoneBlock",
+        "action": "Action_BallSnap",
         "bbox_xyxy": [
           1197.38,
           454.99,
@@ -158522,7 +158512,7 @@
         "xml_track_id": "6",
         "position": "C",
         "team_side": "offense",
-        "action": "Action_ZoneBlock",
+        "action": "Action_BallSnap",
         "bbox_xyxy": [
           1200.62,
           454.93,
@@ -158542,7 +158532,7 @@
         "xml_track_id": "6",
         "position": "C",
         "team_side": "offense",
-        "action": "Action_ZoneBlock",
+        "action": "Action_BallSnap",
         "bbox_xyxy": [
           1202.56,
           453.55,
@@ -158562,7 +158552,7 @@
         "xml_track_id": "6",
         "position": "C",
         "team_side": "offense",
-        "action": "Action_ZoneBlock",
+        "action": "Action_BallSnap",
         "bbox_xyxy": [
           1205.57,
           452.47,
@@ -158582,7 +158572,7 @@
         "xml_track_id": "6",
         "position": "C",
         "team_side": "offense",
-        "action": "Action_ZoneBlock",
+        "action": "Action_BallSnap",
         "bbox_xyxy": [
           1209.22,
           451.38,
@@ -158602,7 +158592,7 @@
         "xml_track_id": "6",
         "position": "C",
         "team_side": "offense",
-        "action": "Action_ZoneBlock",
+        "action": "Action_BallSnap",
         "bbox_xyxy": [
           1211.46,
           449.85,
@@ -158622,7 +158612,7 @@
         "xml_track_id": "6",
         "position": "C",
         "team_side": "offense",
-        "action": "Action_ZoneBlock",
+        "action": "Action_BallSnap",
         "bbox_xyxy": [
           1214.83,
           449.66,
@@ -159582,7 +159572,7 @@
         "xml_track_id": "6",
         "position": "C",
         "team_side": "offense",
-        "action": "Action_None",
+        "action": "Action_ZoneBlock",
         "bbox_xyxy": [
           1327.38,
           568.6,
@@ -172782,7 +172772,7 @@
         "xml_track_id": "8",
         "position": "RG",
         "team_side": "offense",
-        "action": "Action_None",
+        "action": "Action_ZoneBlock",
         "bbox_xyxy": [
           1439.39,
           522.93,
@@ -190522,7 +190512,7 @@
         "xml_track_id": "11",
         "position": "TE",
         "team_side": "offense",
-        "action": "Action_None",
+        "action": "Action_LeadBlock",
         "bbox_xyxy": [
           1116.14,
           347.51,
@@ -190542,7 +190532,7 @@
         "xml_track_id": "11",
         "position": "TE",
         "team_side": "offense",
-        "action": "Action_None",
+        "action": "Action_LeadBlock",
         "bbox_xyxy": [
           1115.1,
           348.06,
@@ -190562,7 +190552,7 @@
         "xml_track_id": "11",
         "position": "TE",
         "team_side": "offense",
-        "action": "Action_None",
+        "action": "Action_LeadBlock",
         "bbox_xyxy": [
           1114.1,
           348.11,
@@ -190582,7 +190572,7 @@
         "xml_track_id": "11",
         "position": "TE",
         "team_side": "offense",
-        "action": "Action_None",
+        "action": "Action_LeadBlock",
         "bbox_xyxy": [
           1112.53,
           347.22,
@@ -190602,7 +190592,7 @@
         "xml_track_id": "11",
         "position": "TE",
         "team_side": "offense",
-        "action": "Action_None",
+        "action": "Action_LeadBlock",
         "bbox_xyxy": [
           1110.91,
           346.13,
@@ -190622,7 +190612,7 @@
         "xml_track_id": "11",
         "position": "TE",
         "team_side": "offense",
-        "action": "Action_None",
+        "action": "Action_LeadBlock",
         "bbox_xyxy": [
           1109.05,
           344.47,
@@ -190642,7 +190632,7 @@
         "xml_track_id": "11",
         "position": "TE",
         "team_side": "offense",
-        "action": "Action_None",
+        "action": "Action_LeadBlock",
         "bbox_xyxy": [
           1107.26,
           341.64,
@@ -190662,7 +190652,7 @@
         "xml_track_id": "11",
         "position": "TE",
         "team_side": "offense",
-        "action": "Action_None",
+        "action": "Action_LeadBlock",
         "bbox_xyxy": [
           1104.96,
           340.43,
@@ -190682,7 +190672,7 @@
         "xml_track_id": "11",
         "position": "TE",
         "team_side": "offense",
-        "action": "Action_None",
+        "action": "Action_LeadBlock",
         "bbox_xyxy": [
           1101.8,
           337.95,
@@ -190702,7 +190692,7 @@
         "xml_track_id": "11",
         "position": "TE",
         "team_side": "offense",
-        "action": "Action_None",
+        "action": "Action_LeadBlock",
         "bbox_xyxy": [
           1099.18,
           335.46,
@@ -190722,7 +190712,7 @@
         "xml_track_id": "11",
         "position": "TE",
         "team_side": "offense",
-        "action": "Action_None",
+        "action": "Action_LeadBlock",
         "bbox_xyxy": [
           1097.03,
           332.83,
@@ -190742,7 +190732,7 @@
         "xml_track_id": "11",
         "position": "TE",
         "team_side": "offense",
-        "action": "Action_None",
+        "action": "Action_LeadBlock",
         "bbox_xyxy": [
           1093.08,
           329.69,
@@ -190762,7 +190752,7 @@
         "xml_track_id": "11",
         "position": "TE",
         "team_side": "offense",
-        "action": "Action_None",
+        "action": "Action_LeadBlock",
         "bbox_xyxy": [
           1090.29,
           326.63,
@@ -190782,7 +190772,7 @@
         "xml_track_id": "11",
         "position": "TE",
         "team_side": "offense",
-        "action": "Action_None",
+        "action": "Action_LeadBlock",
         "bbox_xyxy": [
           1087.76,
           323.63,
@@ -190802,7 +190792,7 @@
         "xml_track_id": "11",
         "position": "TE",
         "team_side": "offense",
-        "action": "Action_None",
+        "action": "Action_LeadBlock",
         "bbox_xyxy": [
           1084.4,
           320.9,
@@ -190822,7 +190812,7 @@
         "xml_track_id": "11",
         "position": "TE",
         "team_side": "offense",
-        "action": "Action_None",
+        "action": "Action_LeadBlock",
         "bbox_xyxy": [
           1080.36,
           319.4,
@@ -190842,7 +190832,7 @@
         "xml_track_id": "11",
         "position": "TE",
         "team_side": "offense",
-        "action": "Action_None",
+        "action": "Action_LeadBlock",
         "bbox_xyxy": [
           1077.37,
           318.01,
@@ -190862,7 +190852,7 @@
         "xml_track_id": "11",
         "position": "TE",
         "team_side": "offense",
-        "action": "Action_None",
+        "action": "Action_LeadBlock",
         "bbox_xyxy": [
           1074.76,
           316.72,
@@ -190882,7 +190872,7 @@
         "xml_track_id": "11",
         "position": "TE",
         "team_side": "offense",
-        "action": "Action_None",
+        "action": "Action_LeadBlock",
         "bbox_xyxy": [
           1072.43,
           314.51,
@@ -190902,7 +190892,7 @@
         "xml_track_id": "11",
         "position": "TE",
         "team_side": "offense",
-        "action": "Action_None",
+        "action": "Action_LeadBlock",
         "bbox_xyxy": [
           1069.96,
           312.44,
@@ -190922,7 +190912,7 @@
         "xml_track_id": "11",
         "position": "TE",
         "team_side": "offense",
-        "action": "Action_None",
+        "action": "Action_LeadBlock",
         "bbox_xyxy": [
           1066.83,
           310.5,
@@ -190942,7 +190932,7 @@
         "xml_track_id": "11",
         "position": "TE",
         "team_side": "offense",
-        "action": "Action_None",
+        "action": "Action_LeadBlock",
         "bbox_xyxy": [
           1062.33,
           309.71,
@@ -190962,7 +190952,7 @@
         "xml_track_id": "11",
         "position": "TE",
         "team_side": "offense",
-        "action": "Action_None",
+        "action": "Action_LeadBlock",
         "bbox_xyxy": [
           1057.14,
           309.66,
@@ -190982,7 +190972,7 @@
         "xml_track_id": "11",
         "position": "TE",
         "team_side": "offense",
-        "action": "Action_None",
+        "action": "Action_LeadBlock",
         "bbox_xyxy": [
           1051.41,
           308.84,
@@ -191002,7 +190992,7 @@
         "xml_track_id": "11",
         "position": "TE",
         "team_side": "offense",
-        "action": "Action_None",
+        "action": "Action_LeadBlock",
         "bbox_xyxy": [
           1048.58,
           308.34,
@@ -191022,7 +191012,7 @@
         "xml_track_id": "11",
         "position": "TE",
         "team_side": "offense",
-        "action": "Action_None",
+        "action": "Action_LeadBlock",
         "bbox_xyxy": [
           1045.98,
           307.4,
@@ -191042,7 +191032,7 @@
         "xml_track_id": "11",
         "position": "TE",
         "team_side": "offense",
-        "action": "Action_None",
+        "action": "Action_LeadBlock",
         "bbox_xyxy": [
           1040.25,
           304.64,
@@ -191062,7 +191052,7 @@
         "xml_track_id": "11",
         "position": "TE",
         "team_side": "offense",
-        "action": "Action_None",
+        "action": "Action_LeadBlock",
         "bbox_xyxy": [
           1034.76,
           301.83,
@@ -191082,7 +191072,7 @@
         "xml_track_id": "11",
         "position": "TE",
         "team_side": "offense",
-        "action": "Action_None",
+        "action": "Action_LeadBlock",
         "bbox_xyxy": [
           1028.46,
           299.2,
@@ -191102,7 +191092,7 @@
         "xml_track_id": "11",
         "position": "TE",
         "team_side": "offense",
-        "action": "Action_None",
+        "action": "Action_LeadBlock",
         "bbox_xyxy": [
           1022.79,
           297.26,
@@ -191122,7 +191112,7 @@
         "xml_track_id": "11",
         "position": "TE",
         "team_side": "offense",
-        "action": "Action_None",
+        "action": "Action_LeadBlock",
         "bbox_xyxy": [
           1018.87,
           295.9,
@@ -191142,7 +191132,7 @@
         "xml_track_id": "11",
         "position": "TE",
         "team_side": "offense",
-        "action": "Action_None",
+        "action": "Action_LeadBlock",
         "bbox_xyxy": [
           1016.42,
           295.51,
@@ -191162,7 +191152,7 @@
         "xml_track_id": "11",
         "position": "TE",
         "team_side": "offense",
-        "action": "Action_None",
+        "action": "Action_LeadBlock",
         "bbox_xyxy": [
           1011.22,
           294.55,
@@ -191182,7 +191172,7 @@
         "xml_track_id": "11",
         "position": "TE",
         "team_side": "offense",
-        "action": "Action_None",
+        "action": "Action_LeadBlock",
         "bbox_xyxy": [
           1004.15,
           292.67,
@@ -191202,7 +191192,7 @@
         "xml_track_id": "11",
         "position": "TE",
         "team_side": "offense",
-        "action": "Action_None",
+        "action": "Action_LeadBlock",
         "bbox_xyxy": [
           994.12,
           291.3,
@@ -191222,7 +191212,7 @@
         "xml_track_id": "11",
         "position": "TE",
         "team_side": "offense",
-        "action": "Action_None",
+        "action": "Action_LeadBlock",
         "bbox_xyxy": [
           984.1,
           289.01,
@@ -191242,7 +191232,7 @@
         "xml_track_id": "11",
         "position": "TE",
         "team_side": "offense",
-        "action": "Action_None",
+        "action": "Action_LeadBlock",
         "bbox_xyxy": [
           973.87,
           286.5,
@@ -191262,7 +191252,7 @@
         "xml_track_id": "11",
         "position": "TE",
         "team_side": "offense",
-        "action": "Action_None",
+        "action": "Action_LeadBlock",
         "bbox_xyxy": [
           962.81,
           284.45,
@@ -191282,7 +191272,7 @@
         "xml_track_id": "11",
         "position": "TE",
         "team_side": "offense",
-        "action": "Action_None",
+        "action": "Action_LeadBlock",
         "bbox_xyxy": [
           951.44,
           283.07,
@@ -191302,7 +191292,7 @@
         "xml_track_id": "11",
         "position": "TE",
         "team_side": "offense",
-        "action": "Action_None",
+        "action": "Action_LeadBlock",
         "bbox_xyxy": [
           940.29,
           282.05,
@@ -191322,7 +191312,7 @@
         "xml_track_id": "11",
         "position": "TE",
         "team_side": "offense",
-        "action": "Action_None",
+        "action": "Action_LeadBlock",
         "bbox_xyxy": [
           930.58,
           281.23,
@@ -191342,7 +191332,7 @@
         "xml_track_id": "11",
         "position": "TE",
         "team_side": "offense",
-        "action": "Action_None",
+        "action": "Action_LeadBlock",
         "bbox_xyxy": [
           917.75,
           280.11,
@@ -191362,7 +191352,7 @@
         "xml_track_id": "11",
         "position": "TE",
         "team_side": "offense",
-        "action": "Action_None",
+        "action": "Action_LeadBlock",
         "bbox_xyxy": [
           908.4,
           277.97,
@@ -191382,7 +191372,7 @@
         "xml_track_id": "11",
         "position": "TE",
         "team_side": "offense",
-        "action": "Action_None",
+        "action": "Action_LeadBlock",
         "bbox_xyxy": [
           897.11,
           275.06,
@@ -191402,7 +191392,7 @@
         "xml_track_id": "11",
         "position": "TE",
         "team_side": "offense",
-        "action": "Action_None",
+        "action": "Action_LeadBlock",
         "bbox_xyxy": [
           880.56,
           271.01,
@@ -191422,7 +191412,7 @@
         "xml_track_id": "11",
         "position": "TE",
         "team_side": "offense",
-        "action": "Action_None",
+        "action": "Action_LeadBlock",
         "bbox_xyxy": [
           875.56,
           269.48,
@@ -191442,7 +191432,7 @@
         "xml_track_id": "11",
         "position": "TE",
         "team_side": "offense",
-        "action": "Action_None",
+        "action": "Action_LeadBlock",
         "bbox_xyxy": [
           862.4,
           267.73,
@@ -191462,7 +191452,7 @@
         "xml_track_id": "11",
         "position": "TE",
         "team_side": "offense",
-        "action": "Action_None",
+        "action": "Action_LeadBlock",
         "bbox_xyxy": [
           858.15,
           267.2,
@@ -191482,7 +191472,7 @@
         "xml_track_id": "11",
         "position": "TE",
         "team_side": "offense",
-        "action": "Action_None",
+        "action": "Action_LeadBlock",
         "bbox_xyxy": [
           849.32,
           265.99,
@@ -191502,7 +191492,7 @@
         "xml_track_id": "11",
         "position": "TE",
         "team_side": "offense",
-        "action": "Action_None",
+        "action": "Action_LeadBlock",
         "bbox_xyxy": [
           839.45,
           266.29,
@@ -191522,7 +191512,7 @@
         "xml_track_id": "11",
         "position": "TE",
         "team_side": "offense",
-        "action": "Action_None",
+        "action": "Action_LeadBlock",
         "bbox_xyxy": [
           826.0,
           263.94,
@@ -191542,7 +191532,7 @@
         "xml_track_id": "11",
         "position": "TE",
         "team_side": "offense",
-        "action": "Action_None",
+        "action": "Action_LeadBlock",
         "bbox_xyxy": [
           821.3,
           263.19,
@@ -191562,7 +191552,7 @@
         "xml_track_id": "11",
         "position": "TE",
         "team_side": "offense",
-        "action": "Action_None",
+        "action": "Action_LeadBlock",
         "bbox_xyxy": [
           812.81,
           262.11,
@@ -191582,7 +191572,7 @@
         "xml_track_id": "11",
         "position": "TE",
         "team_side": "offense",
-        "action": "Action_None",
+        "action": "Action_LeadBlock",
         "bbox_xyxy": [
           805.45,
           261.36,
@@ -191602,7 +191592,7 @@
         "xml_track_id": "11",
         "position": "TE",
         "team_side": "offense",
-        "action": "Action_None",
+        "action": "Action_LeadBlock",
         "bbox_xyxy": [
           797.94,
           261.08,
@@ -191622,7 +191612,7 @@
         "xml_track_id": "11",
         "position": "TE",
         "team_side": "offense",
-        "action": "Action_None",
+        "action": "Action_LeadBlock",
         "bbox_xyxy": [
           792.31,
           259.33,
@@ -191642,7 +191632,7 @@
         "xml_track_id": "11",
         "position": "TE",
         "team_side": "offense",
-        "action": "Action_None",
+        "action": "Action_LeadBlock",
         "bbox_xyxy": [
           784.64,
           257.98,
@@ -191662,7 +191652,7 @@
         "xml_track_id": "11",
         "position": "TE",
         "team_side": "offense",
-        "action": "Action_None",
+        "action": "Action_LeadBlock",
         "bbox_xyxy": [
           775.04,
           255.96,
@@ -191682,7 +191672,7 @@
         "xml_track_id": "11",
         "position": "TE",
         "team_side": "offense",
-        "action": "Action_None",
+        "action": "Action_LeadBlock",
         "bbox_xyxy": [
           764.37,
           254.47,
@@ -198282,7 +198272,7 @@
         "xml_track_id": "12",
         "position": "RT",
         "team_side": "offense",
-        "action": "Action_None",
+        "action": "Action_BlockSecondLevel",
         "bbox_xyxy": [
           1077.25,
           449.77,
@@ -223762,7 +223752,7 @@
         "xml_track_id": "16",
         "position": "QB",
         "team_side": "offense",
-        "action": "Action_None",
+        "action": "Action_Toss",
         "bbox_xyxy": [
           1382.52,
           352.56,
@@ -223782,7 +223772,7 @@
         "xml_track_id": "16",
         "position": "QB",
         "team_side": "offense",
-        "action": "Action_None",
+        "action": "Action_Toss",
         "bbox_xyxy": [
           1382.71,
           351.66,
@@ -223802,7 +223792,7 @@
         "xml_track_id": "16",
         "position": "QB",
         "team_side": "offense",
-        "action": "Action_None",
+        "action": "Action_Toss",
         "bbox_xyxy": [
           1383.22,
           350.86,
@@ -223822,7 +223812,7 @@
         "xml_track_id": "16",
         "position": "QB",
         "team_side": "offense",
-        "action": "Action_None",
+        "action": "Action_Toss",
         "bbox_xyxy": [
           1382.36,
           351.11,
@@ -223842,7 +223832,7 @@
         "xml_track_id": "16",
         "position": "QB",
         "team_side": "offense",
-        "action": "Action_None",
+        "action": "Action_Toss",
         "bbox_xyxy": [
           1382.92,
           351.5,
@@ -223862,7 +223852,7 @@
         "xml_track_id": "16",
         "position": "QB",
         "team_side": "offense",
-        "action": "Action_None",
+        "action": "Action_Toss",
         "bbox_xyxy": [
           1384.49,
           352.08,
@@ -223882,7 +223872,7 @@
         "xml_track_id": "16",
         "position": "QB",
         "team_side": "offense",
-        "action": "Action_None",
+        "action": "Action_Toss",
         "bbox_xyxy": [
           1387.52,
           353.16,
@@ -223902,7 +223892,7 @@
         "xml_track_id": "16",
         "position": "QB",
         "team_side": "offense",
-        "action": "Action_None",
+        "action": "Action_Toss",
         "bbox_xyxy": [
           1392.24,
           353.06,
@@ -223922,7 +223912,7 @@
         "xml_track_id": "16",
         "position": "QB",
         "team_side": "offense",
-        "action": "Action_None",
+        "action": "Action_Toss",
         "bbox_xyxy": [
           1396.44,
           352.88,
@@ -223942,7 +223932,7 @@
         "xml_track_id": "16",
         "position": "QB",
         "team_side": "offense",
-        "action": "Action_None",
+        "action": "Action_Toss",
         "bbox_xyxy": [
           1398.2,
           354.0,
@@ -223962,7 +223952,7 @@
         "xml_track_id": "16",
         "position": "QB",
         "team_side": "offense",
-        "action": "Action_None",
+        "action": "Action_Toss",
         "bbox_xyxy": [
           1399.62,
           355.4,
@@ -223982,7 +223972,7 @@
         "xml_track_id": "16",
         "position": "QB",
         "team_side": "offense",
-        "action": "Action_None",
+        "action": "Action_Toss",
         "bbox_xyxy": [
           1406.22,
           358.13,
@@ -224002,7 +223992,7 @@
         "xml_track_id": "16",
         "position": "QB",
         "team_side": "offense",
-        "action": "Action_None",
+        "action": "Action_Toss",
         "bbox_xyxy": [
           1408.34,
           359.1,
@@ -224022,7 +224012,7 @@
         "xml_track_id": "16",
         "position": "QB",
         "team_side": "offense",
-        "action": "Action_None",
+        "action": "Action_Toss",
         "bbox_xyxy": [
           1415.31,
           360.33,
@@ -237262,7 +237252,7 @@
         "xml_track_id": "18",
         "position": "WR",
         "team_side": "offense",
-        "action": "Action_None",
+        "action": "Action_BallCarry",
         "bbox_xyxy": [
           1356.88,
           349.18,
@@ -237282,7 +237272,7 @@
         "xml_track_id": "18",
         "position": "WR",
         "team_side": "offense",
-        "action": "Action_None",
+        "action": "Action_BallCarry",
         "bbox_xyxy": [
           1351.43,
           345.95,
@@ -237302,7 +237292,7 @@
         "xml_track_id": "18",
         "position": "WR",
         "team_side": "offense",
-        "action": "Action_None",
+        "action": "Action_BallCarry",
         "bbox_xyxy": [
           1346.6,
           343.16,
@@ -237322,7 +237312,7 @@
         "xml_track_id": "18",
         "position": "WR",
         "team_side": "offense",
-        "action": "Action_None",
+        "action": "Action_BallCarry",
         "bbox_xyxy": [
           1341.13,
           339.55,
@@ -237342,7 +237332,7 @@
         "xml_track_id": "18",
         "position": "WR",
         "team_side": "offense",
-        "action": "Action_None",
+        "action": "Action_BallCarry",
         "bbox_xyxy": [
           1334.87,
           335.74,
@@ -237362,7 +237352,7 @@
         "xml_track_id": "18",
         "position": "WR",
         "team_side": "offense",
-        "action": "Action_None",
+        "action": "Action_BallCarry",
         "bbox_xyxy": [
           1328.57,
           331.58,
@@ -237382,7 +237372,7 @@
         "xml_track_id": "18",
         "position": "WR",
         "team_side": "offense",
-        "action": "Action_None",
+        "action": "Action_BallCarry",
         "bbox_xyxy": [
           1321.17,
           327.51,
@@ -237402,7 +237392,7 @@
         "xml_track_id": "18",
         "position": "WR",
         "team_side": "offense",
-        "action": "Action_None",
+        "action": "Action_BallCarry",
         "bbox_xyxy": [
           1313.01,
           324.71,
@@ -237422,7 +237412,7 @@
         "xml_track_id": "18",
         "position": "WR",
         "team_side": "offense",
-        "action": "Action_None",
+        "action": "Action_BallCarry",
         "bbox_xyxy": [
           1301.87,
           320.22,
@@ -237442,7 +237432,7 @@
         "xml_track_id": "18",
         "position": "WR",
         "team_side": "offense",
-        "action": "Action_None",
+        "action": "Action_BallCarry",
         "bbox_xyxy": [
           1290.0,
           315.02,
@@ -237462,7 +237452,7 @@
         "xml_track_id": "18",
         "position": "WR",
         "team_side": "offense",
-        "action": "Action_None",
+        "action": "Action_BallCarry",
         "bbox_xyxy": [
           1278.55,
           311.26,
@@ -237482,7 +237472,7 @@
         "xml_track_id": "18",
         "position": "WR",
         "team_side": "offense",
-        "action": "Action_None",
+        "action": "Action_BallCarry",
         "bbox_xyxy": [
           1268.04,
           307.34,
@@ -237502,7 +237492,7 @@
         "xml_track_id": "18",
         "position": "WR",
         "team_side": "offense",
-        "action": "Action_None",
+        "action": "Action_BallCarry",
         "bbox_xyxy": [
           1256.22,
           303.48,
@@ -237522,7 +237512,7 @@
         "xml_track_id": "18",
         "position": "WR",
         "team_side": "offense",
-        "action": "Action_None",
+        "action": "Action_BallCarry",
         "bbox_xyxy": [
           1245.15,
           298.98,
@@ -237542,7 +237532,7 @@
         "xml_track_id": "18",
         "position": "WR",
         "team_side": "offense",
-        "action": "Action_None",
+        "action": "Action_BallCarry",
         "bbox_xyxy": [
           1233.54,
           295.75,
@@ -237562,7 +237552,7 @@
         "xml_track_id": "18",
         "position": "WR",
         "team_side": "offense",
-        "action": "Action_None",
+        "action": "Action_BallCarry",
         "bbox_xyxy": [
           1223.58,
           292.07,
@@ -237582,7 +237572,7 @@
         "xml_track_id": "18",
         "position": "WR",
         "team_side": "offense",
-        "action": "Action_None",
+        "action": "Action_BallCarry",
         "bbox_xyxy": [
           1211.32,
           287.5,
@@ -237602,7 +237592,7 @@
         "xml_track_id": "18",
         "position": "WR",
         "team_side": "offense",
-        "action": "Action_None",
+        "action": "Action_BallCarry",
         "bbox_xyxy": [
           1194.87,
           280.19,
@@ -237622,7 +237612,7 @@
         "xml_track_id": "18",
         "position": "WR",
         "team_side": "offense",
-        "action": "Action_None",
+        "action": "Action_BallCarry",
         "bbox_xyxy": [
           1189.61,
           277.55,
@@ -237642,7 +237632,7 @@
         "xml_track_id": "18",
         "position": "WR",
         "team_side": "offense",
-        "action": "Action_None",
+        "action": "Action_BallCarry",
         "bbox_xyxy": [
           1172.63,
           272.36,
@@ -237662,7 +237652,7 @@
         "xml_track_id": "18",
         "position": "WR",
         "team_side": "offense",
-        "action": "Action_None",
+        "action": "Action_BallCarry",
         "bbox_xyxy": [
           1167.32,
           270.91,
@@ -237682,7 +237672,7 @@
         "xml_track_id": "18",
         "position": "WR",
         "team_side": "offense",
-        "action": "Action_None",
+        "action": "Action_BallCarry",
         "bbox_xyxy": [
           1158.56,
           268.18,
@@ -237702,7 +237692,7 @@
         "xml_track_id": "18",
         "position": "WR",
         "team_side": "offense",
-        "action": "Action_None",
+        "action": "Action_BallCarry",
         "bbox_xyxy": [
           1145.56,
           266.61,
@@ -237722,7 +237712,7 @@
         "xml_track_id": "18",
         "position": "WR",
         "team_side": "offense",
-        "action": "Action_None",
+        "action": "Action_BallCarry",
         "bbox_xyxy": [
           1128.81,
           262.44,
@@ -237742,7 +237732,7 @@
         "xml_track_id": "18",
         "position": "WR",
         "team_side": "offense",
-        "action": "Action_None",
+        "action": "Action_BallCarry",
         "bbox_xyxy": [
           1122.87,
           261.13,
@@ -237762,7 +237752,7 @@
         "xml_track_id": "18",
         "position": "WR",
         "team_side": "offense",
-        "action": "Action_None",
+        "action": "Action_BallCarry",
         "bbox_xyxy": [
           1112.75,
           257.86,
@@ -237782,7 +237772,7 @@
         "xml_track_id": "18",
         "position": "WR",
         "team_side": "offense",
-        "action": "Action_None",
+        "action": "Action_BallCarry",
         "bbox_xyxy": [
           1101.34,
           254.75,
@@ -237802,7 +237792,7 @@
         "xml_track_id": "18",
         "position": "WR",
         "team_side": "offense",
-        "action": "Action_None",
+        "action": "Action_BallCarry",
         "bbox_xyxy": [
           1090.92,
           252.33,
@@ -237822,7 +237812,7 @@
         "xml_track_id": "18",
         "position": "WR",
         "team_side": "offense",
-        "action": "Action_None",
+        "action": "Action_BallCarry",
         "bbox_xyxy": [
           1081.56,
           248.56,
@@ -237842,7 +237832,7 @@
         "xml_track_id": "18",
         "position": "WR",
         "team_side": "offense",
-        "action": "Action_None",
+        "action": "Action_BallCarry",
         "bbox_xyxy": [
           1071.41,
           245.8,
@@ -237862,7 +237852,7 @@
         "xml_track_id": "18",
         "position": "WR",
         "team_side": "offense",
-        "action": "Action_None",
+        "action": "Action_BallCarry",
         "bbox_xyxy": [
           1061.62,
           241.96,
@@ -237882,7 +237872,7 @@
         "xml_track_id": "18",
         "position": "WR",
         "team_side": "offense",
-        "action": "Action_None",
+        "action": "Action_BallCarry",
         "bbox_xyxy": [
           1046.34,
           239.41,
@@ -237902,7 +237892,7 @@
         "xml_track_id": "18",
         "position": "WR",
         "team_side": "offense",
-        "action": "Action_None",
+        "action": "Action_BallCarry",
         "bbox_xyxy": [
           1038.31,
           237.95,
@@ -237922,7 +237912,7 @@
         "xml_track_id": "18",
         "position": "WR",
         "team_side": "offense",
-        "action": "Action_None",
+        "action": "Action_BallCarry",
         "bbox_xyxy": [
           1022.92,
           236.36,
@@ -237942,7 +237932,7 @@
         "xml_track_id": "18",
         "position": "WR",
         "team_side": "offense",
-        "action": "Action_None",
+        "action": "Action_BallCarry",
         "bbox_xyxy": [
           1015.11,
           235.35,
@@ -237962,7 +237952,7 @@
         "xml_track_id": "18",
         "position": "WR",
         "team_side": "offense",
-        "action": "Action_None",
+        "action": "Action_BallCarry",
         "bbox_xyxy": [
           1005.68,
           235.72,
@@ -237982,7 +237972,7 @@
         "xml_track_id": "18",
         "position": "WR",
         "team_side": "offense",
-        "action": "Action_None",
+        "action": "Action_BallCarry",
         "bbox_xyxy": [
           987.34,
           236.39,
@@ -238002,7 +237992,7 @@
         "xml_track_id": "18",
         "position": "WR",
         "team_side": "offense",
-        "action": "Action_None",
+        "action": "Action_BallCarry",
         "bbox_xyxy": [
           970.54,
           236.62,
@@ -238022,7 +238012,7 @@
         "xml_track_id": "18",
         "position": "WR",
         "team_side": "offense",
-        "action": "Action_None",
+        "action": "Action_BallCarry",
         "bbox_xyxy": [
           964.01,
           236.6,
@@ -238042,7 +238032,7 @@
         "xml_track_id": "18",
         "position": "WR",
         "team_side": "offense",
-        "action": "Action_None",
+        "action": "Action_BallCarry",
         "bbox_xyxy": [
           949.58,
           237.87,
@@ -238062,7 +238052,7 @@
         "xml_track_id": "18",
         "position": "WR",
         "team_side": "offense",
-        "action": "Action_None",
+        "action": "Action_BallCarry",
         "bbox_xyxy": [
           935.21,
           239.9,
@@ -238082,7 +238072,7 @@
         "xml_track_id": "18",
         "position": "WR",
         "team_side": "offense",
-        "action": "Action_None",
+        "action": "Action_BallCarry",
         "bbox_xyxy": [
           921.59,
           241.8,
@@ -238102,7 +238092,7 @@
         "xml_track_id": "18",
         "position": "WR",
         "team_side": "offense",
-        "action": "Action_None",
+        "action": "Action_BallCarry",
         "bbox_xyxy": [
           901.5,
           245.01,
@@ -238122,7 +238112,7 @@
         "xml_track_id": "18",
         "position": "WR",
         "team_side": "offense",
-        "action": "Action_None",
+        "action": "Action_BallCarry",
         "bbox_xyxy": [
           883.95,
           246.66,
@@ -238142,7 +238132,7 @@
         "xml_track_id": "18",
         "position": "WR",
         "team_side": "offense",
-        "action": "Action_None",
+        "action": "Action_BallCarry",
         "bbox_xyxy": [
           877.97,
           247.32,
@@ -238162,7 +238152,7 @@
         "xml_track_id": "18",
         "position": "WR",
         "team_side": "offense",
-        "action": "Action_None",
+        "action": "Action_BallCarry",
         "bbox_xyxy": [
           858.75,
           251.36,
@@ -238182,7 +238172,7 @@
         "xml_track_id": "18",
         "position": "WR",
         "team_side": "offense",
-        "action": "Action_None",
+        "action": "Action_BallCarry",
         "bbox_xyxy": [
           841.48,
           252.91,
@@ -238202,7 +238192,7 @@
         "xml_track_id": "18",
         "position": "WR",
         "team_side": "offense",
-        "action": "Action_None",
+        "action": "Action_BallCarry",
         "bbox_xyxy": [
           835.64,
           253.43,
@@ -238222,7 +238212,7 @@
         "xml_track_id": "18",
         "position": "WR",
         "team_side": "offense",
-        "action": "Action_None",
+        "action": "Action_BallCarry",
         "bbox_xyxy": [
           822.54,
           256.0,
@@ -238242,7 +238232,7 @@
         "xml_track_id": "18",
         "position": "WR",
         "team_side": "offense",
-        "action": "Action_None",
+        "action": "Action_BallCarry",
         "bbox_xyxy": [
           803.52,
           259.76,
@@ -238262,7 +238252,7 @@
         "xml_track_id": "18",
         "position": "WR",
         "team_side": "offense",
-        "action": "Action_None",
+        "action": "Action_BallCarry",
         "bbox_xyxy": [
           796.63,
           260.81,
@@ -238282,7 +238272,7 @@
         "xml_track_id": "18",
         "position": "WR",
         "team_side": "offense",
-        "action": "Action_None",
+        "action": "Action_BallCarry",
         "bbox_xyxy": [
           782.82,
           261.99,
@@ -238302,7 +238292,7 @@
         "xml_track_id": "18",
         "position": "WR",
         "team_side": "offense",
-        "action": "Action_None",
+        "action": "Action_BallCarry",
         "bbox_xyxy": [
           768.36,
           262.85,
@@ -238322,7 +238312,7 @@
         "xml_track_id": "18",
         "position": "WR",
         "team_side": "offense",
-        "action": "Action_None",
+        "action": "Action_BallCarry",
         "bbox_xyxy": [
           752.97,
           263.17,
@@ -238342,7 +238332,7 @@
         "xml_track_id": "18",
         "position": "WR",
         "team_side": "offense",
-        "action": "Action_None",
+        "action": "Action_BallCarry",
         "bbox_xyxy": [
           747.22,
           264.13,
@@ -238362,7 +238352,7 @@
         "xml_track_id": "18",
         "position": "WR",
         "team_side": "offense",
-        "action": "Action_None",
+        "action": "Action_BallCarry",
         "bbox_xyxy": [
           733.38,
           264.0,
@@ -238382,7 +238372,7 @@
         "xml_track_id": "18",
         "position": "WR",
         "team_side": "offense",
-        "action": "Action_None",
+        "action": "Action_BallCarry",
         "bbox_xyxy": [
           728.2,
           264.93,
@@ -238402,7 +238392,7 @@
         "xml_track_id": "18",
         "position": "WR",
         "team_side": "offense",
-        "action": "Action_None",
+        "action": "Action_BallCarry",
         "bbox_xyxy": [
           719.2,
           264.81,
@@ -238422,7 +238412,7 @@
         "xml_track_id": "18",
         "position": "WR",
         "team_side": "offense",
-        "action": "Action_None",
+        "action": "Action_BallCarry",
         "bbox_xyxy": [
           705.46,
           265.27,
@@ -238442,7 +238432,7 @@
         "xml_track_id": "18",
         "position": "WR",
         "team_side": "offense",
-        "action": "Action_None",
+        "action": "Action_BallCarry",
         "bbox_xyxy": [
           694.3,
           268.18,
@@ -238462,7 +238452,7 @@
         "xml_track_id": "18",
         "position": "WR",
         "team_side": "offense",
-        "action": "Action_None",
+        "action": "Action_BallCarry",
         "bbox_xyxy": [
           689.71,
           269.47,
@@ -238482,7 +238472,7 @@
         "xml_track_id": "18",
         "position": "WR",
         "team_side": "offense",
-        "action": "Action_None",
+        "action": "Action_BallCarry",
         "bbox_xyxy": [
           677.35,
           272.04,
@@ -238502,7 +238492,7 @@
         "xml_track_id": "18",
         "position": "WR",
         "team_side": "offense",
-        "action": "Action_None",
+        "action": "Action_BallCarry",
         "bbox_xyxy": [
           665.52,
           272.74,
@@ -238522,7 +238512,7 @@
         "xml_track_id": "18",
         "position": "WR",
         "team_side": "offense",
-        "action": "Action_None",
+        "action": "Action_BallCarry",
         "bbox_xyxy": [
           651.99,
           271.8,
@@ -238542,7 +238532,7 @@
         "xml_track_id": "18",
         "position": "WR",
         "team_side": "offense",
-        "action": "Action_None",
+        "action": "Action_BallCarry",
         "bbox_xyxy": [
           646.44,
           271.71,
@@ -238562,7 +238552,7 @@
         "xml_track_id": "18",
         "position": "WR",
         "team_side": "offense",
-        "action": "Action_None",
+        "action": "Action_BallCarry",
         "bbox_xyxy": [
           634.27,
           270.9,
@@ -238582,7 +238572,7 @@
         "xml_track_id": "18",
         "position": "WR",
         "team_side": "offense",
-        "action": "Action_None",
+        "action": "Action_BallCarry",
         "bbox_xyxy": [
           622.22,
           270.34,
@@ -238602,7 +238592,7 @@
         "xml_track_id": "18",
         "position": "WR",
         "team_side": "offense",
-        "action": "Action_None",
+        "action": "Action_BallCarry",
         "bbox_xyxy": [
           609.6,
           268.08,
@@ -238622,7 +238612,7 @@
         "xml_track_id": "18",
         "position": "WR",
         "team_side": "offense",
-        "action": "Action_None",
+        "action": "Action_BallCarry",
         "bbox_xyxy": [
           597.99,
           265.79,
@@ -238642,7 +238632,7 @@
         "xml_track_id": "18",
         "position": "WR",
         "team_side": "offense",
-        "action": "Action_None",
+        "action": "Action_BallCarry",
         "bbox_xyxy": [
           586.56,
           263.79,
@@ -238662,7 +238652,7 @@
         "xml_track_id": "18",
         "position": "WR",
         "team_side": "offense",
-        "action": "Action_None",
+        "action": "Action_BallCarry",
         "bbox_xyxy": [
           582.16,
           263.37,
@@ -238682,7 +238672,7 @@
         "xml_track_id": "18",
         "position": "WR",
         "team_side": "offense",
-        "action": "Action_None",
+        "action": "Action_BallCarry",
         "bbox_xyxy": [
           567.57,
           259.97,
@@ -238702,7 +238692,7 @@
         "xml_track_id": "18",
         "position": "WR",
         "team_side": "offense",
-        "action": "Action_None",
+        "action": "Action_BallCarry",
         "bbox_xyxy": [
           554.49,
           257.3,
@@ -238722,7 +238712,7 @@
         "xml_track_id": "18",
         "position": "WR",
         "team_side": "offense",
-        "action": "Action_None",
+        "action": "Action_BallCarry",
         "bbox_xyxy": [
           549.48,
           256.93,
@@ -238742,7 +238732,7 @@
         "xml_track_id": "18",
         "position": "WR",
         "team_side": "offense",
-        "action": "Action_None",
+        "action": "Action_BallCarry",
         "bbox_xyxy": [
           535.98,
           254.02,
@@ -238762,7 +238752,7 @@
         "xml_track_id": "18",
         "position": "WR",
         "team_side": "offense",
-        "action": "Action_None",
+        "action": "Action_BallCarry",
         "bbox_xyxy": [
           522.95,
           251.7,
@@ -238782,7 +238772,7 @@
         "xml_track_id": "18",
         "position": "WR",
         "team_side": "offense",
-        "action": "Action_None",
+        "action": "Action_BallCarry",
         "bbox_xyxy": [
           509.41,
           249.47,
@@ -238802,7 +238792,7 @@
         "xml_track_id": "18",
         "position": "WR",
         "team_side": "offense",
-        "action": "Action_None",
+        "action": "Action_BallCarry",
         "bbox_xyxy": [
           495.36,
           247.65,
@@ -238822,7 +238812,7 @@
         "xml_track_id": "18",
         "position": "WR",
         "team_side": "offense",
-        "action": "Action_None",
+        "action": "Action_BallCarry",
         "bbox_xyxy": [
           482.58,
           245.83,
@@ -238842,7 +238832,7 @@
         "xml_track_id": "18",
         "position": "WR",
         "team_side": "offense",
-        "action": "Action_None",
+        "action": "Action_BallCarry",
         "bbox_xyxy": [
           471.88,
           244.19,
@@ -238862,7 +238852,7 @@
         "xml_track_id": "18",
         "position": "WR",
         "team_side": "offense",
-        "action": "Action_None",
+        "action": "Action_BallCarry",
         "bbox_xyxy": [
           468.04,
           244.21,
@@ -238882,7 +238872,7 @@
         "xml_track_id": "18",
         "position": "WR",
         "team_side": "offense",
-        "action": "Action_None",
+        "action": "Action_BallCarry",
         "bbox_xyxy": [
           461.05,
           239.9,
@@ -238902,7 +238892,7 @@
         "xml_track_id": "18",
         "position": "WR",
         "team_side": "offense",
-        "action": "Action_None",
+        "action": "Action_BallCarry",
         "bbox_xyxy": [
           454.15,
           236.75,
@@ -238922,7 +238912,7 @@
         "xml_track_id": "18",
         "position": "WR",
         "team_side": "offense",
-        "action": "Action_None",
+        "action": "Action_BallCarry",
         "bbox_xyxy": [
           446.73,
           232.83,
@@ -238942,7 +238932,7 @@
         "xml_track_id": "18",
         "position": "WR",
         "team_side": "offense",
-        "action": "Action_None",
+        "action": "Action_BallCarry",
         "bbox_xyxy": [
           440.83,
           228.52,
@@ -238962,7 +238952,7 @@
         "xml_track_id": "18",
         "position": "WR",
         "team_side": "offense",
-        "action": "Action_None",
+        "action": "Action_BallCarry",
         "bbox_xyxy": [
           436.08,
           224.81,
@@ -238982,7 +238972,7 @@
         "xml_track_id": "18",
         "position": "WR",
         "team_side": "offense",
-        "action": "Action_None",
+        "action": "Action_BallCarry",
         "bbox_xyxy": [
           431.68,
           221.18,
@@ -239002,7 +238992,7 @@
         "xml_track_id": "18",
         "position": "WR",
         "team_side": "offense",
-        "action": "Action_None",
+        "action": "Action_BallCarry",
         "bbox_xyxy": [
           426.6,
           216.67,
@@ -239022,7 +239012,7 @@
         "xml_track_id": "18",
         "position": "WR",
         "team_side": "offense",
-        "action": "Action_None",
+        "action": "Action_BallCarry",
         "bbox_xyxy": [
           420.57,
           212.35,
@@ -239042,7 +239032,7 @@
         "xml_track_id": "18",
         "position": "WR",
         "team_side": "offense",
-        "action": "Action_None",
+        "action": "Action_BallCarry",
         "bbox_xyxy": [
           414.78,
           206.2,
@@ -239062,7 +239052,7 @@
         "xml_track_id": "18",
         "position": "WR",
         "team_side": "offense",
-        "action": "Action_None",
+        "action": "Action_BallCarry",
         "bbox_xyxy": [
           410.1,
           201.9,
@@ -239082,7 +239072,7 @@
         "xml_track_id": "18",
         "position": "WR",
         "team_side": "offense",
-        "action": "Action_None",
+        "action": "Action_BallCarry",
         "bbox_xyxy": [
           405.89,
           197.64,
@@ -239102,7 +239092,7 @@
         "xml_track_id": "18",
         "position": "WR",
         "team_side": "offense",
-        "action": "Action_None",
+        "action": "Action_BallCarry",
         "bbox_xyxy": [
           401.67,
           194.47,
@@ -239122,7 +239112,7 @@
         "xml_track_id": "18",
         "position": "WR",
         "team_side": "offense",
-        "action": "Action_None",
+        "action": "Action_BallCarry",
         "bbox_xyxy": [
           400.28,
           193.79,
@@ -239142,7 +239132,7 @@
         "xml_track_id": "18",
         "position": "WR",
         "team_side": "offense",
-        "action": "Action_None",
+        "action": "Action_BallCarry",
         "bbox_xyxy": [
           391.18,
           187.63,
@@ -239162,7 +239152,7 @@
         "xml_track_id": "18",
         "position": "WR",
         "team_side": "offense",
-        "action": "Action_None",
+        "action": "Action_BallCarry",
         "bbox_xyxy": [
           387.44,
           186.19,
@@ -239182,7 +239172,7 @@
         "xml_track_id": "18",
         "position": "WR",
         "team_side": "offense",
-        "action": "Action_None",
+        "action": "Action_BallCarry",
         "bbox_xyxy": [
           379.82,
           179.61,
@@ -239202,7 +239192,7 @@
         "xml_track_id": "18",
         "position": "WR",
         "team_side": "offense",
-        "action": "Action_None",
+        "action": "Action_BallCarry",
         "bbox_xyxy": [
           376.69,
           177.91,
@@ -239222,7 +239212,7 @@
         "xml_track_id": "18",
         "position": "WR",
         "team_side": "offense",
-        "action": "Action_None",
+        "action": "Action_BallCarry",
         "bbox_xyxy": [
           369.48,
           172.82,
@@ -239242,7 +239232,7 @@
         "xml_track_id": "18",
         "position": "WR",
         "team_side": "offense",
-        "action": "Action_None",
+        "action": "Action_BallCarry",
         "bbox_xyxy": [
           366.45,
           171.52,
@@ -239262,7 +239252,7 @@
         "xml_track_id": "18",
         "position": "WR",
         "team_side": "offense",
-        "action": "Action_None",
+        "action": "Action_BallCarry",
         "bbox_xyxy": [
           361.79,
           168.89,
@@ -239282,7 +239272,7 @@
         "xml_track_id": "18",
         "position": "WR",
         "team_side": "offense",
-        "action": "Action_None",
+        "action": "Action_BallCarry",
         "bbox_xyxy": [
           355.12,
           163.73,
@@ -239302,7 +239292,7 @@
         "xml_track_id": "18",
         "position": "WR",
         "team_side": "offense",
-        "action": "Action_None",
+        "action": "Action_BallCarry",
         "bbox_xyxy": [
           348.22,
           160.28,
@@ -239322,7 +239312,7 @@
         "xml_track_id": "18",
         "position": "WR",
         "team_side": "offense",
-        "action": "Action_None",
+        "action": "Action_BallCarry",
         "bbox_xyxy": [
           341.32,
           156.8,
@@ -239342,7 +239332,7 @@
         "xml_track_id": "18",
         "position": "WR",
         "team_side": "offense",
-        "action": "Action_None",
+        "action": "Action_BallCarry",
         "bbox_xyxy": [
           334.43,
           153.61,
@@ -239362,7 +239352,7 @@
         "xml_track_id": "18",
         "position": "WR",
         "team_side": "offense",
-        "action": "Action_None",
+        "action": "Action_BallCarry",
         "bbox_xyxy": [
           331.92,
           152.78,
@@ -239382,7 +239372,7 @@
         "xml_track_id": "18",
         "position": "WR",
         "team_side": "offense",
-        "action": "Action_None",
+        "action": "Action_BallCarry",
         "bbox_xyxy": [
           324.65,
           148.17,
@@ -239402,7 +239392,7 @@
         "xml_track_id": "18",
         "position": "WR",
         "team_side": "offense",
-        "action": "Action_None",
+        "action": "Action_BallCarry",
         "bbox_xyxy": [
           317.69,
           145.63,
@@ -239422,7 +239412,7 @@
         "xml_track_id": "18",
         "position": "WR",
         "team_side": "offense",
-        "action": "Action_None",
+        "action": "Action_BallCarry",
         "bbox_xyxy": [
           310.72,
           142.73,
@@ -239442,7 +239432,7 @@
         "xml_track_id": "18",
         "position": "WR",
         "team_side": "offense",
-        "action": "Action_None",
+        "action": "Action_BallCarry",
         "bbox_xyxy": [
           304.14,
           140.31,
@@ -239462,7 +239452,7 @@
         "xml_track_id": "18",
         "position": "WR",
         "team_side": "offense",
-        "action": "Action_None",
+        "action": "Action_BallCarry",
         "bbox_xyxy": [
           301.64,
           139.72,
@@ -239482,7 +239472,7 @@
         "xml_track_id": "18",
         "position": "WR",
         "team_side": "offense",
-        "action": "Action_None",
+        "action": "Action_BallCarry",
         "bbox_xyxy": [
           296.14,
           137.86,
@@ -239502,7 +239492,7 @@
         "xml_track_id": "18",
         "position": "WR",
         "team_side": "offense",
-        "action": "Action_None",
+        "action": "Action_BallCarry",
         "bbox_xyxy": [
           285.13,
           134.83,
@@ -239522,7 +239512,7 @@
         "xml_track_id": "18",
         "position": "WR",
         "team_side": "offense",
-        "action": "Action_None",
+        "action": "Action_BallCarry",
         "bbox_xyxy": [
           275.94,
           132.82,
@@ -239542,7 +239532,7 @@
         "xml_track_id": "18",
         "position": "WR",
         "team_side": "offense",
-        "action": "Action_None",
+        "action": "Action_BallCarry",
         "bbox_xyxy": [
           268.3,
           131.95,
@@ -239562,7 +239552,7 @@
         "xml_track_id": "18",
         "position": "WR",
         "team_side": "offense",
-        "action": "Action_None",
+        "action": "Action_BallCarry",
         "bbox_xyxy": [
           259.22,
           129.44,
@@ -239582,7 +239572,7 @@
         "xml_track_id": "18",
         "position": "WR",
         "team_side": "offense",
-        "action": "Action_None",
+        "action": "Action_BallCarry",
         "bbox_xyxy": [
           250.13,
           127.53,
@@ -239602,7 +239592,7 @@
         "xml_track_id": "18",
         "position": "WR",
         "team_side": "offense",
-        "action": "Action_None",
+        "action": "Action_BallCarry",
         "bbox_xyxy": [
           241.41,
           125.84,
@@ -239622,7 +239612,7 @@
         "xml_track_id": "18",
         "position": "WR",
         "team_side": "offense",
-        "action": "Action_None",
+        "action": "Action_BallCarry",
         "bbox_xyxy": [
           232.82,
           124.64,
@@ -239642,7 +239632,7 @@
         "xml_track_id": "18",
         "position": "WR",
         "team_side": "offense",
-        "action": "Action_None",
+        "action": "Action_BallCarry",
         "bbox_xyxy": [
           224.74,
           124.07,
@@ -239662,7 +239652,7 @@
         "xml_track_id": "18",
         "position": "WR",
         "team_side": "offense",
-        "action": "Action_None",
+        "action": "Action_BallCarry",
         "bbox_xyxy": [
           216.03,
           123.18,
@@ -239682,7 +239672,7 @@
         "xml_track_id": "18",
         "position": "WR",
         "team_side": "offense",
-        "action": "Action_None",
+        "action": "Action_BallCarry",
         "bbox_xyxy": [
           207.51,
           121.72,
@@ -239702,7 +239692,7 @@
         "xml_track_id": "18",
         "position": "WR",
         "team_side": "offense",
-        "action": "Action_None",
+        "action": "Action_BallCarry",
         "bbox_xyxy": [
           199.83,
           120.21,
@@ -239722,7 +239712,7 @@
         "xml_track_id": "18",
         "position": "WR",
         "team_side": "offense",
-        "action": "Action_None",
+        "action": "Action_BallCarry",
         "bbox_xyxy": [
           191.98,
           117.97,
@@ -239742,7 +239732,7 @@
         "xml_track_id": "18",
         "position": "WR",
         "team_side": "offense",
-        "action": "Action_None",
+        "action": "Action_BallCarry",
         "bbox_xyxy": [
           183.46,
           116.92,
@@ -239762,7 +239752,7 @@
         "xml_track_id": "18",
         "position": "WR",
         "team_side": "offense",
-        "action": "Action_None",
+        "action": "Action_BallCarry",
         "bbox_xyxy": [
           174.66,
           115.47,
@@ -239782,7 +239772,7 @@
         "xml_track_id": "18",
         "position": "WR",
         "team_side": "offense",
-        "action": "Action_None",
+        "action": "Action_BallCarry",
         "bbox_xyxy": [
           167.02,
           113.87,
@@ -239802,7 +239792,7 @@
         "xml_track_id": "18",
         "position": "WR",
         "team_side": "offense",
-        "action": "Action_None",
+        "action": "Action_BallCarry",
         "bbox_xyxy": [
           161.12,
           113.87,
@@ -239822,7 +239812,7 @@
         "xml_track_id": "18",
         "position": "WR",
         "team_side": "offense",
-        "action": "Action_None",
+        "action": "Action_BallCarry",
         "bbox_xyxy": [
           155.06,
           114.1,
@@ -239842,7 +239832,7 @@
         "xml_track_id": "18",
         "position": "WR",
         "team_side": "offense",
-        "action": "Action_None",
+        "action": "Action_BallCarry",
         "bbox_xyxy": [
           150.07,
           115.24,
@@ -239862,7 +239852,7 @@
         "xml_track_id": "18",
         "position": "WR",
         "team_side": "offense",
-        "action": "Action_None",
+        "action": "Action_BallCarry",
         "bbox_xyxy": [
           146.14,
           117.54,
@@ -239882,7 +239872,7 @@
         "xml_track_id": "18",
         "position": "WR",
         "team_side": "offense",
-        "action": "Action_None",
+        "action": "Action_BallCarry",
         "bbox_xyxy": [
           142.07,
           119.61,
@@ -239902,7 +239892,7 @@
         "xml_track_id": "18",
         "position": "WR",
         "team_side": "offense",
-        "action": "Action_None",
+        "action": "Action_BallCarry",
         "bbox_xyxy": [
           137.53,
           120.46,
@@ -239922,7 +239912,7 @@
         "xml_track_id": "18",
         "position": "WR",
         "team_side": "offense",
-        "action": "Action_None",
+        "action": "Action_BallCarry",
         "bbox_xyxy": [
           132.4,
           122.75,
@@ -239942,7 +239932,7 @@
         "xml_track_id": "18",
         "position": "WR",
         "team_side": "offense",
-        "action": "Action_None",
+        "action": "Action_BallCarry",
         "bbox_xyxy": [
           127.66,
           123.97,
@@ -239962,7 +239952,7 @@
         "xml_track_id": "18",
         "position": "WR",
         "team_side": "offense",
-        "action": "Action_None",
+        "action": "Action_BallCarry",
         "bbox_xyxy": [
           122.18,
           126.01,
@@ -239982,7 +239972,7 @@
         "xml_track_id": "18",
         "position": "WR",
         "team_side": "offense",
-        "action": "Action_None",
+        "action": "Action_BallCarry",
         "bbox_xyxy": [
           116.09,
           128.72,
@@ -240002,7 +239992,7 @@
         "xml_track_id": "18",
         "position": "WR",
         "team_side": "offense",
-        "action": "Action_None",
+        "action": "Action_BallCarry",
         "bbox_xyxy": [
           113.9,
           130.42,
@@ -240022,7 +240012,7 @@
         "xml_track_id": "18",
         "position": "WR",
         "team_side": "offense",
-        "action": "Action_None",
+        "action": "Action_BallCarry",
         "bbox_xyxy": [
           114.08,
           132.94,
@@ -240042,7 +240032,7 @@
         "xml_track_id": "18",
         "position": "WR",
         "team_side": "offense",
-        "action": "Action_None",
+        "action": "Action_BallCarry",
         "bbox_xyxy": [
           114.98,
           135.07,
@@ -240062,7 +240052,7 @@
         "xml_track_id": "18",
         "position": "WR",
         "team_side": "offense",
-        "action": "Action_None",
+        "action": "Action_BallCarry",
         "bbox_xyxy": [
           111.53,
           134.13,
@@ -240082,7 +240072,7 @@
         "xml_track_id": "18",
         "position": "WR",
         "team_side": "offense",
-        "action": "Action_None",
+        "action": "Action_BallCarry",
         "bbox_xyxy": [
           119.01,
           142.1,
@@ -240102,7 +240092,7 @@
         "xml_track_id": "18",
         "position": "WR",
         "team_side": "offense",
-        "action": "Action_None",
+        "action": "Action_BallCarry",
         "bbox_xyxy": [
           119.68,
           145.21,
@@ -240122,7 +240112,7 @@
         "xml_track_id": "18",
         "position": "WR",
         "team_side": "offense",
-        "action": "Action_None",
+        "action": "Action_BallCarry",
         "bbox_xyxy": [
           123.98,
           148.98,
@@ -240142,7 +240132,7 @@
         "xml_track_id": "18",
         "position": "WR",
         "team_side": "offense",
-        "action": "Action_None",
+        "action": "Action_BallCarry",
         "bbox_xyxy": [
           129.08,
           153.54,
@@ -240162,7 +240152,7 @@
         "xml_track_id": "18",
         "position": "WR",
         "team_side": "offense",
-        "action": "Action_None",
+        "action": "Action_BallCarry",
         "bbox_xyxy": [
           134.11,
           155.98,
@@ -240182,7 +240172,7 @@
         "xml_track_id": "18",
         "position": "WR",
         "team_side": "offense",
-        "action": "Action_None",
+        "action": "Action_BallCarry",
         "bbox_xyxy": [
           140.07,
           159.0,
@@ -240202,7 +240192,7 @@
         "xml_track_id": "18",
         "position": "WR",
         "team_side": "offense",
-        "action": "Action_None",
+        "action": "Action_BallCarry",
         "bbox_xyxy": [
           147.5,
           162.97,
@@ -240222,7 +240212,7 @@
         "xml_track_id": "18",
         "position": "WR",
         "team_side": "offense",
-        "action": "Action_None",
+        "action": "Action_BallCarry",
         "bbox_xyxy": [
           158.24,
           166.3,
@@ -240242,7 +240232,7 @@
         "xml_track_id": "18",
         "position": "WR",
         "team_side": "offense",
-        "action": "Action_None",
+        "action": "Action_BallCarry",
         "bbox_xyxy": [
           169.0,
           169.45,
@@ -240262,7 +240252,7 @@
         "xml_track_id": "18",
         "position": "WR",
         "team_side": "offense",
-        "action": "Action_None",
+        "action": "Action_BallCarry",
         "bbox_xyxy": [
           180.09,
           170.38,
@@ -240282,7 +240272,7 @@
         "xml_track_id": "18",
         "position": "WR",
         "team_side": "offense",
-        "action": "Action_None",
+        "action": "Action_BallCarry",
         "bbox_xyxy": [
           191.93,
           171.58,
@@ -240302,7 +240292,7 @@
         "xml_track_id": "18",
         "position": "WR",
         "team_side": "offense",
-        "action": "Action_None",
+        "action": "Action_BallCarry",
         "bbox_xyxy": [
           202.61,
           172.8,
@@ -240322,7 +240312,7 @@
         "xml_track_id": "18",
         "position": "WR",
         "team_side": "offense",
-        "action": "Action_None",
+        "action": "Action_BallCarry",
         "bbox_xyxy": [
           214.76,
           173.07,
@@ -240342,7 +240332,7 @@
         "xml_track_id": "18",
         "position": "WR",
         "team_side": "offense",
-        "action": "Action_None",
+        "action": "Action_BallCarry",
         "bbox_xyxy": [
           224.15,
           174.78,
@@ -240362,7 +240352,7 @@
         "xml_track_id": "18",
         "position": "WR",
         "team_side": "offense",
-        "action": "Action_None",
+        "action": "Action_BallCarry",
         "bbox_xyxy": [
           232.61,
           177.98,
@@ -240382,7 +240372,7 @@
         "xml_track_id": "18",
         "position": "WR",
         "team_side": "offense",
-        "action": "Action_None",
+        "action": "Action_BallCarry",
         "bbox_xyxy": [
           245.87,
           179.33,
@@ -240402,7 +240392,7 @@
         "xml_track_id": "18",
         "position": "WR",
         "team_side": "offense",
-        "action": "Action_None",
+        "action": "Action_BallCarry",
         "bbox_xyxy": [
           259.27,
           179.74,
@@ -240422,7 +240412,7 @@
         "xml_track_id": "18",
         "position": "WR",
         "team_side": "offense",
-        "action": "Action_None",
+        "action": "Action_BallCarry",
         "bbox_xyxy": [
           272.49,
           181.05,
@@ -240442,7 +240432,7 @@
         "xml_track_id": "18",
         "position": "WR",
         "team_side": "offense",
-        "action": "Action_None",
+        "action": "Action_BallCarry",
         "bbox_xyxy": [
           285.67,
           181.3,
@@ -240462,7 +240452,7 @@
         "xml_track_id": "18",
         "position": "WR",
         "team_side": "offense",
-        "action": "Action_None",
+        "action": "Action_BallCarry",
         "bbox_xyxy": [
           302.07,
           183.01,
@@ -240482,7 +240472,7 @@
         "xml_track_id": "18",
         "position": "WR",
         "team_side": "offense",
-        "action": "Action_None",
+        "action": "Action_BallCarry",
         "bbox_xyxy": [
           314.41,
           185.15,
@@ -240502,7 +240492,7 @@
         "xml_track_id": "18",
         "position": "WR",
         "team_side": "offense",
-        "action": "Action_None",
+        "action": "Action_BallCarry",
         "bbox_xyxy": [
           331.56,
           187.27,
@@ -240522,7 +240512,7 @@
         "xml_track_id": "18",
         "position": "WR",
         "team_side": "offense",
-        "action": "Action_None",
+        "action": "Action_BallCarry",
         "bbox_xyxy": [
           344.69,
           189.34,
@@ -240542,7 +240532,7 @@
         "xml_track_id": "18",
         "position": "WR",
         "team_side": "offense",
-        "action": "Action_None",
+        "action": "Action_BallCarry",
         "bbox_xyxy": [
           354.9,
           191.79,
@@ -240562,7 +240552,7 @@
         "xml_track_id": "18",
         "position": "WR",
         "team_side": "offense",
-        "action": "Action_None",
+        "action": "Action_BallCarry",
         "bbox_xyxy": [
           368.35,
           193.67,
@@ -240582,7 +240572,7 @@
         "xml_track_id": "18",
         "position": "WR",
         "team_side": "offense",
-        "action": "Action_None",
+        "action": "Action_BallCarry",
         "bbox_xyxy": [
           382.65,
           194.42,
@@ -240602,7 +240592,7 @@
         "xml_track_id": "18",
         "position": "WR",
         "team_side": "offense",
-        "action": "Action_None",
+        "action": "Action_BallCarry",
         "bbox_xyxy": [
           390.59,
           195.56,
@@ -240622,7 +240612,7 @@
         "xml_track_id": "18",
         "position": "WR",
         "team_side": "offense",
-        "action": "Action_None",
+        "action": "Action_BallCarry",
         "bbox_xyxy": [
           397.75,
           198.57,
@@ -261181,8 +261171,8 @@
         "definition": "An offensive player (often a fullback, tight end, or pulling lineman) moving ahead of the ball carrier to block an unblocked defender and create a running lane."
       },
       "Action_None": {
-        "label": null,
-        "definition": null
+        "label": "None",
+        "definition": "A temporal label used when the player is visible but is not performing any defined football action in the action taxonomy during the annotated interval."
       },
       "Action_PreSnap": {
         "label": "Pre Snap",
