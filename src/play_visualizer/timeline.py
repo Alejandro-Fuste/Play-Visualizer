@@ -25,6 +25,10 @@ class TimelineRenderer:
         target_actions = {
             "Action_BallSnap": ("Snap", [255, 229, 0]),               # Cyan
             "Action_Handoff": ("Handoff", [7, 193, 255]),             # Gold
+            "Action_FakeHandoff": ("Fake Handoff", [7, 193, 255]),     # Gold
+            "Action_BootAway": ("Boot", [255, 229, 0]),                # Cyan
+            "Action_ThrowPass": ("Pass", [255, 229, 0]),               # Cyan
+            "Action_SecureCatch": ("Catch", [7, 193, 255]),            # Gold
             "Action_JetMotion": ("Jet Motion", [255, 229, 0]),        # Cyan
             "Action_Toss": ("Toss", [255, 229, 0]),                   # Cyan
             "Action_BallCarry": ("Ball Carry", [178, 178, 178]),      # Gray

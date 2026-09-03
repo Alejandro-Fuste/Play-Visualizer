@@ -67,11 +67,17 @@ hidden_actions:
 action_priority:
   - Action_BallSnap
   - Action_SnapReceive
+  - Action_FakeHandoff
+  - Action_BootAway
+  - Action_ThrowPass
+  - Action_SecureCatch
+  - Action_RunFlatRoute
   - Action_JetMotion
   - Action_Toss
   - Action_BallCarry
   - Action_ZoneBlock
   - Action_LeadBlock
+  - Action_RunBlock
   - Action_BlockSecondLevel
   - Action_SealBlock
   - Action_PlayEnd_OutOfBounds

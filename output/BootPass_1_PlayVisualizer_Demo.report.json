@@ -1,0 +1,45 @@
+{
+  "input_video": "examples/BootPass_1.mp4",
+  "input_annotations": "examples/annotations.json",
+  "output_video": "output/BootPass_1_PlayVisualizer_Demo.mp4",
+  "mode": "standard",
+  "video_properties": {
+    "fps": 30.0,
+    "width": 1920,
+    "height": 1080,
+    "num_frames": 360,
+    "duration_seconds": 12.0,
+    "has_audio": true
+  },
+  "annotation_properties": {
+    "clip": {
+      "video_name": "BootPass_1",
+      "frame_start": 0,
+      "frame_end": 359,
+      "num_frames": 360
+    },
+    "play": {
+      "play_tag": "Play_Pass_BootPass",
+      "result_tag": "Result_OutOfBounds",
+      "result_frame": 359
+    },
+    "num_players": 41,
+    "num_action_segments": 184,
+    "num_dense_annotations": 6743
+  },
+  "rendered_frame_start": 0,
+  "rendered_frame_end": 359,
+  "rendered_frames": 360,
+  "warnings": [
+    {
+      "code": "MISSING_BALL_TRACK",
+      "message": "No ball track annotations found in JSON package.",
+      "severity": "INFO",
+      "frame": null,
+      "actor_id": null
+    }
+  ],
+  "skipped_annotations": 0,
+  "ffmpeg_command": "/opt/homebrew/bin/ffmpeg -y -i output/.tmp_play_visualizer/BootPass_1_PlayVisualizer_Demo.intermediate.mp4 -i examples/BootPass_1.mp4 -c:v libx264 -preset medium -crf 18 -pix_fmt yuv420p -movflags +faststart -timecode 00:00:00:00 -write_tmcd 1 -c:a aac -map 0:v:0 -map 1:a:0? output/BootPass_1_PlayVisualizer_Demo.mp4",
+  "status": "success"
+}

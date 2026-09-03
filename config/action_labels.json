@@ -28,6 +28,48 @@
     "attributes": []
   },
   {
+    "name": "Action_FakeHandoff",
+    "id": 7450854,
+    "color": "#e65100",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "Action_BootAway",
+    "id": 7450855,
+    "color": "#00e5ff",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "Action_ThrowPass",
+    "id": 7450856,
+    "color": "#76ff03",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "Action_RunFlatRoute",
+    "id": 7450857,
+    "color": "#ffea00",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "Action_SecureCatch",
+    "id": 7450858,
+    "color": "#00e676",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "Play_Pass_BootPass",
+    "id": 7450859,
+    "color": "#283593",
+    "type": "any",
+    "attributes": []
+  },
+  {
     "name": "Action_ArcToEdge",
     "id": 7442896,
     "color": "#ff0000",

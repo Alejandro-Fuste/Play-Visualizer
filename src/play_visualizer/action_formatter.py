@@ -8,6 +8,11 @@ EXPLICIT_ACTION_MAP = {
     "Action_JetMotion": "Jet Motion",
     "Action_BallSnap": "Ball Snap",
     "Action_SnapReceive": "Snap Receive",
+    "Action_FakeHandoff": "Fake Handoff",
+    "Action_BootAway": "Boot Away",
+    "Action_ThrowPass": "Throw Pass",
+    "Action_RunFlatRoute": "Run Flat Route",
+    "Action_SecureCatch": "Secure Catch",
     "Action_Toss": "Toss",
     "Action_BallCarry": "Ball Carry",
     "Action_ZoneBlock": "Zone Block",
@@ -23,6 +28,7 @@ EXPLICIT_ACTION_MAP = {
 EXPLICIT_PLAY_MAP = {
     "Play_Run_JetSweep": "Jet Sweep",
     "Play_Pass_QuickScreen": "Quick Screen",
+    "Play_Pass_BootPass": "Boot Pass",
     "Play_Unknown": "Unknown Play",
 }
 
