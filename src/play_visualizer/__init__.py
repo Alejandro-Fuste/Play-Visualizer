@@ -1,4 +1,4 @@
-"""TapeVision Football Annotation Video Visualizer package."""
+"""Play-Visualizer Football Annotation Video Visualizer package."""
 
 from .api import render_annotation_video
 

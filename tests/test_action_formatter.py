@@ -1,6 +1,6 @@
 """Unit tests for action, play, and result tag formatters."""
 
-from tapevision_visualizer.action_formatter import (
+from play_visualizer.action_formatter import (
     format_action_label,
     format_play_tag,
     format_result_tag,

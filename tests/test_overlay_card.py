@@ -3,9 +3,9 @@
 import numpy as np
 import pytest
 
-from tapevision_visualizer.config import load_config
-from tapevision_visualizer.models import DenseFrameAnnotation, PlayMetadata
-from tapevision_visualizer.overlays import OverlayRenderer, draw_rounded_rectangle
+from play_visualizer.config import load_config
+from play_visualizer.models import DenseFrameAnnotation, PlayMetadata
+from play_visualizer.overlays import OverlayRenderer, draw_rounded_rectangle
 
 
 def test_draw_rounded_rectangle():

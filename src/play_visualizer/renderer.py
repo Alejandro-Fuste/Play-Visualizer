@@ -7,13 +7,13 @@ import logging
 from .action_filter import ActionFilter
 from .annotation_index import AnnotationIndex
 from .config import ConfigModel
-from .models import TapeVisionAnnotationPackage
+from .models import PlayVisualizerAnnotationPackage
 from .overlays import OverlayRenderer
 from .timeline import TimelineRenderer
 from .validator import clamp_bbox
 from .video_io import VideoReader, VideoWriter
 
-logger = logging.getLogger("tapevision_visualizer")
+logger = logging.getLogger("play_visualizer")
 
 
 class FrameRenderer:
@@ -22,7 +22,7 @@ class FrameRenderer:
     def __init__(
         self,
         config: ConfigModel,
-        pkg: TapeVisionAnnotationPackage,
+        pkg: PlayVisualizerAnnotationPackage,
         index: AnnotationIndex,
         show_offense: bool = True,
         show_defense: bool = True,

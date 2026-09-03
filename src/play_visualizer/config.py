@@ -1,4 +1,4 @@
-"""Configuration loader and management for TapeVision Visualizer."""
+"""Configuration loader and management for Play-Visualizer."""
 
 from __future__ import annotations
 

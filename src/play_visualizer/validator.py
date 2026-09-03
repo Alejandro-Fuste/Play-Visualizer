@@ -9,7 +9,7 @@ from pathlib import Path
 
 
 from .annotation_index import AnnotationIndex
-from .models import TapeVisionAnnotationPackage, ValidationWarning, VideoMetadata
+from .models import PlayVisualizerAnnotationPackage, ValidationWarning, VideoMetadata
 
 SUSPICIOUS_DEFENSE_OFFENSIVE_ACTIONS = {
     "Action_JetMotion",
@@ -80,7 +80,7 @@ class InputValidator:
     def __init__(
         self,
         video_meta: VideoMetadata,
-        pkg: TapeVisionAnnotationPackage,
+        pkg: PlayVisualizerAnnotationPackage,
         index: AnnotationIndex,
     ):
         self.video_meta = video_meta

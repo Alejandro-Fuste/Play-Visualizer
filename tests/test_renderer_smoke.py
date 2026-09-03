@@ -4,11 +4,11 @@ from pathlib import Path
 
 from pathlib import Path
 
-from tapevision_visualizer.annotation_index import AnnotationIndex
-from tapevision_visualizer.annotation_loader import load_annotation_file
-from tapevision_visualizer.config import load_config
-from tapevision_visualizer.renderer import FrameRenderer
-from tapevision_visualizer.video_io import VideoReader, VideoWriter
+from play_visualizer.annotation_index import AnnotationIndex
+from play_visualizer.annotation_loader import load_annotation_file
+from play_visualizer.config import load_config
+from play_visualizer.renderer import FrameRenderer
+from play_visualizer.video_io import VideoReader, VideoWriter
 from tests.fixtures.synthetic_sample import create_synthetic_annotation, create_synthetic_video
 
 

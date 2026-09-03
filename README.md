@@ -1,6 +1,6 @@
-# TapeVision Annotation Video Visualizer (`tapevision-visualizer`)
+# Play-Visualizer
 
-`tapevision-visualizer` is a modular, high-performance Python application designed to render TapeVision football annotations onto source video clips. It generates polished broadcast-grade video demonstrations featuring thin action-colored player bounding boxes, persistent track IDs (`POSITION | TRACK_ID`), human-readable action labels, play metadata cards, a `LIVE ACTIONS` color legend panel, and play progress timelines with frame numbers.
+`Play-Visualizer` is a modular, high-performance Python application designed to render football annotations onto source video clips. It generates polished broadcast-grade video demonstrations featuring thin action-colored player bounding boxes, persistent track IDs (`POSITION | TRACK_ID`), human-readable action labels, play metadata cards, a `LIVE ACTIONS` color legend panel, and play progress timelines with frame numbers.
 
 ---
 
@@ -41,7 +41,7 @@
 Clone or locate the repository and install dependencies in your virtual environment:
 
 ```bash
-cd /Users/alejandro/Desktop/Projects/FilmBreakdownAI/Utilities/Visualizer
+cd /Users/alejandro/Desktop/Projects/FilmBreakdownAI/Utilities/Play-Visualizer
 
 # Create virtual environment (optional)
 python3 -m venv .venv
@@ -63,20 +63,20 @@ pip install -e ".[dev]"
 ### Basic CLI Command
 
 ```bash
-tapevision-visualizer \
+play-visualizer \
   --video path/to/JetSweep_1.mp4 \
-  --annotations path/to/tapevision_annotations.json \
-  --output output/JetSweep_1_TapeVision_Demo.mp4 \
+  --annotations path/to/annotations.json \
+  --output output/JetSweep_1_PlayVisualizer_Demo.mp4 \
   --overwrite
 ```
 
 Or run via Python module:
 
 ```bash
-python -m tapevision_visualizer \
+python -m play_visualizer \
   --video ./examples/JetSweep_1.mp4 \
-  --annotations ./examples/tapevision_annotations.json \
-  --output ./output/JetSweep_1_TapeVision_Demo.mp4 \
+  --annotations ./examples/annotations.json \
+  --output ./output/JetSweep_1_PlayVisualizer_Demo.mp4 \
   --overwrite
 ```
 
@@ -85,9 +85,9 @@ python -m tapevision_visualizer \
 Validate inputs and generate `.report.json` without rendering video:
 
 ```bash
-python -m tapevision_visualizer \
+python -m play_visualizer \
   --video ./examples/JetSweep_1.mp4 \
-  --annotations ./examples/tapevision_annotations.json \
+  --annotations ./examples/annotations.json \
   --output ./output/JetSweep_1_Test.mp4 \
   --dry-run
 ```
@@ -99,7 +99,7 @@ python -m tapevision_visualizer \
 | Argument | Short | Type | Default | Description |
 |---|---|---|---|---|
 | `--video` | `-v` | Path | *Required* | Path to source video MP4. |
-| `--annotations` | `-a` | Path | *Required* | Path to TapeVision annotation JSON. |
+| `--annotations` | `-a` | Path | *Required* | Path to annotation JSON. |
 | `--output` | `-o` | Path | *Required* | Path for output annotated MP4. |
 | `--config` | `-c` | Path | Built-in | Custom YAML configuration path. |
 | `--action-labels` | | Path | Built-in | Custom action labels JSON file path containing action colors. |
@@ -149,7 +149,7 @@ ffmpeg:
 ### Video vs. JSON Frame Mismatch
 Source football clips may have unannotated frames at the tail end. For example:
 - **Source Video**: 360 frames (0–359)
-- **TapeVision JSON**: 330 frames (0–329)
+- **Annotation JSON**: 330 frames (0–329)
 
 **Default Behavior**: The visualizer calculates the intersection range (frames 0–329), renders those frames with annotations, and logs a frame mismatch warning in `output.report.json`. To include the unannotated tail frames, supply `--include-unannotated-tail`.
 
@@ -175,7 +175,7 @@ ruff check .
 Run static type checking with mypy:
 
 ```bash
-mypy src/tapevision_visualizer
+mypy src/play_visualizer
 ```
 
 ---
@@ -183,6 +183,6 @@ mypy src/tapevision_visualizer
 ## 9. Extending for Future Play Types
 
 To add support for new play types or action labels:
-1. Add raw action label mappings to `EXPLICIT_ACTION_MAP` in `src/tapevision_visualizer/action_formatter.py`.
+1. Add raw action label mappings to `EXPLICIT_ACTION_MAP` in `src/play_visualizer/action_formatter.py`.
 2. Update key action priority ranking in `config/default_visualization.yaml`.
 3. The fallback formatter automatically splits PascalCase labels (`Action_RunAfterCatch` -> `Run After Catch`) for unlisted actions.

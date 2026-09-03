@@ -1,4 +1,4 @@
-"""Data models for TapeVision annotation visualizer."""
+"""Data models for Play-Visualizer annotation visualizer."""
 
 from __future__ import annotations
 
@@ -18,7 +18,7 @@ class VideoMetadata(BaseModel):
 
 
 class ClipMetadata(BaseModel):
-    """Clip metadata from TapeVision JSON."""
+    """Clip metadata from annotation JSON."""
     video_name: str
     frame_start: int
     frame_end: int
@@ -26,7 +26,7 @@ class ClipMetadata(BaseModel):
 
 
 class PlayMetadata(BaseModel):
-    """Play metadata from TapeVision JSON."""
+    """Play metadata from annotation JSON."""
     play_tag: str = "Play_Unknown"
     result_tag: str = "Result_Unknown"
     result_frame: int | None = None
@@ -84,8 +84,8 @@ class DenseFrameAnnotation(BaseModel):
     bbox_xywh: tuple[float, float, float, float] | None = None
 
 
-class TapeVisionAnnotationPackage(BaseModel):
-    """Complete parsed TapeVision annotation file package."""
+class PlayVisualizerAnnotationPackage(BaseModel):
+    """Complete parsed Play-Visualizer annotation file package."""
     schema_version: str
     source: dict[str, Any] = Field(default_factory=dict)
     clip: ClipMetadata
@@ -94,6 +94,10 @@ class TapeVisionAnnotationPackage(BaseModel):
     ball: list[BallTrack] = Field(default_factory=list)
     action_segments: list[ActionSegment] = Field(default_factory=list)
     dense_annotations: list[DenseFrameAnnotation] = Field(default_factory=list)
+
+
+# Backward compatibility alias
+TapeVisionAnnotationPackage = PlayVisualizerAnnotationPackage
 
 
 class ValidationWarning(BaseModel):

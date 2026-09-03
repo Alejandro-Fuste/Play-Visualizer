@@ -15,7 +15,7 @@ console = Console()
 def setup_logger(log_level: str = "INFO") -> logging.Logger:
     """Configure and return the application logger."""
     level = getattr(logging, log_level.upper(), logging.INFO)
-    logger = logging.getLogger("tapevision_visualizer")
+    logger = logging.getLogger("play_visualizer")
     logger.setLevel(level)
 
     # Clear handlers to prevent duplicate outputs

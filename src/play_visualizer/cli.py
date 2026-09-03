@@ -1,4 +1,4 @@
-"""Command Line Interface (CLI) entry point for tapevision-visualizer."""
+"""Command Line Interface (CLI) entry point for play-visualizer."""
 
 from __future__ import annotations
 
@@ -20,8 +20,8 @@ from .validator import InputValidator
 from .video_io import VideoReader, VideoWriter
 
 app = typer.Typer(
-    name="tapevision-visualizer",
-    help="TapeVision Football Annotation Video Visualizer CLI",
+    name="play-visualizer",
+    help="Play-Visualizer Football Annotation Video Visualizer CLI",
     add_completion=False,
 )
 
@@ -32,7 +32,7 @@ def main(
         ..., "--video", "-v", help="Path to source football video MP4."
     ),
     annotations: Path = typer.Option(
-        ..., "--annotations", "-a", help="Path to TapeVision JSON annotation file."
+        ..., "--annotations", "-a", help="Path to play JSON annotation file."
     ),
     output: Path = typer.Option(
         ..., "--output", "-o", help="Destination path for annotated output MP4."
@@ -77,10 +77,10 @@ def main(
         "INFO", "--log-level", help="Logging verbosity (DEBUG, INFO, WARNING, ERROR)."
     ),
 ) -> None:
-    """TapeVision Football Annotation Video Visualizer command entry point."""
+    """Play-Visualizer Football Annotation Video Visualizer command entry point."""
     logger = setup_logger(log_level)
 
-    logger.info("Initializing TapeVision Visualizer...")
+    logger.info("Initializing Play-Visualizer...")
     logger.info(f"Source video: {video}")
     logger.info(f"Annotations: {annotations}")
     logger.info(f"Output path: {output}")
@@ -168,7 +168,7 @@ def main(
         sys.exit(0)
 
     # 6. Setup intermediate output video path
-    temp_dir = output.parent / ".tmp_tapevision"
+    temp_dir = output.parent / ".tmp_play_visualizer"
     temp_dir.mkdir(parents=True, exist_ok=True)
     intermediate_path = temp_dir / f"{output.stem}.intermediate.mp4"
 

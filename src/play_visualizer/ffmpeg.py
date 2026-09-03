@@ -7,7 +7,7 @@ import shutil
 import subprocess
 from pathlib import Path
 
-logger = logging.getLogger("tapevision_visualizer")
+logger = logging.getLogger("play_visualizer")
 
 
 class FFmpegError(Exception):

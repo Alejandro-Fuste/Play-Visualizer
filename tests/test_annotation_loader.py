@@ -4,7 +4,7 @@ from pathlib import Path
 
 import pytest
 
-from tapevision_visualizer.annotation_loader import AnnotationLoadError, load_annotation_file
+from play_visualizer.annotation_loader import AnnotationLoadError, load_annotation_file
 from tests.fixtures.synthetic_sample import create_synthetic_annotation
 
 

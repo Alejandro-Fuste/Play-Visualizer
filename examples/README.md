@@ -1,4 +1,4 @@
-# TapeVision Visualizer Examples
+# Play-Visualizer Examples
 
 This directory contains example input files and instructions for running the visualizer.
 
@@ -8,11 +8,10 @@ Place your video file (`JetSweep_1.mp4`) in this directory or reference it direc
 
 Run Portfolio Mode:
 ```bash
-python -m tapevision_visualizer \
+python -m play_visualizer \
   --video ./examples/JetSweep_1.mp4 \
-  --annotations ./examples/tapevision_annotations.json \
-  --output ./output/JetSweep_1_TapeVision_Demo.mp4 \
-  --mode portfolio \
+  --annotations ./examples/annotations.json \
+  --output ./output/JetSweep_1_PlayVisualizer_Demo.mp4 \
   --overwrite
 ```
 

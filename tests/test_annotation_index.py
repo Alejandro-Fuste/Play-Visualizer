@@ -2,8 +2,8 @@
 
 from pathlib import Path
 
-from tapevision_visualizer.annotation_index import AnnotationIndex
-from tapevision_visualizer.annotation_loader import load_annotation_file
+from play_visualizer.annotation_index import AnnotationIndex
+from play_visualizer.annotation_loader import load_annotation_file
 from tests.fixtures.synthetic_sample import create_synthetic_annotation
 
 

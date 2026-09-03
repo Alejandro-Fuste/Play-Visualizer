@@ -1,4 +1,4 @@
-"""Module entry point for python -m tapevision_visualizer."""
+"""Module entry point for python -m play_visualizer."""
 
 from .cli import app
 

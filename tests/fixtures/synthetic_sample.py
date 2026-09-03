@@ -33,7 +33,7 @@ def create_synthetic_video(video_path: Path, num_frames: int = 30, width: int = 
 
 
 def create_synthetic_annotation(json_path: Path, num_frames: int = 30) -> Path:
-    """Create a matching TapeVision annotation JSON file."""
+    """Create a matching play annotation JSON file."""
     json_path.parent.mkdir(parents=True, exist_ok=True)
 
     dense_anns = []

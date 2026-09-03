@@ -1,4 +1,4 @@
-"""Loader and parser for TapeVision JSON annotation files."""
+"""Loader and parser for Play-Visualizer JSON annotation files."""
 
 from __future__ import annotations
 
@@ -14,7 +14,7 @@ from .models import (
     PlayerTrack,
     PlayerTrackSample,
     PlayMetadata,
-    TapeVisionAnnotationPackage,
+    PlayVisualizerAnnotationPackage,
 )
 
 EXPECTED_SCHEMA_VERSION = "tapevision_annotation_enrichment_v1.0"
@@ -24,8 +24,8 @@ class AnnotationLoadError(Exception):
     """Raised when an annotation file cannot be parsed or validated."""
 
 
-def load_annotation_file(file_path: Path) -> TapeVisionAnnotationPackage:
-    """Read, parse, and validate a TapeVision JSON annotation file."""
+def load_annotation_file(file_path: Path) -> PlayVisualizerAnnotationPackage:
+    """Read, parse, and validate a play JSON annotation file."""
     if not file_path.exists():
         raise AnnotationLoadError(f"Annotation file not found: {file_path}")
 
@@ -168,7 +168,7 @@ def load_annotation_file(file_path: Path) -> TapeVisionAnnotationPackage:
                     )
                 )
 
-    return TapeVisionAnnotationPackage(
+    return PlayVisualizerAnnotationPackage(
         schema_version=schema_version,
         source=source_info,
         clip=clip_meta,

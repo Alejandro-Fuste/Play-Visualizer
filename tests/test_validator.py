@@ -2,10 +2,10 @@
 
 from pathlib import Path
 
-from tapevision_visualizer.annotation_index import AnnotationIndex
-from tapevision_visualizer.annotation_loader import load_annotation_file
-from tapevision_visualizer.models import VideoMetadata
-from tapevision_visualizer.validator import InputValidator, clamp_bbox
+from play_visualizer.annotation_index import AnnotationIndex
+from play_visualizer.annotation_loader import load_annotation_file
+from play_visualizer.models import VideoMetadata
+from play_visualizer.validator import InputValidator, clamp_bbox
 from tests.fixtures.synthetic_sample import create_synthetic_annotation
 
 

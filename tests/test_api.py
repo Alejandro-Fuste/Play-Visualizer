@@ -2,7 +2,7 @@
 
 from pathlib import Path
 
-from tapevision_visualizer import render_annotation_video
+from play_visualizer import render_annotation_video
 from tests.fixtures.synthetic_sample import create_synthetic_annotation, create_synthetic_video
 
 

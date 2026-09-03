@@ -3,9 +3,9 @@
 from pathlib import Path
 import numpy as np
 
-from tapevision_visualizer.config import hex_to_bgr, load_action_colors, load_config
-from tapevision_visualizer.models import DenseFrameAnnotation
-from tapevision_visualizer.overlays import OverlayRenderer
+from play_visualizer.config import hex_to_bgr, load_action_colors, load_config
+from play_visualizer.models import DenseFrameAnnotation
+from play_visualizer.overlays import OverlayRenderer
 
 
 def test_hex_to_bgr():

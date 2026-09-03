@@ -7,14 +7,14 @@ from collections import defaultdict
 from .models import (
     ActionSegment,
     DenseFrameAnnotation,
-    TapeVisionAnnotationPackage,
+    PlayVisualizerAnnotationPackage,
 )
 
 
 class AnnotationIndex:
-    """Pre-indexed lookup structure for TapeVision annotations."""
+    """Pre-indexed lookup structure for play annotations."""
 
-    def __init__(self, pkg: TapeVisionAnnotationPackage):
+    def __init__(self, pkg: PlayVisualizerAnnotationPackage):
         self.pkg = pkg
         self.by_frame: dict[int, list[DenseFrameAnnotation]] = defaultdict(list)
         self.actor_metadata: dict[str, dict] = {}

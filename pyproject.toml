@@ -3,13 +3,13 @@ requires = ["setuptools>=61.0"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "tapevision-visualizer"
+name = "play-visualizer"
 version = "1.0.0"
-description = "TapeVision Football Annotation Video Visualizer"
+description = "Play-Visualizer Football Annotation Video Visualizer"
 readme = "README.md"
 requires-python = ">=3.9"
 authors = [
-    { name = "TapeVision AI Architecture Team" }
+    { name = "Play-Visualizer AI Architecture Team" }
 ]
 dependencies = [
     "opencv-python>=4.8.0",
@@ -29,7 +29,7 @@ dev = [
 ]
 
 [project.scripts]
-tapevision-visualizer = "tapevision_visualizer.cli:app"
+play-visualizer = "play_visualizer.cli:app"
 
 
 [tool.setuptools.packages.find]

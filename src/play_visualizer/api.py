@@ -33,7 +33,7 @@ def render_annotation_video(
     overwrite: bool = False,
     log_level: str = "INFO",
 ) -> RenderReport:
-    """Render TapeVision annotations onto a video file via Python API.
+    """Render Play-Visualizer annotations onto a video file via Python API.
 
     Returns a RenderReport object detailing the execution result.
     """
@@ -45,7 +45,7 @@ def render_annotation_video(
 
     logger = setup_logger(log_level)
 
-    logger.info("Initializing TapeVision Visualizer API...")
+    logger.info("Initializing Play-Visualizer API...")
     logger.info(f"Source video: {video}")
     logger.info(f"Annotations: {annotations}")
     logger.info(f"Output path: {output}")
@@ -100,7 +100,7 @@ def render_annotation_video(
         reader.close()
         return report
 
-    temp_dir = output.parent / ".tmp_tapevision"
+    temp_dir = output.parent / ".tmp_play_visualizer"
     temp_dir.mkdir(parents=True, exist_ok=True)
     intermediate_path = temp_dir / f"{output.stem}.intermediate.mp4"
 
