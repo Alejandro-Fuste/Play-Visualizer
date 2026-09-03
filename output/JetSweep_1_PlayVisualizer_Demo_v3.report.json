@@ -1,0 +1,52 @@
+{
+  "input_video": "examples/JetSweep_1.mp4",
+  "input_annotations": "examples/annotations.json",
+  "output_video": "output/JetSweep_1_PlayVisualizer_Demo_v3.mp4",
+  "mode": "standard",
+  "video_properties": {
+    "fps": 30.0,
+    "width": 1920,
+    "height": 1080,
+    "num_frames": 360,
+    "duration_seconds": 12.0,
+    "has_audio": true
+  },
+  "annotation_properties": {
+    "clip": {
+      "video_name": "JetSweep_1",
+      "frame_start": 0,
+      "frame_end": 329,
+      "num_frames": 330
+    },
+    "play": {
+      "play_tag": "Play_Run_JetSweep",
+      "result_tag": "Result_OutOfBounds",
+      "result_frame": 329
+    },
+    "num_players": 24,
+    "num_action_segments": 57,
+    "num_dense_annotations": 7230
+  },
+  "rendered_frame_start": 0,
+  "rendered_frame_end": 329,
+  "rendered_frames": 330,
+  "warnings": [
+    {
+      "code": "FRAME_COUNT_MISMATCH",
+      "message": "Frame count mismatch: video has 360 frames, annotation clip specifies 330 frames (frames 0-329).",
+      "severity": "WARNING",
+      "frame": null,
+      "actor_id": null
+    },
+    {
+      "code": "MISSING_BALL_TRACK",
+      "message": "No ball track annotations found in JSON package.",
+      "severity": "INFO",
+      "frame": null,
+      "actor_id": null
+    }
+  ],
+  "skipped_annotations": 0,
+  "ffmpeg_command": "/opt/homebrew/bin/ffmpeg -y -i output/.tmp_play_visualizer/JetSweep_1_PlayVisualizer_Demo_v3.intermediate.mp4 -i examples/JetSweep_1.mp4 -c:v libx264 -preset medium -crf 18 -pix_fmt yuv420p -movflags +faststart -timecode 00:00:00:00 -write_tmcd 1 -c:a aac -map 0:v:0 -map 1:a:0? output/JetSweep_1_PlayVisualizer_Demo_v3.mp4",
+  "status": "success"
+}
