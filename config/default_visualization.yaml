@@ -1,0 +1,117 @@
+# TapeVision Annotation Video Visualizer Default Configuration
+
+modes:
+  default: portfolio
+
+portfolio:
+  player_label:
+    show_position: true
+    show_track_id: true
+    separator: " | "
+    show_action_text: false
+  play_card:
+    show_play_name: true
+    show_result: true
+    show_frame: false
+    show_timestamp: false
+  live_actions:
+    show_player_position: false
+    show_track_id: false
+    unique_actions_only: true
+    show_color_swatch: true
+  end_result_overlay:
+    enabled: false
+
+styles:
+  cyan_accent: [255, 229, 0]        # Cyan (#00E5FF in BGR)
+  gold_accent: [7, 193, 255]        # Gold (#FFC107 in BGR)
+  neutral_player: [178, 178, 178]   # Light Gray (#B2B2B2 in BGR)
+  panel_bg: [33, 24, 20]            # Dark Translucent (#141821 in BGR)
+  offense:
+    box_color: [46, 204, 113]       # Green (BGR)
+    label_bg_color: [39, 174, 96]
+    text_color: [255, 255, 255]
+    thickness: 2
+  defense:
+    box_color: [231, 76, 60]        # Red/Coral (BGR)
+    label_bg_color: [192, 57, 43]
+    text_color: [255, 255, 255]
+    thickness: 2
+  active_highlight:
+    box_color: [241, 196, 15]       # Vibrant Gold/Yellow (BGR)
+    label_bg_color: [243, 156, 18]
+    text_color: [0, 0, 0]
+    thickness: 3
+  ball:
+    box_color: [52, 152, 219]        # Orange/Blue (BGR)
+    label_bg_color: [41, 128, 185]
+    text_color: [255, 255, 255]
+    thickness: 3
+  neutral:
+    box_color: [149, 165, 166]      # Gray (BGR)
+    label_bg_color: [127, 140, 141]
+    text_color: [255, 255, 255]
+    thickness: 2
+
+fonts:
+  scale_base: 0.5
+  font_face: FONT_HERSHEY_SIMPLEX
+  thickness: 1
+
+hidden_actions:
+  portfolio:
+    - Action_None
+    - Action_Unknown
+    - Action_Defense_NotAnnotated
+  technical: []
+
+action_priority:
+  - Action_BallSnap
+  - Action_SnapReceive
+  - Action_JetMotion
+  - Action_Toss
+  - Action_BallCarry
+  - Action_ZoneBlock
+  - Action_LeadBlock
+  - Action_BlockSecondLevel
+  - Action_SealBlock
+  - Action_PlayEnd_OutOfBounds
+
+suspicious_actions:
+  defensive_offensive_actions:
+    - Action_JetMotion
+    - Action_Toss
+    - Action_BallCarry
+    - Action_ZoneBlock
+    - Action_LeadBlock
+    - Action_BlockSecondLevel
+    - Action_SealBlock
+    - Action_BallSnap
+    - Action_SnapReceive
+  suppress_in_portfolio: true
+
+panel:
+  max_items: 5
+  bg_alpha: 0.80
+  position: top_right
+  top_margin: 52
+  right_margin: 24
+  corner_radius: 14
+  border_color: [255, 229, 0]
+  border_thickness: 1
+
+timeline:
+  height_px: 36
+  bg_alpha: 0.85
+
+ffmpeg:
+  crf: 18
+  preset: medium
+  pix_fmt: yuv420p
+  movflags: "+faststart"
+
+audio:
+  preserve: true
+
+intermediate:
+  keep: false

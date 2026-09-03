@@ -1,0 +1,3917 @@
+[
+  {
+    "name": "Object_Ball",
+    "id": 7442895,
+    "color": "#00ffff",
+    "type": "any",
+    "attributes": [
+      {
+        "id": 2398769,
+        "name": "ball_status",
+        "input_type": "select",
+        "mutable": true,
+        "values": [
+          "in-hand",
+          "fumbled",
+          "in-air",
+          "dead-ball"
+        ],
+        "default_value": "in-hand"
+      }
+    ]
+  },
+  {
+    "name": "Action_ArcToEdge",
+    "id": 7442896,
+    "color": "#ff0000",
+    "type": "any",
+    "attributes": [
+      {
+        "id": 2398770,
+        "name": "actor_role",
+        "input_type": "select",
+        "mutable": true,
+        "values": [
+          "QB",
+          "RB",
+          "FB",
+          "H-Back",
+          "WR-X",
+          "WR-Y",
+          "WR-Z",
+          "WR-F",
+          "TE-Y",
+          "TE-F",
+          "TE-H",
+          "LT",
+          "LG",
+          "C",
+          "RG",
+          "RT",
+          "RDE",
+          "LDE",
+          "DT",
+          "MLB",
+          "WLB",
+          "OLB-Right",
+          "OLB-Left",
+          "RCB",
+          "LCB",
+          "CB-Nickel",
+          "CB-Dime",
+          "FS",
+          "SS",
+          "K",
+          "P"
+        ],
+        "default_value": "QB"
+      },
+      {
+        "id": 2398771,
+        "name": "player_state",
+        "input_type": "select",
+        "mutable": true,
+        "values": [
+          "blocking",
+          "down",
+          "in-stance",
+          "intercepting",
+          "kicking",
+          "punting",
+          "receiving",
+          "running",
+          "standing",
+          "tackled",
+          "tackling",
+          "throwing"
+        ],
+        "default_value": "in-stance"
+      },
+      {
+        "id": 2398772,
+        "name": "orientation",
+        "input_type": "select",
+        "mutable": true,
+        "values": [
+          "facing_line_of_scrimmage",
+          "facing_own_endzone",
+          "facing_opponent_endzone",
+          "facing_left_sideline",
+          "facing_right_sideline",
+          "facing_upfield_left_45_degree_angle",
+          "facing_upfield_right_45_degree_angle",
+          "facing_downfield_left_45_degree_angle",
+          "facing_downfield_right_45_degree_angle",
+          "facing_upfield_right_perimeter_angle",
+          "facing_upfield_left_perimeter_angle"
+        ],
+        "default_value": "facing_line_of_scrimmage"
+      }
+    ]
+  },
+  {
+    "name": "Action_Handoff",
+    "id": 7442897,
+    "color": "#a52a2a",
+    "type": "any",
+    "attributes": [
+      {
+        "id": 2398773,
+        "name": "actor_role",
+        "input_type": "select",
+        "mutable": true,
+        "values": [
+          "QB",
+          "RB",
+          "FB",
+          "H-BACK",
+          "WR-X",
+          "WR-Y",
+          "WR-Z",
+          "WR-F",
+          "TE-F",
+          "TE-H",
+          "TE-Y"
+        ],
+        "default_value": "QB"
+      },
+      {
+        "id": 2398774,
+        "name": "player_state",
+        "input_type": "select",
+        "mutable": true,
+        "values": [
+          "handing-off",
+          "throwing"
+        ],
+        "default_value": "handing-off"
+      },
+      {
+        "id": 2398775,
+        "name": "orientation",
+        "input_type": "select",
+        "mutable": true,
+        "values": [
+          "facing_line_of_scrimmage",
+          "facing_own_endzone",
+          "facing_opponent_endzone",
+          "facing_left_sideline",
+          "facing_right_sideline",
+          "facing_upfield_left_45_degree_angle",
+          "facing_upfield_right_45_degree_angle",
+          "facing_downfield_left_45_degree_angle",
+          "facing_downfield_right_45_degree_angle"
+        ],
+        "default_value": "facing_line_of_scrimmage"
+      }
+    ]
+  },
+  {
+    "name": "Action_TakeHandoff",
+    "id": 7442898,
+    "color": "#696969",
+    "type": "any",
+    "attributes": [
+      {
+        "id": 2398776,
+        "name": "actor_role",
+        "input_type": "select",
+        "mutable": true,
+        "values": [
+          "QB",
+          "RB",
+          "FB",
+          "H-BACK",
+          "WR-X",
+          "WR-Y",
+          "WR-Z",
+          "WR-F",
+          "TE-Y",
+          "TE-F",
+          "TE-H"
+        ],
+        "default_value": "RB"
+      },
+      {
+        "id": 2398777,
+        "name": "player_state",
+        "input_type": "select",
+        "mutable": true,
+        "values": [
+          "receiving",
+          "running",
+          "standing"
+        ],
+        "default_value": "receiving"
+      },
+      {
+        "id": 2398778,
+        "name": "orientation",
+        "input_type": "select",
+        "mutable": true,
+        "values": [
+          "facing_line_of_scrimmage",
+          "facing_own_endzone",
+          "facing_opponent_endzone",
+          "facing_left_sideline",
+          "facing_right_sideline",
+          "facing_upfield_left_45_degree_angle",
+          "facing_upfield_right_45_degree_angle",
+          "facing_downfield_left_45_degree_angle",
+          "facing_downfield_right_45_degree_angle"
+        ],
+        "default_value": "facing_line_of_scrimmage"
+      }
+    ]
+  },
+  {
+    "name": "Action_PlaySideFakeStep",
+    "id": 7442899,
+    "color": "#c98f53",
+    "type": "any",
+    "attributes": [
+      {
+        "id": 2398779,
+        "name": "actor_role",
+        "input_type": "select",
+        "mutable": true,
+        "values": [
+          "RB",
+          "FB",
+          "H-BACK"
+        ],
+        "default_value": "RB"
+      },
+      {
+        "id": 2398780,
+        "name": "player_state",
+        "input_type": "select",
+        "mutable": true,
+        "values": [
+          "in-stance",
+          "running",
+          "standing"
+        ],
+        "default_value": "running"
+      },
+      {
+        "id": 2398781,
+        "name": "orientation",
+        "input_type": "select",
+        "mutable": true,
+        "values": [
+          "facing_line_of_scrimmage",
+          "facing_own_endzone",
+          "facing_opponent_endzone",
+          "facing_left_sideline",
+          "facing_right_sideline",
+          "facing_upfield_left_45_degree_angle",
+          "facing_upfield_right_45_degree_angle",
+          "facing_downfield_left_45_degree_angle",
+          "facing_downfield_right_45_degree_angle"
+        ],
+        "default_value": "facing_line_of_scrimmage"
+      }
+    ]
+  },
+  {
+    "name": "Action_PreSnap",
+    "id": 7442900,
+    "color": "#300c11",
+    "type": "any",
+    "attributes": [
+      {
+        "id": 2398782,
+        "name": "actor_role",
+        "input_type": "select",
+        "mutable": true,
+        "values": [
+          "QB",
+          "RB",
+          "LT",
+          "LG",
+          "C",
+          "RG",
+          "RT",
+          "TE-Y",
+          "WR-X",
+          "FB",
+          "H-BACK",
+          "WR-Y",
+          "WR-Z",
+          "WR-F",
+          "TE-H",
+          "TE-F",
+          "RDE",
+          "LDE",
+          "DT",
+          "MLB",
+          "WLB",
+          "OLB-RIGHT",
+          "OLB-LEFT",
+          "RCB",
+          "LCB",
+          "CB-NICKEL",
+          "CB-DIME",
+          "FS",
+          "SS",
+          "K",
+          "P"
+        ],
+        "default_value": "QB"
+      },
+      {
+        "id": 2398783,
+        "name": "player_state",
+        "input_type": "select",
+        "mutable": true,
+        "values": [
+          "standing",
+          "in-stance",
+          "running"
+        ],
+        "default_value": "in-stance"
+      },
+      {
+        "id": 2398784,
+        "name": "orientation",
+        "input_type": "select",
+        "mutable": true,
+        "values": [
+          "facing_line_of_scrimmage",
+          "facing_own_endzone",
+          "facing_opponent_endzone",
+          "facing_left_sideline",
+          "facing_right_sideline",
+          "facing_upfield_left_45_degree_angle",
+          "facing_upfield_right_45_degree_angle",
+          "facing_downfield_left_45_degree_angle",
+          "facing_downfield_right_45_degree_angle"
+        ],
+        "default_value": "facing_line_of_scrimmage"
+      }
+    ]
+  },
+  {
+    "name": "Action_BallSnap",
+    "id": 7442901,
+    "color": "#52415d",
+    "type": "any",
+    "attributes": [
+      {
+        "id": 2398785,
+        "name": "actor_role",
+        "input_type": "select",
+        "mutable": true,
+        "values": [
+          "C",
+          "LS"
+        ],
+        "default_value": "C"
+      },
+      {
+        "id": 2398786,
+        "name": "player_state",
+        "input_type": "select",
+        "mutable": true,
+        "values": [
+          "throwing",
+          "running"
+        ],
+        "default_value": "throwing"
+      },
+      {
+        "id": 2398787,
+        "name": "orientation",
+        "input_type": "select",
+        "mutable": true,
+        "values": [
+          "facing_line_of_scrimmage",
+          "facing_own_endzone",
+          "facing_opponent_endzone",
+          "facing_left_sideline",
+          "facing_right_sideline",
+          "facing_upfield_left_45_degree_angle",
+          "facing_upfield_right_45_degree_angle",
+          "facing_downfield_left_45_degree_angle",
+          "facing_downfield_right_45_degree_angle"
+        ],
+        "default_value": "facing_line_of_scrimmage"
+      }
+    ]
+  },
+  {
+    "name": "Action_SnapReceive",
+    "id": 7442902,
+    "color": "#9ffb59",
+    "type": "any",
+    "attributes": [
+      {
+        "id": 2398788,
+        "name": "actor_role",
+        "input_type": "select",
+        "mutable": true,
+        "values": [
+          "QB",
+          "RB",
+          "FB",
+          "H-BACK",
+          "WR-X",
+          "WR-Y",
+          "WR-Z",
+          "WR-F",
+          "TE-Y",
+          "TE-F",
+          "TE-H"
+        ],
+        "default_value": "QB"
+      },
+      {
+        "id": 2398789,
+        "name": "player_state",
+        "input_type": "select",
+        "mutable": true,
+        "values": [
+          "standing",
+          "in-stance",
+          "receiving"
+        ],
+        "default_value": "receiving"
+      },
+      {
+        "id": 2398790,
+        "name": "orientation",
+        "input_type": "select",
+        "mutable": true,
+        "values": [
+          "facing_line_of_scrimmage"
+        ],
+        "default_value": "facing_line_of_scrimmage"
+      }
+    ]
+  },
+  {
+    "name": "Action_BallCarry",
+    "id": 7442903,
+    "color": "#ffbf00",
+    "type": "any",
+    "attributes": [
+      {
+        "id": 2398791,
+        "name": "actor_role",
+        "input_type": "select",
+        "mutable": true,
+        "values": [
+          "QB",
+          "FB",
+          "RB",
+          "H-BACK",
+          "WR-X",
+          "WR-Y",
+          "WR-Z",
+          "WR-F",
+          "TE-Y",
+          "TE-F",
+          "TE-H"
+        ],
+        "default_value": "RB"
+      },
+      {
+        "id": 2398792,
+        "name": "player_state",
+        "input_type": "select",
+        "mutable": true,
+        "values": [
+          "down",
+          "in-stance",
+          "running",
+          "standing",
+          "throwing",
+          "tackled",
+          "out-of-bounds",
+          "kneeling",
+          "fumbling",
+          "falling"
+        ],
+        "default_value": "running"
+      },
+      {
+        "id": 2398793,
+        "name": "orientation",
+        "input_type": "select",
+        "mutable": true,
+        "values": [
+          "facing_line_of_scrimmage",
+          "facing_own_endzone",
+          "facing_opponent_endzone",
+          "facing_left_sideline",
+          "facing_right_sideline",
+          "facing_upfield_left_45_degree_angle",
+          "facing_upfield_right_45_degree_angle",
+          "facing_downfield_left_45_degree_angle",
+          "facing_downfield_right_45_degree_angle"
+        ],
+        "default_value": "facing_line_of_scrimmage"
+      },
+      {
+        "id": 2398794,
+        "name": "ball-status",
+        "input_type": "select",
+        "mutable": true,
+        "values": [
+          "in-hand",
+          "fumbled",
+          "in-air",
+          "dead-ball"
+        ],
+        "default_value": "in-hand"
+      }
+    ]
+  },
+  {
+    "name": "Action_LeadBlock",
+    "id": 7442904,
+    "color": "#d2691e",
+    "type": "any",
+    "attributes": [
+      {
+        "id": 2398795,
+        "name": "actor_role",
+        "input_type": "select",
+        "mutable": true,
+        "values": [
+          "LT",
+          "LG",
+          "C",
+          "RG",
+          "RT",
+          "TE-Y",
+          "TE-F",
+          "TE-H",
+          "FB",
+          "H-BACK",
+          "RB",
+          "WR-X",
+          "WR-Y",
+          "WR-Z",
+          "WR-F"
+        ],
+        "default_value": "FB"
+      },
+      {
+        "id": 2398796,
+        "name": "player_state",
+        "input_type": "select",
+        "mutable": true,
+        "values": [
+          "blocking",
+          "running",
+          "in-stance"
+        ],
+        "default_value": "running"
+      },
+      {
+        "id": 2398797,
+        "name": "orientation",
+        "input_type": "select",
+        "mutable": true,
+        "values": [
+          "facing_line_of_scrimmage",
+          "facing_own_endzone",
+          "facing_opponent_endzone",
+          "facing_left_sideline",
+          "facing_right_sideline",
+          "facing_upfield_left_45_degree_angle",
+          "facing_upfield_right_45_degree_angle",
+          "facing_downfield_left_45_degree_angle",
+          "facing_downfield_right_45_degree_angle",
+          "facing_upfield_right_perimeter_angle",
+          "facing_upfield_left_perimeter_angle"
+        ],
+        "default_value": "facing_line_of_scrimmage"
+      },
+      {
+        "id": 2398798,
+        "name": "block_origin",
+        "input_type": "select",
+        "mutable": true,
+        "values": [
+          "playside",
+          "backside",
+          "unspecified",
+          "center"
+        ],
+        "default_value": "playside"
+      }
+    ]
+  },
+  {
+    "name": "Action_PullBlock",
+    "id": 7442905,
+    "color": "#d2b48c",
+    "type": "any",
+    "attributes": [
+      {
+        "id": 2398799,
+        "name": "block_side",
+        "input_type": "select",
+        "mutable": true,
+        "values": [
+          "playside",
+          "backside",
+          "unspecified"
+        ],
+        "default_value": "playside"
+      },
+      {
+        "id": 2398800,
+        "name": "actor_role",
+        "input_type": "select",
+        "mutable": true,
+        "values": [
+          "LT",
+          "LG",
+          "C",
+          "RG",
+          "RT",
+          "FB",
+          "H-BACK",
+          "TE-Y",
+          "TE-H",
+          "TE-F",
+          "WR-X",
+          "WR-Y",
+          "WR-Z",
+          "WR-F"
+        ],
+        "default_value": "LT"
+      },
+      {
+        "id": 2398801,
+        "name": "player_state",
+        "input_type": "select",
+        "mutable": true,
+        "values": [
+          "blocking",
+          "running"
+        ],
+        "default_value": "blocking"
+      },
+      {
+        "id": 2398802,
+        "name": "orientation",
+        "input_type": "select",
+        "mutable": true,
+        "values": [
+          "facing_line_of_scrimmage",
+          "facing_own_endzone",
+          "facing_opponent_endzone",
+          "facing_left_sideline",
+          "facing_right_sideline",
+          "facing_upfield_left_45_degree_angle",
+          "facing_upfield_right_45_degree_angle",
+          "facing_downfield_left_45_degree_angle",
+          "facing_downfield_right_45_degree_angle"
+        ],
+        "default_value": "facing_line_of_scrimmage"
+      }
+    ]
+  },
+  {
+    "name": "Action_DownBlock",
+    "id": 7442906,
+    "color": "#9400d3",
+    "type": "any",
+    "attributes": [
+      {
+        "id": 2398803,
+        "name": "block_origin",
+        "input_type": "select",
+        "mutable": true,
+        "values": [
+          "playside",
+          "backside",
+          "unspecified",
+          "center"
+        ],
+        "default_value": "playside"
+      },
+      {
+        "id": 2398804,
+        "name": "actor_role",
+        "input_type": "select",
+        "mutable": true,
+        "values": [
+          "LT",
+          "LG",
+          "C",
+          "RG",
+          "RT",
+          "TE-Y",
+          "TE-F",
+          "TE-H",
+          "WR-X",
+          "WR-Z",
+          "WR-Y",
+          "WR-F"
+        ],
+        "default_value": "LT"
+      },
+      {
+        "id": 2398805,
+        "name": "player_state",
+        "input_type": "select",
+        "mutable": true,
+        "values": [
+          "blocking",
+          "running",
+          "falling",
+          "in-stance"
+        ],
+        "default_value": "running"
+      },
+      {
+        "id": 2398806,
+        "name": "orientation",
+        "input_type": "select",
+        "mutable": true,
+        "values": [
+          "facing_line_of_scrimmage",
+          "facing_own_endzone",
+          "facing_opponent_endzone",
+          "facing_left_sideline",
+          "facing_right_sideline",
+          "facing_upfield_left_45_degree_angle",
+          "facing_upfield_right_45_degree_angle",
+          "facing_downfield_left_45_degree_angle",
+          "facing_downfield_right_45_degree_angle"
+        ],
+        "default_value": "facing_line_of_scrimmage"
+      }
+    ]
+  },
+  {
+    "name": "Action_SealBlock",
+    "id": 7442907,
+    "color": "#483d8b",
+    "type": "any",
+    "attributes": [
+      {
+        "id": 2398807,
+        "name": "actor_role",
+        "input_type": "select",
+        "mutable": true,
+        "values": [
+          "LT",
+          "LG",
+          "C",
+          "RG",
+          "RT",
+          "TE-Y",
+          "TE-F",
+          "TE-H",
+          "FB",
+          "H-BACK",
+          "WR-X",
+          "WR-Z",
+          "WR-Y",
+          "WR-F"
+        ],
+        "default_value": "LT"
+      },
+      {
+        "id": 2398808,
+        "name": "player_state",
+        "input_type": "select",
+        "mutable": true,
+        "values": [
+          "blocking",
+          "running",
+          "falling",
+          "in-stance"
+        ],
+        "default_value": "in-stance"
+      },
+      {
+        "id": 2398809,
+        "name": "orientation",
+        "input_type": "select",
+        "mutable": true,
+        "values": [
+          "facing_line_of_scrimmage",
+          "facing_own_endzone",
+          "facing_opponent_endzone",
+          "facing_left_sideline",
+          "facing_right_sideline",
+          "facing_upfield_left_45_degree_angle",
+          "facing_upfield_right_45_degree_angle",
+          "facing_downfield_left_45_degree_angle",
+          "facing_downfield_right_45_degree_angle"
+        ],
+        "default_value": "facing_line_of_scrimmage"
+      }
+    ]
+  },
+  {
+    "name": "Action_ReadDefender",
+    "id": 7442908,
+    "color": "#800000",
+    "type": "any",
+    "attributes": [
+      {
+        "id": 2398810,
+        "name": "actor_role",
+        "input_type": "select",
+        "mutable": true,
+        "values": [
+          "QB",
+          "RB",
+          "FB",
+          "H-BACK",
+          "WR-X",
+          "WR-Z",
+          "WR-Y",
+          "WR-F",
+          "TE-Y",
+          "TE-F",
+          "TE-H"
+        ],
+        "default_value": "QB"
+      },
+      {
+        "id": 2398811,
+        "name": "player_state",
+        "input_type": "select",
+        "mutable": true,
+        "values": [
+          "reading-defender"
+        ],
+        "default_value": "reading-defender"
+      },
+      {
+        "id": 2398812,
+        "name": "orientation",
+        "input_type": "select",
+        "mutable": true,
+        "values": [
+          "facing_line_of_scrimmage",
+          "facing_opponent_endzone",
+          "facing_left_sideline",
+          "facing_right_sideline",
+          "facing_upfield_left_45_degree_angle",
+          "facing_upfield_right_45_degree_angle",
+          "facing_downfield_left_45_degree_angle",
+          "facing_downfield_right_45_degree_angle"
+        ],
+        "default_value": "facing_line_of_scrimmage"
+      }
+    ]
+  },
+  {
+    "name": "Action_Keep",
+    "id": 7442909,
+    "color": "#1709c9",
+    "type": "any",
+    "attributes": [
+      {
+        "id": 2398813,
+        "name": "actor_role",
+        "input_type": "select",
+        "mutable": true,
+        "values": [
+          "QB",
+          "RB",
+          "FB",
+          "H-BACK",
+          "WR-X",
+          "WR-Z",
+          "WR-Y",
+          "WR-F",
+          "TE-Y",
+          "TE-F",
+          "TE-H"
+        ],
+        "default_value": "QB"
+      },
+      {
+        "id": 2398814,
+        "name": "player_state",
+        "input_type": "select",
+        "mutable": true,
+        "values": [
+          "running"
+        ],
+        "default_value": "running"
+      },
+      {
+        "id": 2398815,
+        "name": "orientation",
+        "input_type": "select",
+        "mutable": true,
+        "values": [
+          "facing_line_of_scrimmage",
+          "facing_own_endzone",
+          "facing_opponent_endzone",
+          "facing_left_sideline",
+          "facing_right_sideline",
+          "facing_upfield_left_45_degree_angle",
+          "facing_upfield_right_45_degree_angle",
+          "facing_downfield_left_45_degree_angle",
+          "facing_downfield_right_45_degree_angle"
+        ],
+        "default_value": "facing_line_of_scrimmage"
+      }
+    ]
+  },
+  {
+    "name": "Action_ArcToInterior",
+    "id": 7442910,
+    "color": "#ff7f50",
+    "type": "any",
+    "attributes": [
+      {
+        "id": 2398816,
+        "name": "actor_role",
+        "input_type": "select",
+        "mutable": true,
+        "values": [
+          "QB",
+          "RB",
+          "FB",
+          "H-BACK",
+          "WR-X",
+          "WR-Y",
+          "WR-Z",
+          "WR-F",
+          "TE-Y",
+          "TE-F",
+          "TE-H"
+        ],
+        "default_value": "RB"
+      },
+      {
+        "id": 2398817,
+        "name": "player_state",
+        "input_type": "select",
+        "mutable": true,
+        "values": [
+          "running"
+        ],
+        "default_value": "running"
+      },
+      {
+        "id": 2398818,
+        "name": "orientation",
+        "input_type": "select",
+        "mutable": true,
+        "values": [
+          "facing_line_of_scrimmage",
+          "facing_own_endzone",
+          "facing_opponent_endzone",
+          "facing_left_sideline",
+          "facing_right_sideline",
+          "facing_upfield_left_45_degree_angle",
+          "facing_upfield_right_45_degree_angle",
+          "facing_downfield_left_45_degree_angle",
+          "facing_downfield_right_45_degree_angle"
+        ],
+        "default_value": "facing_line_of_scrimmage"
+      }
+    ]
+  },
+  {
+    "name": "Action_ZoneBlock",
+    "id": 7442911,
+    "color": "#b0c4de",
+    "type": "any",
+    "attributes": [
+      {
+        "id": 2398819,
+        "name": "actor_role",
+        "input_type": "select",
+        "mutable": true,
+        "values": [
+          "LT",
+          "LG",
+          "C",
+          "RG",
+          "RT",
+          "TE-Y",
+          "TE-F",
+          "TE-H",
+          "RB",
+          "H-BACK"
+        ],
+        "default_value": "LT"
+      },
+      {
+        "id": 2398820,
+        "name": "player_state",
+        "input_type": "select",
+        "mutable": true,
+        "values": [
+          "blocking",
+          "running",
+          "falling",
+          "in-stance"
+        ],
+        "default_value": "in-stance"
+      },
+      {
+        "id": 2398821,
+        "name": "orientation",
+        "input_type": "select",
+        "mutable": true,
+        "values": [
+          "facing_line_of_scrimmage",
+          "facing_own_endzone",
+          "facing_opponent_endzone",
+          "facing_left_sideline",
+          "facing_right_sideline",
+          "facing_upfield_left_45_degree_angle",
+          "facing_upfield_right_45_degree_angle",
+          "facing_downfield_left_45_degree_angle",
+          "facing_downfield_right_45_degree_angle"
+        ],
+        "default_value": "facing_line_of_scrimmage"
+      }
+    ]
+  },
+  {
+    "name": "Action_StretchStep",
+    "id": 7442912,
+    "color": "#2f4f4f",
+    "type": "any",
+    "attributes": [
+      {
+        "id": 2398822,
+        "name": "actor_role",
+        "input_type": "select",
+        "mutable": true,
+        "values": [
+          "LT",
+          "LG",
+          "C",
+          "RG",
+          "RT",
+          "TE-Y",
+          "TE-F",
+          "TE-H",
+          "H-Back",
+          "RB",
+          "FB"
+        ],
+        "default_value": "RB"
+      },
+      {
+        "id": 2398823,
+        "name": "player_state",
+        "input_type": "select",
+        "mutable": true,
+        "values": [
+          "in-stance",
+          "running",
+          "performing_stretch_step"
+        ],
+        "default_value": "running"
+      },
+      {
+        "id": 2398824,
+        "name": "orientation",
+        "input_type": "select",
+        "mutable": true,
+        "values": [
+          "facing_line_of_scrimmage",
+          "facing_own_endzone",
+          "facing_opponent_endzone",
+          "facing_left_sideline",
+          "facing_right_sideline",
+          "facing_upfield_left_45_degree_angle",
+          "facing_upfield_right_45_degree_angle",
+          "facing_downfield_left_45_degree_angle",
+          "facing_downfield_right_45_degree_angle",
+          "facing_upfield_right_perimeter_angle",
+          "facing_upfield_left_perimeter_angle"
+        ],
+        "default_value": "facing_line_of_scrimmage"
+      }
+    ]
+  },
+  {
+    "name": "Action_PressGap",
+    "id": 7442913,
+    "color": "#b8860b",
+    "type": "any",
+    "attributes": [
+      {
+        "id": 2398825,
+        "name": "actor_role",
+        "input_type": "select",
+        "mutable": true,
+        "values": [
+          "RB"
+        ],
+        "default_value": "RB"
+      },
+      {
+        "id": 2398826,
+        "name": "player_state",
+        "input_type": "select",
+        "mutable": true,
+        "values": [
+          "running"
+        ],
+        "default_value": "running"
+      },
+      {
+        "id": 2398827,
+        "name": "orientation",
+        "input_type": "select",
+        "mutable": true,
+        "values": [
+          "facing_line_of_scrimmage",
+          "facing_own_endzone",
+          "facing_opponent_endzone",
+          "facing_left_sideline",
+          "facing_right_sideline",
+          "facing_upfield_left_45_degree_angle",
+          "facing_upfield_right_45_degree_angle",
+          "facing_downfield_left_45_degree_angle",
+          "facing_downfield_right_45_degree_angle"
+        ],
+        "default_value": "facing_line_of_scrimmage"
+      }
+    ]
+  },
+  {
+    "name": "Action_JetMotion",
+    "id": 7442914,
+    "color": "#deb887",
+    "type": "any",
+    "attributes": [
+      {
+        "id": 2398828,
+        "name": "actor_role",
+        "input_type": "select",
+        "mutable": true,
+        "values": [
+          "WR-X",
+          "WR-Z",
+          "WR-Y",
+          "WR-F",
+          "TE-Y",
+          "TE-F",
+          "TE-H",
+          "RB",
+          "FB",
+          "H-Back",
+          "QB"
+        ],
+        "default_value": "WR-X"
+      },
+      {
+        "id": 2398829,
+        "name": "player_state",
+        "input_type": "select",
+        "mutable": true,
+        "values": [
+          "running",
+          "in-stance"
+        ],
+        "default_value": "running"
+      },
+      {
+        "id": 2398830,
+        "name": "orientation",
+        "input_type": "select",
+        "mutable": true,
+        "values": [
+          "facing_line_of_scrimmage",
+          "facing_own_endzone",
+          "facing_opponent_endzone",
+          "facing_left_sideline",
+          "facing_right_sideline",
+          "facing_upfield_left_45_degree_angle",
+          "facing_upfield_right_45_degree_angle",
+          "facing_downfield_left_45_degree_angle",
+          "facing_downfield_right_45_degree_angle"
+        ],
+        "default_value": "facing_line_of_scrimmage"
+      }
+    ]
+  },
+  {
+    "name": "Action_CrackBlock",
+    "id": 7442915,
+    "color": "#00fa9a",
+    "type": "any",
+    "attributes": [
+      {
+        "id": 2398831,
+        "name": "block_origin",
+        "input_type": "select",
+        "mutable": true,
+        "values": [
+          "playside",
+          "backside",
+          "unspecified"
+        ],
+        "default_value": "playside"
+      },
+      {
+        "id": 2398832,
+        "name": "actor_role",
+        "input_type": "select",
+        "mutable": true,
+        "values": [
+          "WR-X",
+          "WR-Z",
+          "WR-Y",
+          "WR-F",
+          "TE-Y",
+          "TE-F",
+          "TE-H",
+          "H-Back"
+        ],
+        "default_value": "WR-X"
+      },
+      {
+        "id": 2398833,
+        "name": "player_state",
+        "input_type": "select",
+        "mutable": true,
+        "values": [
+          "blocking",
+          "in-stance",
+          "running"
+        ],
+        "default_value": "blocking"
+      },
+      {
+        "id": 2398834,
+        "name": "orientation",
+        "input_type": "select",
+        "mutable": true,
+        "values": [
+          "facing_line_of_scrimmage",
+          "facing_own_endzone",
+          "facing_opponent_endzone",
+          "facing_left_sideline",
+          "facing_right_sideline",
+          "facing_upfield_left_45_degree_angle",
+          "facing_upfield_right_45_degree_angle",
+          "facing_downfield_left_45_degree_angle",
+          "facing_downfield_right_45_degree_angle"
+        ],
+        "default_value": "facing_line_of_scrimmage"
+      }
+    ]
+  },
+  {
+    "name": "Play_Run_InsideZoneRead",
+    "id": 7442916,
+    "color": "#9370db",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "Play_Run_InsideZoneStretch",
+    "id": 7442917,
+    "color": "#6a5acd",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "Play_Run_Iso",
+    "id": 7442918,
+    "color": "#6a5acd",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "Action_UnderCenterHandoffDrop",
+    "id": 7442920,
+    "color": "#800080",
+    "type": "any",
+    "attributes": [
+      {
+        "id": 2398838,
+        "name": "actor_role",
+        "input_type": "select",
+        "mutable": true,
+        "values": [
+          "QB",
+          "RB",
+          "TE-F",
+          "TE-H",
+          "TE-Y"
+        ],
+        "default_value": "QB"
+      },
+      {
+        "id": 2398839,
+        "name": "player_state",
+        "input_type": "select",
+        "mutable": true,
+        "values": [
+          "dropping_back",
+          "preparing_to_handoff",
+          "handing-off"
+        ],
+        "default_value": "dropping_back"
+      },
+      {
+        "id": 2398840,
+        "name": "orientation",
+        "input_type": "select",
+        "mutable": true,
+        "values": [
+          "facing_own_endzone",
+          "facing_playside_45_degree_angle",
+          "facing_backside_45_degree_angle"
+        ],
+        "default_value": "facing_own_endzone"
+      }
+    ]
+  },
+  {
+    "name": "Action_BlockSecondLevel",
+    "id": 7442921,
+    "color": "#ffd700",
+    "type": "any",
+    "attributes": [
+      {
+        "id": 2398841,
+        "name": "block_origin",
+        "input_type": "select",
+        "mutable": true,
+        "values": [
+          "playside",
+          "backside",
+          "unspecified",
+          "center"
+        ],
+        "default_value": "playside"
+      },
+      {
+        "id": 2398842,
+        "name": "orientation",
+        "input_type": "select",
+        "mutable": true,
+        "values": [
+          "facing_line_of_scrimmage",
+          "facing_opponent_endzone",
+          "facing_left_sideline",
+          "facing_right_sideline",
+          "facing_upfield_left_45_degree_angle",
+          "facing_upfield_right_45_degree_angle",
+          "facing_downfield_left_45_degree_angle",
+          "facing_downfield_right_45_degree_angle"
+        ],
+        "default_value": "facing_opponent_endzone"
+      },
+      {
+        "id": 2398843,
+        "name": "actor_role",
+        "input_type": "select",
+        "mutable": true,
+        "values": [
+          "LT",
+          "LG",
+          "C",
+          "RG",
+          "RT",
+          "TE-Y",
+          "TE-F",
+          "TE-H"
+        ],
+        "default_value": "LT"
+      },
+      {
+        "id": 2398844,
+        "name": "player_state",
+        "input_type": "select",
+        "mutable": true,
+        "values": [
+          "blocking",
+          "running",
+          "falling",
+          "down"
+        ],
+        "default_value": "running"
+      }
+    ]
+  },
+  {
+    "name": "Action_PlayEnd_Tackle",
+    "id": 7442922,
+    "color": "#00ffff",
+    "type": "any",
+    "attributes": [
+      {
+        "id": 2398845,
+        "name": "actor_role",
+        "input_type": "select",
+        "mutable": true,
+        "values": [
+          "QB",
+          "RB",
+          "FB",
+          "H-Back",
+          "WR-X",
+          "WR-Z",
+          "WR-Y",
+          "WR-F",
+          "TE-Y",
+          "TE-F",
+          "TE-H",
+          "LT",
+          "LG",
+          "C",
+          "RG",
+          "RT",
+          "RDE",
+          "LDE",
+          "DT",
+          "MLB",
+          "WLB",
+          "OLB-Right",
+          "OLB-Left",
+          "RCB",
+          "LCB",
+          "CB-Nickel",
+          "CB-Dime",
+          "FS",
+          "SS",
+          "K",
+          "P"
+        ],
+        "default_value": "RB"
+      },
+      {
+        "id": 2398846,
+        "name": "player_state",
+        "input_type": "select",
+        "mutable": true,
+        "values": [
+          "tackled"
+        ],
+        "default_value": "tackled"
+      },
+      {
+        "id": 2398847,
+        "name": "orientation",
+        "input_type": "select",
+        "mutable": true,
+        "values": [
+          "facing_line_of_scrimmage",
+          "facing_own_endzone",
+          "facing_opponent_endzone",
+          "facing_left_sideline",
+          "facing_right_sideline",
+          "facing_upfield_left_45_degree_angle",
+          "facing_upfield_right_45_degree_angle",
+          "facing_downfield_left_45_degree_angle",
+          "facing_downfield_right_45_degree_angle"
+        ],
+        "default_value": "facing_line_of_scrimmage"
+      }
+    ]
+  },
+  {
+    "name": "Action_ComboBlock",
+    "id": 7442923,
+    "color": "#e246b6",
+    "type": "any",
+    "attributes": [
+      {
+        "id": 2398848,
+        "name": "actor_role",
+        "input_type": "select",
+        "mutable": true,
+        "values": [
+          "LT",
+          "LG",
+          "C",
+          "RG",
+          "RT",
+          "TE-Y",
+          "TE-F",
+          "TE-H"
+        ],
+        "default_value": "LT"
+      },
+      {
+        "id": 2398849,
+        "name": "player_state",
+        "input_type": "select",
+        "mutable": true,
+        "values": [
+          "blocking",
+          "in-stance",
+          "running",
+          "falling"
+        ],
+        "default_value": "running"
+      },
+      {
+        "id": 2398850,
+        "name": "orientation",
+        "input_type": "select",
+        "mutable": true,
+        "values": [
+          "facing_line_of_scrimmage",
+          "facing_own_endzone",
+          "facing_opponent_endzone",
+          "facing_left_sideline",
+          "facing_right_sideline",
+          "facing_upfield_left_45_degree_angle",
+          "facing_upfield_right_45_degree_angle",
+          "facing_downfield_left_45_degree_angle",
+          "facing_downfield_right_45_degree_angle"
+        ],
+        "default_value": "facing_line_of_scrimmage"
+      },
+      {
+        "id": 2398851,
+        "name": "block_origin",
+        "input_type": "select",
+        "mutable": true,
+        "values": [
+          "playside",
+          "backside",
+          "unspecified",
+          "center"
+        ],
+        "default_value": "playside"
+      }
+    ]
+  },
+  {
+    "name": "Action_PlayEnd_Touchdown",
+    "id": 7442924,
+    "color": "#00bfff",
+    "type": "any",
+    "attributes": [
+      {
+        "id": 2398852,
+        "name": "actor_role",
+        "input_type": "select",
+        "mutable": true,
+        "values": [
+          "QB",
+          "RB",
+          "FB",
+          "H-Back",
+          "WR-X",
+          "WR-Z",
+          "WR-Y",
+          "WR-F",
+          "TE-Y",
+          "TE-F",
+          "TE-H",
+          "LT",
+          "LG",
+          "C",
+          "RG",
+          "RT",
+          "RDE",
+          "LDE",
+          "DT",
+          "MLB",
+          "WLB",
+          "OLB-Right",
+          "OLB-Left",
+          "RCB",
+          "LCB",
+          "CB-Nickel",
+          "CB-Dime",
+          "FS",
+          "SS"
+        ],
+        "default_value": "QB"
+      },
+      {
+        "id": 2398853,
+        "name": "player_state",
+        "input_type": "select",
+        "mutable": true,
+        "values": [
+          "running",
+          "standing",
+          "down",
+          "dead-ball"
+        ],
+        "default_value": "dead-ball"
+      },
+      {
+        "id": 2398854,
+        "name": "orientation",
+        "input_type": "select",
+        "mutable": true,
+        "values": [
+          "facing_opponent_endzone",
+          "facing_left_sideline",
+          "facing_right_sideline",
+          "facing_upfield_left_45_degree_angle",
+          "facing_upfield_right_45_degree_angle",
+          "facing_downfield_left_45_degree_angle",
+          "facing_downfield_right_45_degree_angle"
+        ],
+        "default_value": "facing_opponent_endzone"
+      }
+    ]
+  },
+  {
+    "name": "Play_Run_JetSweep",
+    "id": 7442925,
+    "color": "#0000cd",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "Play_Run_OutsideZoneRead",
+    "id": 7442926,
+    "color": "#00008b",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "Play_Run_OutsideZoneStretch",
+    "id": 7442927,
+    "color": "#0000ff",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "Action_Toss",
+    "id": 7442928,
+    "color": "#708090",
+    "type": "any",
+    "attributes": [
+      {
+        "id": 2398855,
+        "name": "actor_role",
+        "input_type": "select",
+        "mutable": true,
+        "values": [
+          "QB",
+          "RB",
+          "FB",
+          "H-Back",
+          "WR-X",
+          "WR-Z",
+          "WR-Y",
+          "WR-F",
+          "TE-Y",
+          "TE-F",
+          "TE-H"
+        ],
+        "default_value": "QB"
+      },
+      {
+        "id": 2398856,
+        "name": "player_state",
+        "input_type": "select",
+        "mutable": true,
+        "values": [
+          "throwing"
+        ],
+        "default_value": "throwing"
+      },
+      {
+        "id": 2398857,
+        "name": "orientation",
+        "input_type": "select",
+        "mutable": true,
+        "values": [
+          "facing_line_of_scrimmage",
+          "facing_own_endzone",
+          "facing_opponent_endzone",
+          "facing_left_sideline",
+          "facing_right_sideline",
+          "facing_upfield_left_45_degree_angle",
+          "facing_upfield_right_45_degree_angle",
+          "facing_downfield_left_45_degree_angle",
+          "facing_downfield_right_45_degree_angle"
+        ],
+        "default_value": "facing_line_of_scrimmage"
+      }
+    ]
+  },
+  {
+    "name": "Action_PlayEnd_OutOfBounds",
+    "id": 7442929,
+    "color": "#7fff00",
+    "type": "any",
+    "attributes": [
+      {
+        "id": 2398858,
+        "name": "actor_role",
+        "input_type": "select",
+        "mutable": true,
+        "values": [
+          "QB",
+          "RB",
+          "FB",
+          "H-Back",
+          "WR-X",
+          "WR-Z",
+          "WR-Y",
+          "WR-F",
+          "TE-Y",
+          "TE-F",
+          "TE-H",
+          "LT",
+          "LG",
+          "C",
+          "RG",
+          "RT",
+          "RDE",
+          "LDE",
+          "DT",
+          "MLB",
+          "WLB",
+          "OLB-Right",
+          "OLB-Left",
+          "RCB",
+          "LCB",
+          "CB-Nickel",
+          "CB-Dime",
+          "FS",
+          "SS",
+          "K",
+          "P"
+        ],
+        "default_value": "QB"
+      },
+      {
+        "id": 2398859,
+        "name": "player_state",
+        "input_type": "select",
+        "mutable": true,
+        "values": [
+          "out-of-bounds"
+        ],
+        "default_value": "out-of-bounds"
+      },
+      {
+        "id": 2398860,
+        "name": "orientation",
+        "input_type": "select",
+        "mutable": true,
+        "values": [
+          "facing_own_endzone",
+          "facing_opponent_endzone",
+          "facing_left_sideline",
+          "facing_right_sideline",
+          "facing_upfield_left_45_degree_angle",
+          "facing_upfield_right_45_degree_angle",
+          "facing_downfield_left_45_degree_angle",
+          "facing_downfield_right_45_degree_angle"
+        ],
+        "default_value": "facing_own_endzone"
+      }
+    ]
+  },
+  {
+    "name": "Action_WhamBlock",
+    "id": 7442930,
+    "color": "#ff8c00",
+    "type": "any",
+    "attributes": [
+      {
+        "id": 2398861,
+        "name": "orientation",
+        "input_type": "select",
+        "mutable": true,
+        "values": [
+          "facing_line_of_scrimmage",
+          "facing_own_endzone",
+          "facing_opponent_endzone",
+          "facing_left_sideline",
+          "facing_right_sideline",
+          "facing_upfield_left_45_degree_angle",
+          "facing_upfield_right_45_degree_angle",
+          "facing_downfield_left_45_degree_angle",
+          "facing_downfield_right_45_degree_angle"
+        ],
+        "default_value": "facing_line_of_scrimmage"
+      },
+      {
+        "id": 2398862,
+        "name": "actor_role",
+        "input_type": "select",
+        "mutable": true,
+        "values": [
+          "TE-Y",
+          "TE-F",
+          "H-Back"
+        ],
+        "default_value": "TE-Y"
+      },
+      {
+        "id": 2398863,
+        "name": "player_state",
+        "input_type": "select",
+        "mutable": true,
+        "values": [
+          "running",
+          "blocking",
+          "falling"
+        ],
+        "default_value": "running"
+      }
+    ]
+  },
+  {
+    "name": "Action_ReadEdgeDefender",
+    "id": 7442931,
+    "color": "#4b0082",
+    "type": "any",
+    "attributes": [
+      {
+        "id": 2398864,
+        "name": "player_state",
+        "input_type": "select",
+        "mutable": true,
+        "values": [
+          "reading-defender"
+        ],
+        "default_value": "reading-defender"
+      },
+      {
+        "id": 2398865,
+        "name": "actor_role",
+        "input_type": "select",
+        "mutable": true,
+        "values": [
+          "QB"
+        ],
+        "default_value": "QB"
+      },
+      {
+        "id": 2398866,
+        "name": "orientation",
+        "input_type": "select",
+        "mutable": true,
+        "values": [
+          "facing_line_of_scrimmage",
+          "facing_own_endzone",
+          "facing_opponent_endzone",
+          "facing_left_sideline",
+          "facing_right_sideline",
+          "facing_upfield_left_45_degree_angle",
+          "facing_upfield_right_45_degree_angle",
+          "facing_downfield_left_45_degree_angle",
+          "facing_downfield_right_45_degree_angle"
+        ],
+        "default_value": "facing_line_of_scrimmage"
+      }
+    ]
+  },
+  {
+    "name": "Action_PinBlock",
+    "id": 7442932,
+    "color": "#59ec35",
+    "type": "any",
+    "attributes": [
+      {
+        "id": 2398867,
+        "name": "actor_role",
+        "input_type": "select",
+        "mutable": true,
+        "values": [
+          "LT",
+          "LG",
+          "C",
+          "RG",
+          "RT",
+          "TE-Y",
+          "TE-F",
+          "TE-H",
+          "H-Back",
+          "WR-X",
+          "WR-Z",
+          "WR-Y",
+          "WR-F"
+        ],
+        "default_value": "LT"
+      },
+      {
+        "id": 2398868,
+        "name": "player_state",
+        "input_type": "select",
+        "mutable": true,
+        "values": [
+          "blocking",
+          "down",
+          "falling",
+          "in-stance",
+          "running"
+        ],
+        "default_value": "running"
+      },
+      {
+        "id": 2398869,
+        "name": "orientation",
+        "input_type": "select",
+        "mutable": true,
+        "values": [
+          "facing_line_of_scrimmage",
+          "facing_own_endzone",
+          "facing_opponent_endzone",
+          "facing_left_sideline",
+          "facing_right_sideline",
+          "facing_upfield_left_45_degree_angle",
+          "facing_upfield_right_45_degree_angle",
+          "facing_downfield_left_45_degree_angle",
+          "facing_downfield_right_45_degree_angle"
+        ],
+        "default_value": "facing_line_of_scrimmage"
+      },
+      {
+        "id": 2398870,
+        "name": "block_origin",
+        "input_type": "select",
+        "mutable": true,
+        "values": [
+          "playside",
+          "backside",
+          "unspecified"
+        ],
+        "default_value": "playside"
+      }
+    ]
+  },
+  {
+    "name": "Play_Run_PinAndPull",
+    "id": 7442933,
+    "color": "#1e90ff",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "Play_Run_Power",
+    "id": 7442934,
+    "color": "#4682b4",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "Play_Run_QbSneak",
+    "id": 7442935,
+    "color": "#6495ed",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "Play_Run_SplitZone",
+    "id": 7442936,
+    "color": "#87ceeb",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "Play_Run_Trap",
+    "id": 7442937,
+    "color": "#add8e6",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "Play_Run_TushPush",
+    "id": 7442938,
+    "color": "#b0e0e6",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "Action_CleanupBlock",
+    "id": 7442939,
+    "color": "#adff2f",
+    "type": "any",
+    "attributes": [
+      {
+        "id": 2398871,
+        "name": "actor_role",
+        "input_type": "select",
+        "mutable": true,
+        "values": [
+          "LT",
+          "LG",
+          "C",
+          "RG",
+          "RT",
+          "TE-Y",
+          "TE-F",
+          "TE-H",
+          "H-Back"
+        ],
+        "default_value": "LT"
+      },
+      {
+        "id": 2398872,
+        "name": "player_state",
+        "input_type": "select",
+        "mutable": true,
+        "values": [
+          "blocking",
+          "down",
+          "falling",
+          "in-stance",
+          "running"
+        ],
+        "default_value": "running"
+      },
+      {
+        "id": 2398873,
+        "name": "orientation",
+        "input_type": "select",
+        "mutable": true,
+        "values": [
+          "facing_line_of_scrimmage",
+          "facing_own_endzone",
+          "facing_opponent_endzone",
+          "facing_left_sideline",
+          "facing_right_sideline",
+          "facing_upfield_left_45_degree_angle",
+          "facing_upfield_right_45_degree_angle",
+          "facing_downfield_left_45_degree_angle",
+          "facing_downfield_right_45_degree_angle"
+        ],
+        "default_value": "facing_line_of_scrimmage"
+      },
+      {
+        "id": 2398874,
+        "name": "block_origin",
+        "input_type": "select",
+        "mutable": true,
+        "values": [
+          "playside",
+          "backside",
+          "unspecified"
+        ],
+        "default_value": "playside"
+      }
+    ]
+  },
+  {
+    "name": "Action_ReachBlock",
+    "id": 7442940,
+    "color": "#8b0000",
+    "type": "any",
+    "attributes": [
+      {
+        "id": 2398875,
+        "name": "actor_role",
+        "input_type": "select",
+        "mutable": true,
+        "values": [
+          "LT",
+          "LG",
+          "C",
+          "RG",
+          "RT",
+          "TE-Y",
+          "TE-F",
+          "TE-H",
+          "H-Back"
+        ],
+        "default_value": "LT"
+      },
+      {
+        "id": 2398876,
+        "name": "player_state",
+        "input_type": "select",
+        "mutable": true,
+        "values": [
+          "blocking",
+          "down",
+          "falling",
+          "in-stance",
+          "running"
+        ],
+        "default_value": "running"
+      },
+      {
+        "id": 2398877,
+        "name": "orientation",
+        "input_type": "select",
+        "mutable": true,
+        "values": [
+          "facing_line_of_scrimmage",
+          "facing_own_endzone",
+          "facing_opponent_endzone",
+          "facing_left_sideline",
+          "facing_right_sideline",
+          "facing_upfield_left_45_degree_angle",
+          "facing_upfield_right_45_degree_angle",
+          "facing_downfield_left_45_degree_angle",
+          "facing_downfield_right_45_degree_angle"
+        ],
+        "default_value": "facing_line_of_scrimmage"
+      }
+    ]
+  },
+  {
+    "name": "Action_FollowPuller",
+    "id": 7442941,
+    "color": "#2411c0",
+    "type": "any",
+    "attributes": [
+      {
+        "id": 2398878,
+        "name": "actor_role",
+        "input_type": "select",
+        "mutable": true,
+        "values": [
+          "QB",
+          "RB",
+          "FB",
+          "H-Back",
+          "WR-X",
+          "WR-Z",
+          "WR-Y",
+          "WR-F",
+          "TE-Y",
+          "TE-F",
+          "TE-H"
+        ],
+        "default_value": "RB"
+      },
+      {
+        "id": 2398879,
+        "name": "player_state",
+        "input_type": "select",
+        "mutable": true,
+        "values": [
+          "down",
+          "falling",
+          "in-stance",
+          "running"
+        ],
+        "default_value": "running"
+      },
+      {
+        "id": 2398880,
+        "name": "orientation",
+        "input_type": "select",
+        "mutable": true,
+        "values": [
+          "facing_line_of_scrimmage",
+          "facing_own_endzone",
+          "facing_opponent_endzone",
+          "facing_left_sideline",
+          "facing_right_sideline",
+          "facing_upfield_left_45_degree_angle",
+          "facing_upfield_right_45_degree_angle",
+          "facing_downfield_left_45_degree_angle",
+          "facing_downfield_right_45_degree_angle"
+        ],
+        "default_value": "facing_line_of_scrimmage"
+      }
+    ]
+  },
+  {
+    "name": "Action_PullLeadBlock",
+    "id": 7442942,
+    "color": "#deb887",
+    "type": "any",
+    "attributes": [
+      {
+        "id": 2398881,
+        "name": "block_origin",
+        "input_type": "select",
+        "mutable": false,
+        "values": [
+          "playside",
+          "backside",
+          "unspecified"
+        ],
+        "default_value": "playside"
+      },
+      {
+        "id": 2398882,
+        "name": "actor_role",
+        "input_type": "select",
+        "mutable": true,
+        "values": [
+          "LT",
+          "LG",
+          "C",
+          "RG",
+          "RT",
+          "TE-Y",
+          "TE-F",
+          "TE-H",
+          "H-Back"
+        ],
+        "default_value": "LT"
+      },
+      {
+        "id": 2398883,
+        "name": "player_state",
+        "input_type": "select",
+        "mutable": true,
+        "values": [
+          "blocking",
+          "down",
+          "falling",
+          "in-stance",
+          "running"
+        ],
+        "default_value": "running"
+      },
+      {
+        "id": 2398884,
+        "name": "orientation",
+        "input_type": "select",
+        "mutable": true,
+        "values": [
+          "facing_line_of_scrimmage",
+          "facing_own_endzone",
+          "facing_opponent_endzone",
+          "facing_left_sideline",
+          "facing_right_sideline",
+          "facing_upfield_left_45_degree_angle",
+          "facing_upfield_right_45_degree_angle",
+          "facing_downfield_left_45_degree_angle",
+          "facing_downfield_right_45_degree_angle"
+        ],
+        "default_value": "facing_line_of_scrimmage"
+      }
+    ]
+  },
+  {
+    "name": "Action_FollowLeadBlock",
+    "id": 7442943,
+    "color": "#dc143c",
+    "type": "any",
+    "attributes": [
+      {
+        "id": 2398885,
+        "name": "actor_role",
+        "input_type": "select",
+        "mutable": true,
+        "values": [
+          "QB",
+          "RB",
+          "FB",
+          "H-Back",
+          "WR-X",
+          "WR-Z",
+          "WR-Y",
+          "WR-F",
+          "TE-Y",
+          "TE-F",
+          "TE-H"
+        ],
+        "default_value": "QB"
+      },
+      {
+        "id": 2398886,
+        "name": "player_state",
+        "input_type": "select",
+        "mutable": true,
+        "values": [
+          "blocking",
+          "down",
+          "falling",
+          "in-stance",
+          "running"
+        ],
+        "default_value": "running"
+      },
+      {
+        "id": 2398887,
+        "name": "orientation",
+        "input_type": "select",
+        "mutable": true,
+        "values": [
+          "facing_line_of_scrimmage",
+          "facing_own_endzone",
+          "facing_opponent_endzone",
+          "facing_left_sideline",
+          "facing_right_sideline",
+          "facing_upfield_left_45_degree_angle",
+          "facing_upfield_right_45_degree_angle",
+          "facing_downfield_left_45_degree_angle",
+          "facing_downfield_right_45_degree_angle"
+        ],
+        "default_value": "facing_line_of_scrimmage"
+      }
+    ]
+  },
+  {
+    "name": "Action_Dive",
+    "id": 7442944,
+    "color": "#8a2be2",
+    "type": "any",
+    "attributes": [
+      {
+        "id": 2398888,
+        "name": "actor_role",
+        "input_type": "select",
+        "mutable": true,
+        "values": [
+          "QB",
+          "RB",
+          "TE-Y",
+          "TE-F",
+          "TE-H",
+          "H-Back"
+        ],
+        "default_value": "QB"
+      },
+      {
+        "id": 2398889,
+        "name": "player_state",
+        "input_type": "select",
+        "mutable": true,
+        "values": [
+          "down",
+          "falling",
+          "in-stance",
+          "receiving",
+          "running"
+        ],
+        "default_value": "running"
+      },
+      {
+        "id": 2398890,
+        "name": "orientation",
+        "input_type": "select",
+        "mutable": true,
+        "values": [
+          "facing_line_of_scrimmage",
+          "facing_own_endzone",
+          "facing_opponent_endzone",
+          "facing_left_sideline",
+          "facing_right_sideline",
+          "facing_upfield_left_45_degree_angle",
+          "facing_upfield_right_45_degree_angle",
+          "facing_downfield_left_45_degree_angle",
+          "facing_downfield_right_45_degree_angle"
+        ],
+        "default_value": "facing_line_of_scrimmage"
+      }
+    ]
+  },
+  {
+    "name": "Action_DriveBlock",
+    "id": 7442945,
+    "color": "#ff00ff",
+    "type": "any",
+    "attributes": [
+      {
+        "id": 2398891,
+        "name": "actor_role",
+        "input_type": "select",
+        "mutable": true,
+        "values": [
+          "LT",
+          "LG",
+          "C",
+          "RG",
+          "RT",
+          "TE-Y",
+          "TE-F",
+          "TE-H",
+          "H-Back",
+          "FB",
+          "WR-X",
+          "WR-Z",
+          "WR-Y",
+          "WR-F"
+        ],
+        "default_value": "LT"
+      },
+      {
+        "id": 2398892,
+        "name": "player_state",
+        "input_type": "select",
+        "mutable": true,
+        "values": [
+          "blocking",
+          "down",
+          "falling",
+          "in-stance",
+          "running"
+        ],
+        "default_value": "running"
+      },
+      {
+        "id": 2398893,
+        "name": "orientation",
+        "input_type": "select",
+        "mutable": true,
+        "values": [
+          "facing_line_of_scrimmage",
+          "facing_own_endzone",
+          "facing_opponent_endzone",
+          "facing_left_sideline",
+          "facing_right_sideline",
+          "facing_upfield_left_45_degree_angle",
+          "facing_upfield_right_45_degree_angle",
+          "facing_downfield_left_45_degree_angle",
+          "facing_downfield_right_45_degree_angle"
+        ],
+        "default_value": "facing_line_of_scrimmage"
+      }
+    ]
+  },
+  {
+    "name": "Action_FollowBlock",
+    "id": 7442946,
+    "color": "#c71585",
+    "type": "any",
+    "attributes": [
+      {
+        "id": 2398894,
+        "name": "actor_role",
+        "input_type": "select",
+        "mutable": true,
+        "values": [
+          "QB",
+          "RB",
+          "FB",
+          "H-Back",
+          "WR-X",
+          "WR-Z",
+          "WR-Y",
+          "WR-F",
+          "TE-Y",
+          "TE-F",
+          "TE-H"
+        ],
+        "default_value": "RB"
+      },
+      {
+        "id": 2398895,
+        "name": "player_state",
+        "input_type": "select",
+        "mutable": true,
+        "values": [
+          "blocking",
+          "down",
+          "falling",
+          "in-stance",
+          "running",
+          "standing"
+        ],
+        "default_value": "running"
+      },
+      {
+        "id": 2398896,
+        "name": "orientation",
+        "input_type": "select",
+        "mutable": true,
+        "values": [
+          "facing_line_of_scrimmage",
+          "facing_own_endzone",
+          "facing_opponent_endzone",
+          "facing_left_sideline",
+          "facing_right_sideline",
+          "facing_upfield_left_45_degree_angle",
+          "facing_upfield_right_45_degree_angle",
+          "facing_downfield_left_45_degree_angle",
+          "facing_downfield_right_45_degree_angle"
+        ],
+        "default_value": "facing_line_of_scrimmage"
+      }
+    ]
+  },
+  {
+    "name": "Action_SplitBlock",
+    "id": 7442947,
+    "color": "#00008b",
+    "type": "any",
+    "attributes": [
+      {
+        "id": 2398897,
+        "name": "actor_role",
+        "input_type": "select",
+        "mutable": true,
+        "values": [
+          "LT",
+          "LG",
+          "C",
+          "RG",
+          "RT",
+          "H-Back",
+          "TE-Y",
+          "TE-F",
+          "TE-H"
+        ],
+        "default_value": "H-Back"
+      },
+      {
+        "id": 2398898,
+        "name": "player_state",
+        "input_type": "select",
+        "mutable": true,
+        "values": [
+          "blocking",
+          "down",
+          "falling",
+          "in-stance",
+          "running",
+          "standing"
+        ],
+        "default_value": "running"
+      },
+      {
+        "id": 2398899,
+        "name": "orientation",
+        "input_type": "select",
+        "mutable": true,
+        "values": [
+          "facing_line_of_scrimmage",
+          "facing_own_endzone",
+          "facing_opponent_endzone",
+          "facing_left_sideline",
+          "facing_right_sideline",
+          "facing_upfield_left_45_degree_angle",
+          "facing_upfield_right_45_degree_angle",
+          "facing_downfield_left_45_degree_angle",
+          "facing_downfield_right_45_degree_angle"
+        ],
+        "default_value": "facing_line_of_scrimmage"
+      },
+      {
+        "id": 2398900,
+        "name": "block_origin",
+        "input_type": "select",
+        "mutable": true,
+        "values": [
+          "playside",
+          "backside",
+          "center",
+          "unspecified"
+        ],
+        "default_value": "backside"
+      }
+    ]
+  },
+  {
+    "name": "Action_PullAndTrapBlock",
+    "id": 7442948,
+    "color": "#8b4513",
+    "type": "any",
+    "attributes": [
+      {
+        "id": 2398901,
+        "name": "actor_role",
+        "input_type": "select",
+        "mutable": true,
+        "values": [
+          "LT",
+          "LG",
+          "C",
+          "RG",
+          "RT",
+          "TE-Y",
+          "TE-F",
+          "TE-H",
+          "H-Back"
+        ],
+        "default_value": "LT"
+      },
+      {
+        "id": 2398902,
+        "name": "player_state",
+        "input_type": "select",
+        "mutable": true,
+        "values": [
+          "blocking",
+          "down",
+          "falling",
+          "in-stance",
+          "running",
+          "standing"
+        ],
+        "default_value": "running"
+      },
+      {
+        "id": 2398903,
+        "name": "orientation",
+        "input_type": "select",
+        "mutable": true,
+        "values": [
+          "facing_line_of_scrimmage",
+          "facing_own_endzone",
+          "facing_opponent_endzone",
+          "facing_left_sideline",
+          "facing_right_sideline",
+          "facing_upfield_left_45_degree_angle",
+          "facing_upfield_right_45_degree_angle",
+          "facing_downfield_left_45_degree_angle",
+          "facing_downfield_right_45_degree_angle"
+        ],
+        "default_value": "facing_line_of_scrimmage"
+      },
+      {
+        "id": 2398904,
+        "name": "block_origin",
+        "input_type": "select",
+        "mutable": true,
+        "values": [
+          "playside",
+          "backside",
+          "center",
+          "unspecified"
+        ],
+        "default_value": "backside"
+      }
+    ]
+  },
+  {
+    "name": "Action_CutBack",
+    "id": 7442949,
+    "color": "#1e90ff",
+    "type": "any",
+    "attributes": [
+      {
+        "id": 2398905,
+        "name": "actor_role",
+        "input_type": "select",
+        "mutable": true,
+        "values": [
+          "LT",
+          "LG",
+          "C",
+          "RG",
+          "RT",
+          "H-Back",
+          "TE-Y",
+          "TE-F",
+          "TE-H"
+        ],
+        "default_value": "LT"
+      },
+      {
+        "id": 2398906,
+        "name": "player_state",
+        "input_type": "select",
+        "mutable": true,
+        "values": [
+          "blocking",
+          "down",
+          "falling",
+          "in-stance",
+          "running",
+          "standing"
+        ],
+        "default_value": "running"
+      },
+      {
+        "id": 2398907,
+        "name": "orientation",
+        "input_type": "select",
+        "mutable": true,
+        "values": [
+          "facing_line_of_scrimmage",
+          "facing_own_endzone",
+          "facing_opponent_endzone",
+          "facing_left_sideline",
+          "facing_right_sideline",
+          "facing_upfield_left_45_degree_angle",
+          "facing_upfield_right_45_degree_angle",
+          "facing_downfield_left_45_degree_angle",
+          "facing_downfield_right_45_degree_angle"
+        ],
+        "default_value": "facing_line_of_scrimmage"
+      }
+    ]
+  },
+  {
+    "name": "Action_Sneak",
+    "id": 7442950,
+    "color": "#191970",
+    "type": "any",
+    "attributes": [
+      {
+        "id": 2398908,
+        "name": "actor_role",
+        "input_type": "select",
+        "mutable": true,
+        "values": [
+          "QB",
+          "RB",
+          "FB",
+          "H-Back",
+          "TE-Y",
+          "TE-F",
+          "TE-H"
+        ],
+        "default_value": "QB"
+      },
+      {
+        "id": 2398909,
+        "name": "player_state",
+        "input_type": "select",
+        "mutable": true,
+        "values": [
+          "down",
+          "falling",
+          "in-stance",
+          "running",
+          "standing"
+        ],
+        "default_value": "running"
+      },
+      {
+        "id": 2398910,
+        "name": "orientation",
+        "input_type": "select",
+        "mutable": true,
+        "values": [
+          "facing_line_of_scrimmage",
+          "facing_own_endzone",
+          "facing_opponent_endzone",
+          "facing_left_sideline",
+          "facing_right_sideline",
+          "facing_upfield_left_45_degree_angle",
+          "facing_upfield_right_45_degree_angle",
+          "facing_downfield_left_45_degree_angle",
+          "facing_downfield_right_45_degree_angle"
+        ],
+        "default_value": "facing_line_of_scrimmage"
+      }
+    ]
+  },
+  {
+    "name": "Action_PushSupport",
+    "id": 7442951,
+    "color": "#35774f",
+    "type": "any",
+    "attributes": [
+      {
+        "id": 2398911,
+        "name": "actor_role",
+        "input_type": "select",
+        "mutable": true,
+        "values": [
+          "RB",
+          "FB",
+          "H-Back"
+        ],
+        "default_value": "RB"
+      },
+      {
+        "id": 2398912,
+        "name": "player_state",
+        "input_type": "select",
+        "mutable": true,
+        "values": [
+          "blocking",
+          "down",
+          "falling",
+          "in-stance",
+          "pushing",
+          "running",
+          "standing"
+        ],
+        "default_value": "pushing"
+      },
+      {
+        "id": 2398913,
+        "name": "orientation",
+        "input_type": "select",
+        "mutable": true,
+        "values": [
+          "facing_line_of_scrimmage",
+          "facing_own_endzone",
+          "facing_opponent_endzone",
+          "facing_left_sideline",
+          "facing_right_sideline",
+          "facing_upfield_left_45_degree_angle",
+          "facing_upfield_right_45_degree_angle",
+          "facing_downfield_left_45_degree_angle",
+          "facing_downfield_right_45_degree_angle"
+        ],
+        "default_value": "facing_line_of_scrimmage"
+      }
+    ]
+  },
+  {
+    "name": "Play_Run_Counter",
+    "id": 7442952,
+    "color": "#8b008b",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "Play_Run_Draw",
+    "id": 7442953,
+    "color": "#ba55d3",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "Play_Run_Duo",
+    "id": 7442954,
+    "color": "#8a2be2",
+    "type": "any",
+    "attributes": []
+  },
+  {
+    "name": "Action_PassSet",
+    "id": 7442955,
+    "color": "#9faa63",
+    "type": "any",
+    "attributes": [
+      {
+        "id": 2398914,
+        "name": "actor_role",
+        "input_type": "select",
+        "mutable": true,
+        "values": [
+          "LT",
+          "LG",
+          "C",
+          "RG",
+          "RT",
+          "TE-Y",
+          "TE-F",
+          "TE-H",
+          "FB",
+          "H-Back",
+          "RB"
+        ],
+        "default_value": "LT"
+      },
+      {
+        "id": 2398915,
+        "name": "player_state",
+        "input_type": "select",
+        "mutable": true,
+        "values": [
+          "blocking",
+          "down",
+          "falling",
+          "in-stance",
+          "running",
+          "standing"
+        ],
+        "default_value": "in-stance"
+      },
+      {
+        "id": 2398916,
+        "name": "orientation",
+        "input_type": "select",
+        "mutable": true,
+        "values": [
+          "facing_line_of_scrimmage",
+          "facing_own_endzone",
+          "facing_opponent_endzone",
+          "facing_left_sideline",
+          "facing_right_sideline",
+          "facing_upfield_left_45_degree_angle",
+          "facing_upfield_right_45_degree_angle",
+          "facing_downfield_left_45_degree_angle",
+          "facing_downfield_right_45_degree_angle"
+        ],
+        "default_value": "facing_line_of_scrimmage"
+      }
+    ]
+  },
+  {
+    "name": "Action_PassBlock",
+    "id": 7442956,
+    "color": "#cd853f",
+    "type": "any",
+    "attributes": [
+      {
+        "id": 2398917,
+        "name": "actor_role",
+        "input_type": "select",
+        "mutable": true,
+        "values": [
+          "LT",
+          "LG",
+          "C",
+          "RG",
+          "RT",
+          "TE-Y",
+          "TE-F",
+          "TE-H",
+          "FB",
+          "H-Back"
+        ],
+        "default_value": "LT"
+      },
+      {
+        "id": 2398918,
+        "name": "player_state",
+        "input_type": "select",
+        "mutable": true,
+        "values": [
+          "blocking",
+          "down",
+          "falling",
+          "in-stance",
+          "running"
+        ],
+        "default_value": "in-stance"
+      },
+      {
+        "id": 2398919,
+        "name": "orientation",
+        "input_type": "select",
+        "mutable": true,
+        "values": [
+          "facing_line_of_scrimmage",
+          "facing_own_endzone",
+          "facing_opponent_endzone",
+          "facing_left_sideline",
+          "facing_right_sideline",
+          "facing_upfield_left_45_degree_angle",
+          "facing_upfield_right_45_degree_angle",
+          "facing_downfield_left_45_degree_angle",
+          "facing_downfield_right_45_degree_angle"
+        ],
+        "default_value": "facing_line_of_scrimmage"
+      }
+    ]
+  },
+  {
+    "name": "Action_FakePassDropToHandoff",
+    "id": 7442957,
+    "color": "#dfc414",
+    "type": "any",
+    "attributes": [
+      {
+        "id": 2398920,
+        "name": "actor_role",
+        "input_type": "select",
+        "mutable": true,
+        "values": [
+          "QB"
+        ],
+        "default_value": "QB"
+      },
+      {
+        "id": 2398921,
+        "name": "player_state",
+        "input_type": "select",
+        "mutable": true,
+        "values": [
+          "down",
+          "falling",
+          "in-stance",
+          "running",
+          "standing"
+        ],
+        "default_value": "in-stance"
+      },
+      {
+        "id": 2398922,
+        "name": "orientation",
+        "input_type": "select",
+        "mutable": true,
+        "values": [
+          "facing_line_of_scrimmage",
+          "facing_own_endzone",
+          "facing_opponent_endzone",
+          "facing_left_sideline",
+          "facing_right_sideline",
+          "facing_upfield_left_45_degree_angle",
+          "facing_upfield_right_45_degree_angle",
+          "facing_downfield_left_45_degree_angle",
+          "facing_downfield_right_45_degree_angle"
+        ],
+        "default_value": "facing_line_of_scrimmage"
+      }
+    ]
+  },
+  {
+    "name": "Action_DefeatZoneBlock",
+    "id": 7443396,
+    "color": "#8fbee2",
+    "type": "rectangle",
+    "attributes": [
+      {
+        "id": 2399005,
+        "name": "actor_role",
+        "input_type": "select",
+        "mutable": true,
+        "values": [
+          "RDE",
+          "LDE",
+          "DT",
+          "MLB",
+          "WLB",
+          "OLB-RIGHT",
+          "OLB-LEFT",
+          "RCB",
+          "LCB",
+          "CB-NICKEL",
+          "CB-DIME",
+          "FS",
+          "SS"
+        ],
+        "default_value": "RDE"
+      },
+      {
+        "id": 2399006,
+        "name": "player_state",
+        "input_type": "select",
+        "mutable": true,
+        "values": [
+          "engaging-block"
+        ],
+        "default_value": "engaging-block"
+      },
+      {
+        "id": 2399007,
+        "name": "orientation",
+        "input_type": "select",
+        "mutable": true,
+        "values": [
+          "facing_line_of_scrimmage",
+          "facing_own_endzone",
+          "facing_opponent_endzone",
+          "facing_left_sideline",
+          "facing_right_sideline",
+          "facing_upfield_left_45_degree_angle",
+          "facing_upfield_right_45_degree_angle",
+          "facing_downfield_left_45_degree_angle",
+          "facing_downfield_right_45_degree_angle"
+        ],
+        "default_value": "facing_line_of_scrimmage"
+      }
+    ]
+  },
+  {
+    "name": "Action_DisplacedByZoneBlock",
+    "id": 7443540,
+    "color": "#eea647",
+    "type": "any",
+    "attributes": [
+      {
+        "id": 2399015,
+        "name": "actor_role",
+        "input_type": "select",
+        "mutable": true,
+        "values": [
+          "undefined",
+          "RDE",
+          "LDE",
+          "DT",
+          "MLB",
+          "WLB",
+          "OLB-RIGHT",
+          "OLB-LEFT",
+          "RCB",
+          "LCB",
+          "CB-NICKEL",
+          "CB-DIME",
+          "FS",
+          "SS"
+        ],
+        "default_value": "undefined"
+      },
+      {
+        "id": 2399016,
+        "name": "player_state",
+        "input_type": "select",
+        "mutable": true,
+        "values": [
+          "undefined",
+          "engaging-block",
+          "tackling"
+        ],
+        "default_value": "engaging-block"
+      },
+      {
+        "id": 2399017,
+        "name": "orientation",
+        "input_type": "select",
+        "mutable": true,
+        "values": [
+          "undefined",
+          "facing_line_of_scrimmage",
+          "facing_own_endzone",
+          "facing_opponent_endzone",
+          "facing_left_sideline",
+          "facing_right_sideline",
+          "facing_upfield_left_45_degree_angle",
+          "facing_upfield_right_45_degree_angle",
+          "facing_downfield_left_45_degree_angle",
+          "facing_downfield_right_45_degree_angle"
+        ],
+        "default_value": "undefined"
+      }
+    ]
+  },
+  {
+    "name": "Action_LatePursuit",
+    "id": 7443542,
+    "color": "#e00699",
+    "type": "rectangle",
+    "attributes": [
+      {
+        "id": 2399018,
+        "name": "actor_role",
+        "input_type": "select",
+        "mutable": true,
+        "values": [
+          "undefined",
+          "RDE",
+          "LDE",
+          "DT",
+          "MLB",
+          "WLB",
+          "OLB-Right",
+          "OLB-Left",
+          "RCB",
+          "LCB",
+          "CB-Nickel",
+          "CB-Dime",
+          "FS",
+          "SS"
+        ],
+        "default_value": "undefined"
+      },
+      {
+        "id": 2399019,
+        "name": "player_state",
+        "input_type": "select",
+        "mutable": true,
+        "values": [
+          "undefined",
+          "engaging-block",
+          "tackling"
+        ],
+        "default_value": "engaging-block"
+      },
+      {
+        "id": 2399020,
+        "name": "orientation",
+        "input_type": "select",
+        "mutable": true,
+        "values": [
+          "undefined",
+          "facing_line_of_scrimmage",
+          "facing_own_endzone",
+          "facing_opponent_endzone",
+          "facing_left_sideline",
+          "facing_right_sideline",
+          "facing_upfield_left_45_degree_angle",
+          "facing_upfield_right_45_degree_angle",
+          "facing_downfield_left_45_degree_angle",
+          "facing_downfield_right_45_degree_angle"
+        ],
+        "default_value": "undefined"
+      }
+    ]
+  },
+  {
+    "name": "Action_LoseEdge",
+    "id": 7443552,
+    "color": "#4186e0",
+    "type": "rectangle",
+    "attributes": [
+      {
+        "id": 2399021,
+        "name": "actor_role",
+        "input_type": "select",
+        "mutable": true,
+        "values": [
+          "undefined",
+          "RDE",
+          "LDE",
+          "DT",
+          "MLB",
+          "WLB",
+          "OLB-Right",
+          "OLB-Left",
+          "RCB",
+          "LCB",
+          "CB-Nickel",
+          "CB-Dime",
+          "FS",
+          "SS"
+        ],
+        "default_value": "undefined"
+      },
+      {
+        "id": 2399022,
+        "name": "player_state",
+        "input_type": "select",
+        "mutable": true,
+        "values": [
+          "undefined",
+          "engaging-block",
+          "tackling"
+        ],
+        "default_value": "engaging-block"
+      },
+      {
+        "id": 2399023,
+        "name": "orientation",
+        "input_type": "select",
+        "mutable": true,
+        "values": [
+          "undefined",
+          "facing_line_of_scrimmage",
+          "facing_own_endzone",
+          "facing_opponent_endzone",
+          "facing_left_sideline",
+          "facing_right_sideline",
+          "facing_upfield_left_45_degree_angle",
+          "facing_upfield_right_45_degree_angle",
+          "facing_downfield_left_45_degree_angle",
+          "facing_downfield_right_45_degree_angle"
+        ],
+        "default_value": "undefined"
+      }
+    ]
+  },
+  {
+    "name": "Action_LostCutbackContain",
+    "id": 7443554,
+    "color": "#a8f850",
+    "type": "rectangle",
+    "attributes": [
+      {
+        "id": 2399025,
+        "name": "player_state",
+        "input_type": "select",
+        "mutable": true,
+        "values": [
+          "undefined",
+          "engaging-block",
+          "tackling"
+        ],
+        "default_value": "engaging-block"
+      },
+      {
+        "id": 2399024,
+        "name": "actor_role",
+        "input_type": "select",
+        "mutable": true,
+        "values": [
+          "undefined",
+          "RDE",
+          "LDE",
+          "DT",
+          "MLB",
+          "WLB",
+          "OLB-Right",
+          "OLB-Left",
+          "RCB",
+          "LCB",
+          "CB-Nickel",
+          "CB-Dime",
+          "FS",
+          "SS"
+        ],
+        "default_value": "undefined"
+      },
+      {
+        "id": 2399026,
+        "name": "orientation",
+        "input_type": "select",
+        "mutable": true,
+        "values": [
+          "undefined",
+          "facing_line_of_scrimmage",
+          "facing_own_endzone",
+          "facing_opponent_endzone",
+          "facing_left_sideline",
+          "facing_right_sideline",
+          "facing_upfield_left_45_degree_angle",
+          "facing_upfield_right_45_degree_angle",
+          "facing_downfield_left_45_degree_angle",
+          "facing_downfield_right_45_degree_angle"
+        ],
+        "default_value": "undefined"
+      }
+    ]
+  },
+  {
+    "name": "Action_LostGapFit",
+    "id": 7443559,
+    "color": "#e93255",
+    "type": "rectangle",
+    "attributes": [
+      {
+        "id": 2399027,
+        "name": "actor_role",
+        "input_type": "select",
+        "mutable": true,
+        "values": [
+          "undefined",
+          "RDE",
+          "LDE",
+          "DT",
+          "MLB",
+          "WLB",
+          "OLB-Right",
+          "OLB-Left",
+          "RCB",
+          "LCB",
+          "CB-Nickel",
+          "CB-Dime",
+          "FS",
+          "SS"
+        ],
+        "default_value": "undefined"
+      },
+      {
+        "id": 2399028,
+        "name": "player_state",
+        "input_type": "select",
+        "mutable": true,
+        "values": [
+          "undefined",
+          "engaging-block",
+          "tackling"
+        ],
+        "default_value": "engaging-block"
+      },
+      {
+        "id": 2399029,
+        "name": "orientation",
+        "input_type": "select",
+        "mutable": true,
+        "values": [
+          "undefined",
+          "facing_line_of_scrimmage",
+          "facing_own_endzone",
+          "facing_opponent_endzone",
+          "facing_left_sideline",
+          "facing_right_sideline",
+          "facing_upfield_left_45_degree_angle",
+          "facing_upfield_right_45_degree_angle",
+          "facing_downfield_left_45_degree_angle",
+          "facing_downfield_right_45_degree_angle"
+        ],
+        "default_value": "undefined"
+      }
+    ]
+  },
+  {
+    "name": "Action_LostOutsideLeverage",
+    "id": 7443560,
+    "color": "#2cb348",
+    "type": "rectangle",
+    "attributes": [
+      {
+        "id": 2399030,
+        "name": "actor_role",
+        "input_type": "select",
+        "mutable": true,
+        "values": [
+          "undefined",
+          "RDE",
+          "LDE",
+          "DT",
+          "MLB",
+          "WLB",
+          "OLB-Right",
+          "OLB-Left",
+          "RCB",
+          "LCB",
+          "CB-Nickel",
+          "CB-Dime",
+          "FS",
+          "SS"
+        ],
+        "default_value": "undefined"
+      },
+      {
+        "id": 2399031,
+        "name": "player_state",
+        "input_type": "select",
+        "mutable": true,
+        "values": [
+          "undefined",
+          "engaging-block",
+          "tackling"
+        ],
+        "default_value": "engaging-block"
+      },
+      {
+        "id": 2399032,
+        "name": "orientation",
+        "input_type": "select",
+        "mutable": true,
+        "values": [
+          "undefined",
+          "facing_line_of_scrimmage",
+          "facing_own_endzone",
+          "facing_opponent_endzone",
+          "facing_left_sideline",
+          "facing_right_sideline",
+          "facing_upfield_left_45_degree_angle",
+          "facing_upfield_right_45_degree_angle",
+          "facing_downfield_left_45_degree_angle",
+          "facing_downfield_right_45_degree_angle"
+        ],
+        "default_value": "undefined"
+      }
+    ]
+  },
+  {
+    "name": "Action_MissTackle",
+    "id": 7443561,
+    "color": "#722254",
+    "type": "rectangle",
+    "attributes": [
+      {
+        "id": 2399033,
+        "name": "actor_role",
+        "input_type": "select",
+        "mutable": true,
+        "values": [
+          "undefined",
+          "RDE",
+          "LDE",
+          "DT",
+          "MLB",
+          "WLB",
+          "OLB-Right",
+          "OLB-Left",
+          "RCB",
+          "LCB",
+          "CB-Nickel",
+          "CB-Dime",
+          "FS",
+          "SS"
+        ],
+        "default_value": "undefined"
+      },
+      {
+        "id": 2399034,
+        "name": "player_state",
+        "input_type": "select",
+        "mutable": true,
+        "values": [
+          "undefined",
+          "engaging-block",
+          "tackling"
+        ],
+        "default_value": "engaging-block"
+      },
+      {
+        "id": 2399035,
+        "name": "orientation",
+        "input_type": "select",
+        "mutable": true,
+        "values": [
+          "undefined",
+          "facing_line_of_scrimmage",
+          "facing_own_endzone",
+          "facing_opponent_endzone",
+          "facing_left_sideline",
+          "facing_right_sideline",
+          "facing_upfield_left_45_degree_angle",
+          "facing_upfield_right_45_degree_angle",
+          "facing_downfield_left_45_degree_angle",
+          "facing_downfield_right_45_degree_angle"
+        ],
+        "default_value": "undefined"
+      }
+    ]
+  },
+  {
+    "name": "Action_OverrunFit",
+    "id": 7443562,
+    "color": "#5e08f0",
+    "type": "rectangle",
+    "attributes": [
+      {
+        "id": 2399036,
+        "name": "actor_role",
+        "input_type": "select",
+        "mutable": true,
+        "values": [
+          "undefined",
+          "RDE",
+          "LDE",
+          "DT",
+          "MLB",
+          "WLB",
+          "OLB-Right",
+          "OLB-Left",
+          "RCB",
+          "LCB",
+          "CB-Nickel",
+          "CB-Dime",
+          "FS",
+          "SS"
+        ],
+        "default_value": "undefined"
+      },
+      {
+        "id": 2399037,
+        "name": "player_state",
+        "input_type": "select",
+        "mutable": true,
+        "values": [
+          "undefined",
+          "engaging-block",
+          "tackling"
+        ],
+        "default_value": "engaging-block"
+      },
+      {
+        "id": 2399038,
+        "name": "orientation",
+        "input_type": "select",
+        "mutable": true,
+        "values": [
+          "undefined",
+          "facing_line_of_scrimmage",
+          "facing_own_endzone",
+          "facing_opponent_endzone",
+          "facing_left_sideline",
+          "facing_right_sideline",
+          "facing_upfield_left_45_degree_angle",
+          "facing_upfield_right_45_degree_angle",
+          "facing_downfield_left_45_degree_angle",
+          "facing_downfield_right_45_degree_angle"
+        ],
+        "default_value": "undefined"
+      }
+    ]
+  },
+  {
+    "name": "Action_RunBlock",
+    "id": 7443567,
+    "color": "#33b1ef",
+    "type": "rectangle",
+    "attributes": [
+      {
+        "id": 2399041,
+        "name": "actor_role",
+        "input_type": "select",
+        "mutable": true,
+        "values": [
+          "undefined",
+          "WR-X",
+          "WR-Y",
+          "WR-Z",
+          "WR-F",
+          "TE-Y",
+          "TE-F",
+          "TE-H"
+        ],
+        "default_value": "undefined"
+      },
+      {
+        "id": 2399042,
+        "name": "player_state",
+        "input_type": "select",
+        "mutable": true,
+        "values": [
+          "undefined",
+          "blocking",
+          "running"
+        ],
+        "default_value": "undefined"
+      },
+      {
+        "id": 2399043,
+        "name": "orientation",
+        "input_type": "select",
+        "mutable": true,
+        "values": [
+          "undefined",
+          "facing_line_of_scrimmage",
+          "facing_own_endzone",
+          "facing_opponent_endzone",
+          "facing_left_sideline",
+          "facing_right_sideline",
+          "facing_upfield_left_45_degree_angle",
+          "facing_upfield_right_45_degree_angle",
+          "facing_downfield_left_45_degree_angle",
+          "facing_downfield_right_45_degree_angle"
+        ],
+        "default_value": "undefined"
+      }
+    ]
+  },
+  {
+    "name": "Action_RunSupport",
+    "id": 7443569,
+    "color": "#e553d3",
+    "type": "rectangle",
+    "attributes": [
+      {
+        "id": 2399044,
+        "name": "actor_role",
+        "input_type": "select",
+        "mutable": true,
+        "values": [
+          "undefined",
+          "RDE",
+          "LDE",
+          "DT",
+          "MLB",
+          "WLB",
+          "OLB-Right",
+          "OLB-Left",
+          "RCB",
+          "LCB",
+          "CB-Nickel",
+          "CB-Dime",
+          "FS",
+          "SS"
+        ],
+        "default_value": "undefined"
+      },
+      {
+        "id": 2399045,
+        "name": "player_state",
+        "input_type": "select",
+        "mutable": true,
+        "values": [
+          "undefined",
+          "engaging-block",
+          "tackling"
+        ],
+        "default_value": "engaging-block"
+      },
+      {
+        "id": 2399046,
+        "name": "orientation",
+        "input_type": "select",
+        "mutable": true,
+        "values": [
+          "undefined",
+          "facing_line_of_scrimmage",
+          "facing_own_endzone",
+          "facing_opponent_endzone",
+          "facing_left_sideline",
+          "facing_right_sideline",
+          "facing_upfield_left_45_degree_angle",
+          "facing_upfield_right_45_degree_angle",
+          "facing_downfield_left_45_degree_angle",
+          "facing_downfield_right_45_degree_angle"
+        ],
+        "default_value": "undefined"
+      }
+    ]
+  },
+  {
+    "name": "Action_SealedBySplitBlock",
+    "id": 7443571,
+    "color": "#bb5f4a",
+    "type": "rectangle",
+    "attributes": [
+      {
+        "id": 2399048,
+        "name": "player_state",
+        "input_type": "select",
+        "mutable": true,
+        "values": [
+          "undefined",
+          "engaging-block",
+          "tackling"
+        ],
+        "default_value": "engaging-block"
+      },
+      {
+        "id": 2399049,
+        "name": "orientation",
+        "input_type": "select",
+        "mutable": true,
+        "values": [
+          "undefined",
+          "facing_line_of_scrimmage",
+          "facing_own_endzone",
+          "facing_opponent_endzone",
+          "facing_left_sideline",
+          "facing_right_sideline",
+          "facing_upfield_left_45_degree_angle",
+          "facing_upfield_right_45_degree_angle",
+          "facing_downfield_left_45_degree_angle",
+          "facing_downfield_right_45_degree_angle"
+        ],
+        "default_value": "undefined"
+      },
+      {
+        "id": 2399047,
+        "name": "actor_role",
+        "input_type": "select",
+        "mutable": true,
+        "values": [
+          "undefined",
+          "RDE",
+          "LDE",
+          "DT",
+          "MLB",
+          "WLB",
+          "OLB-Right",
+          "OLB-Left",
+          "RCB",
+          "LCB",
+          "CB-Nickel",
+          "CB-Dime",
+          "FS",
+          "SS"
+        ],
+        "default_value": "undefined"
+      }
+    ]
+  },
+  {
+    "name": "Action_SetEdge",
+    "id": 7443574,
+    "color": "#06355d",
+    "type": "rectangle",
+    "attributes": [
+      {
+        "id": 2399050,
+        "name": "actor_role",
+        "input_type": "select",
+        "mutable": true,
+        "values": [
+          "undefined",
+          "RDE",
+          "LDE",
+          "DT",
+          "MLB",
+          "WLB",
+          "OLB-Right",
+          "OLB-Left",
+          "RCB",
+          "LCB",
+          "CB-Nickel",
+          "CB-Dime",
+          "FS",
+          "SS"
+        ],
+        "default_value": "undefined"
+      },
+      {
+        "id": 2399051,
+        "name": "player_state",
+        "input_type": "select",
+        "mutable": true,
+        "values": [
+          "undefined",
+          "engaging-block",
+          "tackling"
+        ],
+        "default_value": "engaging-block"
+      },
+      {
+        "id": 2399052,
+        "name": "orientation",
+        "input_type": "select",
+        "mutable": true,
+        "values": [
+          "undefined",
+          "facing_line_of_scrimmage",
+          "facing_own_endzone",
+          "facing_opponent_endzone",
+          "facing_left_sideline",
+          "facing_right_sideline",
+          "facing_upfield_left_45_degree_angle",
+          "facing_upfield_right_45_degree_angle",
+          "facing_downfield_left_45_degree_angle",
+          "facing_downfield_right_45_degree_angle"
+        ],
+        "default_value": "undefined"
+      }
+    ]
+  },
+  {
+    "name": "Object_PlayerOffense",
+    "id": 7448568,
+    "color": "#dd44b0",
+    "type": "any",
+    "attributes": [
+      {
+        "id": 2503660,
+        "name": "position",
+        "input_type": "select",
+        "mutable": false,
+        "values": [
+          "undefined",
+          "QB",
+          "RB",
+          "LT",
+          "LG",
+          "C",
+          "RG",
+          "RT",
+          "TE-Y",
+          "WR-X",
+          "FB",
+          "H-BACK",
+          "WR-Y",
+          "WR-Z",
+          "WR-F",
+          "TE-H",
+          "TE-F"
+        ],
+        "default_value": "undefined"
+      }
+    ]
+  },
+  {
+    "name": "Object_PlayerDefense",
+    "id": 7448569,
+    "color": "#dd7ee9",
+    "type": "any",
+    "attributes": [
+      {
+        "id": 2503661,
+        "name": "position",
+        "input_type": "select",
+        "mutable": false,
+        "values": [
+          "undefined",
+          "RDE",
+          "LDE",
+          "DT-0",
+          "DT-1",
+          "DT-2i",
+          "DT-2",
+          "DT-3",
+          "MLB",
+          "WLB",
+          "OLB-Right",
+          "OLB-Left",
+          "RCB",
+          "LCB",
+          "CB-Nickel",
+          "CB-Dime",
+          "FS",
+          "SS"
+        ],
+        "default_value": "undefined"
+      }
+    ]
+  },
+  {
+    "name": "player",
+    "id": 7450852,
+    "color": "#c06060",
+    "type": "any",
+    "attributes": [
+      {
+        "id": 2503916,
+        "name": "position",
+        "input_type": "select",
+        "mutable": false,
+        "values": [
+          "undefined",
+          "QB",
+          "RB",
+          "FB",
+          "H-BACK",
+          "LT",
+          "LG",
+          "C",
+          "RG",
+          "RT",
+          "WR-X",
+          "WR-Y",
+          "WR-Z",
+          "WR-F",
+          "TE-Y",
+          "TE-H",
+          "TE-F",
+          "RDE",
+          "LDE",
+          "DT-0",
+          "DT-1",
+          "DT-2i",
+          "DT-2",
+          "DT-3",
+          "MLB",
+          "WLB",
+          "OLB-Right",
+          "OLB-Left",
+          "RCB",
+          "LCB",
+          "CB-Nickel",
+          "CB-Dime",
+          "FS",
+          "SS"
+        ],
+        "default_value": "undefined"
+      },
+      {
+        "id": 2503917,
+        "name": "team_side",
+        "input_type": "select",
+        "mutable": false,
+        "values": [
+          "undefined",
+          "offense",
+          "defense"
+        ],
+        "default_value": "undefined"
+      }
+    ]
+  }
+]
