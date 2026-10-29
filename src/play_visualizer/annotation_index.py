@@ -78,7 +78,7 @@ class AnnotationIndex:
                         bbox_xyxy=p_sample.bbox_xyxy,
                         bbox_xywh=p_sample.bbox_xywh,
                     )
-                    self.by_frame[sample.frame].append(ann)
+                    self.by_frame[p_sample.frame].append(ann)
 
     def for_frame(self, frame_number: int) -> list[DenseFrameAnnotation]:
         """Retrieve all dense annotations for a given frame index."""

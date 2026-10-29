@@ -30,6 +30,7 @@ dev = [
 
 [project.scripts]
 play-visualizer = "play_visualizer.cli:app"
+play-visualizer-showcase-batch = "play_visualizer.batch_cli:app"
 
 
 [tool.setuptools.packages.find]

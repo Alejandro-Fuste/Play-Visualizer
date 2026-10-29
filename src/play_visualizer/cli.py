@@ -15,9 +15,7 @@ from .config import load_config
 from .ffmpeg import run_ffmpeg_encode
 from .logging_utils import setup_logger, write_run_report
 from .models import RenderReport
-from .renderer import FrameRenderer
 from .validator import InputValidator
-from .video_io import VideoReader, VideoWriter
 
 app = typer.Typer(
     name="play-visualizer",
@@ -107,6 +105,8 @@ def main(
     index = AnnotationIndex(pkg)
 
     # 4. Inspect video properties
+    from .video_io import VideoReader, VideoWriter
+
     try:
         reader = VideoReader(video)
         logger.info(
@@ -185,6 +185,8 @@ def main(
         sys.exit(1)
 
     # 7. Execute frame rendering
+    from .renderer import FrameRenderer
+
     renderer = FrameRenderer(
         config=cfg,
         pkg=pkg,

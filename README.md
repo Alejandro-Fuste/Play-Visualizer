@@ -94,7 +94,75 @@ python -m play_visualizer \
 
 ---
 
-## 5. Command-Line Arguments Reference
+## 5. Google Colab Showcase Batch Workflow
+
+`Play-Visualizer` provides a Google Colab-compatible batch-rendering pipeline that processes the **50 finalized showcase clips** sequentially with failure isolation, SHA-256 input fingerprinting, resume capabilities, and atomic persistence to Google Drive.
+
+### 5.1 Colab Notebook
+
+The notebook is located at [`notebooks/showcase_batch_colab.ipynb`](file:///Users/alejandro/Desktop/Projects/FilmBreakdownAI/Utilities/Play-Visualizer/notebooks/showcase_batch_colab.ipynb). It provides 8 numbered execution cells:
+1. **Configuration**: Configures Drive paths, local scratch directory (`/content/play_visualizer_batch`), and overlay settings.
+2. **Mount Google Drive**: Mounts `/content/drive` interactively.
+3. **Clone & Install**: Installs `play-visualizer` in editable mode and verifies `ffmpeg` and `ffprobe`.
+4. **Access Checks**: Confirms that `VIDEOS_ROOT`, `ANNOTATIONS_ROOT`, and sample showcase clips exist.
+5. **Full Showcase Dry-Run**: Validates manifest, inventory, file existence, and schema v1.1 without rendering MP4s.
+6. **Representative Test Batch**: Renders a 5–6 clip QA subset (`JetSweep_1`, `Post10to15_1`, `Power_3`, `PuntBlock_1`, `KickoffReturnTouchdown_17`, `Power_4`).
+7. **Full 50-Clip Batch Render**: Sequentially renders all 50 showcase clips with `--resume` enabled.
+8. **Results & In-Notebook Video Player**: Formats the final Markdown audit summary and embeds an HTML5 player to preview rendered clips.
+
+### 5.2 Showcase Batch CLI (`play-visualizer-showcase-batch`)
+
+The batch workflow can also be run directly from the command line:
+
+```bash
+# Full 50-clip dry-run preflight
+play-visualizer-showcase-batch \
+  --videos-root /content/drive/MyDrive/.../videos \
+  --annotations-root /content/drive/MyDrive/.../Play-Visualizer/annotations \
+  --output-root /content/drive/MyDrive/.../Play-Visualizer/outputs/showcase \
+  --scratch-root /content/play_visualizer_batch \
+  --manifest /content/Play-Visualizer/config/showcase_clips.json \
+  --inventory /content/drive/MyDrive/.../Play-Visualizer/1_Videos_Inventory.csv \
+  --dry-run
+
+# Representative subset render (5 clips) with resume protection
+play-visualizer-showcase-batch \
+  --videos-root /content/drive/MyDrive/.../videos \
+  --annotations-root /content/drive/MyDrive/.../Play-Visualizer/annotations \
+  --output-root /content/drive/MyDrive/.../Play-Visualizer/outputs/showcase \
+  --clips JetSweep_1,Post10to15_1,Power_3,PuntBlock_1,KickoffReturnTouchdown_17 \
+  --resume
+
+# Full 50-clip showcase rendering
+play-visualizer-showcase-batch \
+  --videos-root /content/drive/MyDrive/.../videos \
+  --annotations-root /content/drive/MyDrive/.../Play-Visualizer/annotations \
+  --output-root /content/drive/MyDrive/.../Play-Visualizer/outputs/showcase \
+  --resume
+```
+
+### 5.3 Batch CLI Options Reference
+
+| Argument | Description |
+|---|---|
+| `--videos-root` | Path to directory containing source football videos (`{ClipName}.mp4`). **Required**. |
+| `--annotations-root` | Path to annotations directory (`{PlayName}/{ClipName}/annotations.json`). **Required**. |
+| `--output-root` | Persistent Google Drive directory for output videos and reports. **Required**. |
+| `--manifest` | Path to `showcase_clips.json` (defaults to bundled `config/showcase_clips.json`). |
+| `--inventory` | Path to `1_Videos_Inventory.csv` for provenance and Google Drive File ID mapping. |
+| `--scratch-root` | Fast local SSD directory for staging (`/content/play_visualizer_batch`). |
+| `--clip` / `--clips` | Process specific clip(s) for quick verification (e.g. `--clips JetSweep_1,Power_3`). |
+| `--dry-run` | Audits entire batch without producing MP4s. Writes validation summary. |
+| `--resume` | Skips clips where output MP4 and report exist and match input SHA-256 fingerprint. |
+| `--overwrite` | Replaces existing outputs using safe local staging and atomic commit. |
+| `--show-timeline / --hide-timeline` | Toggle bottom progress timeline with frame markers (default: hidden). |
+| `--show-offense / --hide-offense` | Toggle offensive player bounding boxes (default: shown). |
+| `--show-defense / --hide-defense` | Toggle defensive player bounding boxes (default: shown). |
+| `--show-action-panel / --hide-action-panel` | Toggle LIVE ACTIONS legend panel in upper-right (default: shown). |
+
+---
+
+## 6. Single-Video CLI Arguments Reference
 
 | Argument | Short | Type | Default | Description |
 |---|---|---|---|---|
@@ -117,7 +185,7 @@ python -m play_visualizer \
 
 ---
 
-## 6. Configuration
+## 7. Configuration
 
 Visual styling, fonts, colors, panel limits, and FFmpeg encoding presets are controlled by `config/default_visualization.yaml`. You can copy and customize this YAML file:
 
@@ -143,7 +211,7 @@ ffmpeg:
 
 ---
 
-## 7. Frame Mismatches & Edge Cases
+## 8. Frame Mismatches & Edge Cases
 
 ### Video vs. JSON Frame Mismatch
 Source football clips may have unannotated frames at the tail end. For example:
@@ -157,7 +225,7 @@ If `tracks.ball` is empty or lacks frame samples, the visualizer logs an informa
 
 ---
 
-## 8. Development & Testing
+## 9. Development & Testing
 
 Run unit tests and end-to-end smoke tests using pytest:
 
@@ -179,7 +247,7 @@ mypy src/play_visualizer
 
 ---
 
-## 9. Extending for Future Play Types
+## 10. Extending for Future Play Types
 
 To add support for new play types or action labels:
 1. Add raw action label mappings to `EXPLICIT_ACTION_MAP` in `src/play_visualizer/action_formatter.py`.

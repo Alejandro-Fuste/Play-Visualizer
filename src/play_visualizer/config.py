@@ -26,11 +26,9 @@ def hex_to_bgr(hex_code: str) -> list[int]:
 
 def load_action_colors(action_labels_path: Path | None = None) -> dict[str, list[int]]:
     """Load action label definitions JSON and return mapping of action name to BGR color."""
-    target_path = (
-        action_labels_path
-        if action_labels_path and action_labels_path.exists()
-        else DEFAULT_ACTION_LABELS_PATH
-    )
+    if action_labels_path is not None and not action_labels_path.exists():
+        raise FileNotFoundError(f"Action labels file not found: {action_labels_path}")
+    target_path = action_labels_path if action_labels_path else DEFAULT_ACTION_LABELS_PATH
 
     if not target_path.exists():
         return {}
@@ -77,7 +75,12 @@ def load_config(
     action_labels_path: Path | None = None,
 ) -> ConfigModel:
     """Load configuration from a YAML file, falling back to default config if none provided."""
-    target_path = config_path if config_path and config_path.exists() else DEFAULT_CONFIG_PATH
+    if config_path is not None and not config_path.exists():
+        raise FileNotFoundError(f"Configuration file not found: {config_path}")
+    if action_labels_path is not None and not action_labels_path.exists():
+        raise FileNotFoundError(f"Action labels file not found: {action_labels_path}")
+
+    target_path = config_path if config_path else DEFAULT_CONFIG_PATH
     action_colors = load_action_colors(action_labels_path)
 
     if not target_path.exists():

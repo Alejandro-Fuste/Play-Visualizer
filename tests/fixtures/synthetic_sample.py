@@ -3,12 +3,13 @@
 import json
 from pathlib import Path
 
-import cv2
 import numpy as np
 
 
 def create_synthetic_video(video_path: Path, num_frames: int = 30, width: int = 640, height: int = 480, fps: float = 30.0) -> Path:
     """Create a synthetic MP4 video file with color-patterned frames."""
+    import cv2
+
     video_path.parent.mkdir(parents=True, exist_ok=True)
     fourcc = cv2.VideoWriter_fourcc(*"mp4v")
     writer = cv2.VideoWriter(str(video_path), fourcc, fps, (width, height))
@@ -89,14 +90,30 @@ def create_synthetic_annotation(json_path: Path, num_frames: int = 30) -> Path:
                     "actor_track_id": "1",
                     "position": "QB",
                     "team_side": "offense",
-                    "samples": [],
+                    "samples": [
+                        {
+                            "frame": f,
+                            "bbox_xyxy": [100.0 + f, 200.0, 150.0 + f, 300.0],
+                            "bbox_xywh": [100.0 + f, 200.0, 50.0, 100.0],
+                            "visible": True,
+                        }
+                        for f in range(num_frames)
+                    ],
                 },
                 {
                     "xml_track_id": "20",
                     "actor_track_id": "2",
                     "position": "FS",
                     "team_side": "defense",
-                    "samples": [],
+                    "samples": [
+                        {
+                            "frame": f,
+                            "bbox_xyxy": [400.0, 100.0, 450.0, 200.0],
+                            "bbox_xywh": [400.0, 100.0, 50.0, 100.0],
+                            "visible": True,
+                        }
+                        for f in range(num_frames)
+                    ],
                 },
             ],
             "ball": [],
